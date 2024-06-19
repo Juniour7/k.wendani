@@ -19,7 +19,7 @@ const AmbassadorChoir = () => {
 
                 {/* Ambassadors Choir */}
                 <section className="w-[90%] mx-auto mt-[50px]">
-                    <h1 className="text-5xl">Ambassadors Choir</h1>
+                    <h1 className="text-3xl md:text-5xl">Ambassadors Choir</h1>
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         <div className="h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/UyXrGFvm9mc" title="MAMBO YA KALE - KAHAWA WENDANI SDA AMBASSADORS || OFFICIAL VIDEO  #sda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

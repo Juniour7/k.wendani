@@ -12,7 +12,7 @@ const AboutPage = () => {
             <Helmet>
                 <title>About Us | Kahawa Wendani SDA Church</title>
             </Helmet>
-            <body className='mt-[80px] lg:mt-[100px] bg-[#F8F8F8]'>
+            <body className='mt-[80px] lg:mt-[100px] bg-[#F8F8F8] pb-[100px]'>
                 <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52'>
                     <div className='text-left absolute top-[30%] left-[25%] md:left-[32%] text-md'>
                         <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
@@ -63,10 +63,28 @@ const AboutPage = () => {
 
                 {/* Our Leaders */}
                 <section className='mt-[70px]'>
-                    <h1 className='text-5xl text-[#007681] font-About mb-[40px] text-center mt-[20px]'>Meet Our Leaders</h1>
-                    <div className='grid grid-cols-3 gap-4'>
-                        <div>
-                            
+                    <h1 className='text-3xl md:text-5xl text-[#007681] font-About mb-[40px] text-center mt-[20px]'>Meet Our Leaders</h1>
+                    <div className='grid md:grid-cols-3 gap-4 font-About w-[85%] mx-auto'>
+                        <div className='relative'>
+                            <h4 className='text-3xl'>First Elder</h4>
+                            <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
+                                <img src={require('../Assets/Leaders/1st Elder.png')} alt='first elder' className='w-full h-full object-cover' />
+                            </div>
+                            <div className='absolute -bottom-[2%] left-[20%] bg-[#F8F8F8] border border-[#F0B323] w-[70%] h-[70%] z-0'/>
+                        </div>
+                        <div className='relative'>
+                            <h4 className='text-3xl'>Pastor</h4>
+                            <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
+                                <img src={require('../Assets/Leaders/Pastor.jpg')} alt='first elder' className='w-full h-full object-cover' />
+                            </div>
+                            <div className='absolute -bottom-[2%] left-[20%] bg-[#F8F8F8] border border-[#F0B323] w-[70%] h-[70%] z-0'/>
+                        </div>
+                        <div className='relative'>
+                            <h4 className='text-3xl'>Church Leader</h4>
+                            <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
+                                <img src={require('../Assets/Leaders/Church Leader.jpeg')} alt='first elder' className='w-full h-full object-cover' />
+                            </div>
+                            <div className='absolute -bottom-[2%] left-[20%] bg-[#F8F8F8] border border-[#F0B323] w-[70%] h-[70%] z-0'/>
                         </div>
                     </div>
                 </section>

@@ -110,9 +110,9 @@ const HeroCarousel = () => {
                 <Slider {...settings}>
                     <div className='relative h-screen font-[Poppins] '>
                         <img 
-                            src="https://images.unsplash.com/photo-1600288480699-0b0d8a456dd8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={require('../../Assets/SlideShow/IMG_0004.JPG')}
                             alt=""
-                            className=' max-h-screen w-full object-fill overflow-hidden'
+                            className=' max-h-screen w-full object-cover overflow-hidden'
                         />
                         <div className='absolute top-[280px] ml-[100px] w-[70%] text-white p-5 leading-loose'>
                             <p>Communicate with God</p>

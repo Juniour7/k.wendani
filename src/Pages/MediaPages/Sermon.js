@@ -11,10 +11,35 @@ const Sermon = () => {
             </Helmet>
             <body className="mt-[60px] lg:mt-[100px] bg-[#F8F8F8] pb-[50px]">
                 <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52'>
-                    <div className='text-center absolute top-[30%] left-[15%] lg:left-[32%] text-md'>
+                    <div className='text-center absolute top-[30%] left-[15%] lg:left-[40%] text-md'>
                         <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
                         <Link className='text-[#F0B323]'>Sermon</Link>
                         <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>SERMON</h1>
+                    </div>
+                </section>
+
+                <section className="w-[90%] mx-auto mt-[50px]">
+                    <h1 className="text-5xl">Sermons</h1>
+                    <p className="md:w-[60%]">Dive into our inspiring collection of past sermons and experience the uplifting messages that have touched countless hearts in our SDA community—watch now and feel the power of faith!</p>
+                    <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
+                        <div className="h-[250px]">
+                            <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/7JWwjy-5NsI?si=ljivcAg125fkpUQL&amp;start=14756" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div className="h-[250px]">
+                            <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/gO0_R-mLY8U?si=q7sfLkH9lEp7Afy1&amp;start=14348" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div className="h-[250px]">
+                            <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/gv0jr1mEXzI?si=VRqbkqzgPR_UbzEf&amp;start=14348" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div className="h-[250px]">
+                            <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/Ec19UWr6Ly0?si=vbjkcB529ByPtVYM&amp;start=13714" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div className="h-[250px]">
+                            <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/mdEDPUOleCc?si=f4hsbWqdK-KRihCp&amp;start=14081" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div className="h-[250px]">
+                            <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/gty6oQcWr4c?si=YLaQ5PxU3-gzI-Gm&amp;start=14813" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </section>
             </body>

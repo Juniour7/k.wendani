@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import { MdOutlineArticle, MdOutlineHeadsetMic  } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa6";
 import { GoBook } from "react-icons/go";
-
+import { TfiHeadphoneAlt } from "react-icons/tfi";
 
 //Components
 import HeroCarousel from '../Components/Carousel/HeroCarousel';
@@ -122,8 +122,8 @@ const HomePage = () => {
                 <section className='bg-[#F8F8F8] w-full p-5 flex flex-wrap lg:flex-nowrap gap-5 justify-center'>
                     <div className='lg:basis-[40%]'>
                         <h4 className='text-md'>You're Welcome</h4>
-                        <h1 className='text-[#007681] text-5xl'>Join The Drive</h1>
-                        <p className='text-wrap mt-10'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together. Your generous support will help lay the foundation for a church that not only serves as a place of spiritual nourishment but also stands as a testament to our shared commitment and unity. Together, let's construct a space where love, hope, and faith flourish for generations to come. Donate today and be a cornerstone of our collective mission!    </p>
+                        <h1 className='text-[#007681] text-3xl md:text-5xl'>Join The Drive</h1>
+                        <p className='text-wrap mt-4 md:mt-10'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together. Your generous support will help lay the foundation for a church that not only serves as a place of spiritual nourishment but also stands as a testament to our shared commitment and unity. Together, let's construct a space where love, hope, and faith flourish for generations to come. Donate today and be a cornerstone of our collective mission!    </p>
                         <Link to="/giving"><button className='bg-[#007681] text-white text-xl font-semibold px-6 py-2 mt-[100px]'>Donate Now</button></Link>
                     </div>
                     <div className='lg:w-[50%] h-[250px] lg:h-[500px]'>
@@ -158,11 +158,11 @@ const HomePage = () => {
 
                 {/* Dedication Form */}
                 <section className='bg-[#007681] w-full p-9'>
-                    <div className='w-[85%] mx-auto'>
-                        <div className='w-[60%] mx-auto'>
+                    <div className='w-[95%] md:w-[85%] mx-auto'>
+                        <div className='w-[90%] md:w-[60%] mx-auto'>
                             <img src={require('../Assets/Logos/Baby-Dedication-Form.webp')} alt='Dedication Form' className='w-full h-full bject-cover' />
                         </div>
-                        <p className='text-white mt-5'>We are thrilled to invite you to participate in a cherished tradition—our monthly Child Dedication Ceremony, held every first Sabbath of the month. This is a wonderful opportunity for parents to dedicate their children to God's guidance and blessing in the presence of our loving church family. To ensure your child's inclusion in this special ceremony, please take a moment to fill out the attached form. Your prompt response will help us prepare a memorable and heartfelt dedication experience for you and your little ones. Let's come together in faith and celebrate the gift of our children!</p>
+                        <p className='text-white mt-5 text-center'>We are thrilled to invite you to participate in a cherished tradition—our monthly Child Dedication Ceremony, held every first Sabbath of the month. This is a wonderful opportunity for parents to dedicate their children to God's guidance and blessing in the presence of our loving church family. To ensure your child's inclusion in this special ceremony, please take a moment to fill out the attached form. Your prompt response will help us prepare a memorable and heartfelt dedication experience for you and your little ones. Let's come together in faith and celebrate the gift of our children!</p>
                     </div>
                 </section>
 
@@ -209,7 +209,7 @@ const HomePage = () => {
                 </section>
 
                 {/* reach out */}
-                <section className='w-full relative h-[480px] md:h-[370px] mt-[150px]'>
+                <section className='w-full relative h-[500px] md:h-[370px] mt-[150px]'>
                     <img src={require('../Assets/Construction Drive/7.jpg')} alt='' className='w-full h-full object-none object-center' />
                     <div className='absolute top-0 w-full h-full bg-[#007681] bg-opacity-[63%]'>
                         

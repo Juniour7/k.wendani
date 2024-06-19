@@ -70,7 +70,7 @@ const NavSm = () => {
                                     <Link to="/lessonDiscussion" onClick={closeMenu}><MenuItem label="Lesson Discussion" /></Link>
                                     <Link to="/churchChoir" onClick={closeMenu}><MenuItem label="Church Choir" /></Link>
                                     <Link to="/youthChoir" onClick={closeMenu}><MenuItem label="Youth Choir" /></Link>
-                                    <Link to="/" onClick={closeMenu}><MenuItem label="Ambassadors Choir" /></Link>
+                                    <Link to="/ambChoir" onClick={closeMenu}><MenuItem label="Ambassadors Choir" /></Link>
                                 </MenuItem>
                                 <Link to="/events" onClick={closeMenu}><MenuItem label="Events" /></Link>
                                 <MenuItem label="Resources" >

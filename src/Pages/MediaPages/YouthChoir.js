@@ -20,7 +20,7 @@ const YouthChoir = () => {
 
                 {/* Church Choir */}
                 <section className="w-[90%] mx-auto mt-[50px]">
-                    <h1 className="text-5xl">Youth Choir</h1>
+                    <h1 className="text-3xl md:text-5xl">Youth Choir</h1>
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         
                     </div>
