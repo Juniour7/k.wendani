@@ -10,11 +10,11 @@ const AboutPage = () => {
     return (
         <>
             <Helmet>
-                    <title>About Us | Kahawa Wendani SDA Church</title>
+                <title>About Us | Kahawa Wendani SDA Church</title>
             </Helmet>
-            <body className='mt-[100px] bg-[#F8F8F8]'>
+            <body className='mt-[80px] lg:mt-[100px] bg-[#F8F8F8]'>
                 <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52'>
-                    <div className='text-left absolute top-[30%] left-[25%] md:left-[2%] text-md'>
+                    <div className='text-left absolute top-[30%] left-[25%] md:left-[32%] text-md'>
                         <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
                         <Link className='text-[#F0B323]'>About Us</Link>
                         <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>Who We Are</h1>
@@ -50,7 +50,7 @@ const AboutPage = () => {
 
                 {/* Vision Section */}
                 <section className='w-[85%] mx-auto mt-[70px]'>
-                    <h1 className='text-5xl text-[#007681] font-About mb-[40px]'>Our Mission</h1>
+                    <h1 className='text-5xl text-[#007681] font-About mb-[40px]'>Our Vision</h1>
                     <div className='md:flex flex-row-reverse justify-evenly mt-[50px]'>
                         <div className='overflow-hidden basis-[50%] h-[300px]'>
                             <img src={require('../Assets/1c6c5cd12abc318761dfb5cb5be56522.jpg')} alt='Mission' className='w-full h-full object-cover rounded-lg' />
@@ -64,8 +64,10 @@ const AboutPage = () => {
                 {/* Our Leaders */}
                 <section className='mt-[70px]'>
                     <h1 className='text-5xl text-[#007681] font-About mb-[40px] text-center mt-[20px]'>Meet Our Leaders</h1>
-                    <div className='grid grid-cols-3 gap-'>
-
+                    <div className='grid grid-cols-3 gap-4'>
+                        <div>
+                            
+                        </div>
                     </div>
                 </section>
             </body>

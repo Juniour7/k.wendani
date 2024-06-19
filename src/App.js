@@ -23,6 +23,9 @@ import YouthChoir from './Pages/MediaPages/YouthChoir';
 import LessonDiscussion from './Pages/MediaPages/LessonDiscussion';
 import ChurchChoir from './Pages/MediaPages/ChurchChoir';
 
+//Resources Pages
+import DedicationForm from './Pages/ResourcesPages/DedicationForm';
+
 function App() {
   return (
     <HelmetProvider>
@@ -40,6 +43,8 @@ function App() {
           <Route exact path="/youthChoir" element={<YouthChoir  />} />
           <Route exact path="/lessonDiscussion" element={<LessonDiscussion  />} />
           <Route exact path="/churchChoir" element={<ChurchChoir  />} />
+
+          <Route exact path="/childregistration" element={<DedicationForm  />} />
         </Routes>
         <ScrollToTop />
         <Footer />

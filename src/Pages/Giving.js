@@ -8,7 +8,7 @@ const Giving = () => {
         <Helmet>
             <title>Giving | Kahawa Wendani SDA Church</title>
         </Helmet>
-        <body className='mt-[60px] lg:mt-[100px] w-full bg-[#F8F8F8]'>
+        <body className='mt-[60px] lg:mt-[100px] w-full bg-[#F8F8F8] pb-[50px]'>
             <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52'>
                 <div className='text-center absolute top-[30%] left-[25%] md:left-[40%] text-md'>
                     <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
@@ -16,7 +16,7 @@ const Giving = () => {
                     <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>Giving</h1>
                 </div>
             </section>
-            <section className='w-[97%] md:w-[90%] mx-auto p-4'>
+            <section className='w-[97%] md:w-[90%] lg:w-[95%] mx-auto p-'>
                 <div className='mt-5'>
                     <h4 className='text-[#F0B323] text-md font-["Roboto"]'>Worship In Giving</h4>
                     <h1 className='text-2xl md:text-5xl'>Church Account Info</h1>

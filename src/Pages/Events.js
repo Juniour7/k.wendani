@@ -8,13 +8,10 @@ import Footer from '../Components/Footer/Footer';
 const EventPage = () => {
     return (
         <>
-            <div>
-                <Helmet>
-                    <title>Events | Kahawa Wendani SDA Church</title>
-                </Helmet>
-            </div>
-            <NavBar />
-            <section>
+            <Helmet>
+                <title>Events | Kahawa Wendani SDA Church</title>
+            </Helmet>
+            <section className='pb-[50px]'>
                 <div className='bg-fixed relative bg-cover bg-center bg-no-repeat w-full h-72 z-0'
                     style={{backgroundImage: "url(https://images.unsplash.com/photo-1632772998001-cc9bf6f7c852?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"}}
                 >
@@ -124,7 +121,6 @@ const EventPage = () => {
                     </div>
                 </body>
             </section>
-            <Footer />
         </>
     );
 }
