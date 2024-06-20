@@ -77,13 +77,13 @@ const NavSm = () => {
                                     <Link to="" onClick={closeMenu}><MenuItem label="News" /></Link>
                                     <Link to="/childregistration" onClick={closeMenu}><MenuItem label="Dediaction Form" /></Link>
                                     <Link to="" onClick={closeMenu}><MenuItem label="Bennevolence Form" /></Link>
-                                    <Link to="" onClick={closeMenu}><MenuItem label="Library" /></Link>
+                                    <Link to="/churchLibrary" onClick={closeMenu}><MenuItem label="Library" /></Link>
                                 </MenuItem>
                                 <MenuItem label="Ministries">
-                                    <Link to=""><MenuItem label="Adventurers Club" /></Link>
-                                    <Link to=""><MenuItem label="Pathfinder Club" /></Link>
-                                    <Link to=""><MenuItem label="Ambassodrs Club" /></Link>
-                                    <Link to=""><MenuItem label="Youth Ministry" /></Link>
+                                    <Link to="/adventurersClub" onClick={closeMenu}><MenuItem label="Adventurers Club" /></Link>
+                                    <Link to="/pathfindersClub" onClick={closeMenu}><MenuItem label="Pathfinder Club" /></Link>
+                                    <Link to="/ambassadorsClub" onClick={closeMenu}><MenuItem label="Ambassdors Club" /></Link>
+                                    <Link to="/youthsCorner" onClick={closeMenu}><MenuItem label="Youth's Corner" /></Link>
                                 </MenuItem>
                                 <Link to="/contactUs" onClick={closeMenu}><MenuItem label="Contact Us" /></Link>
                                 <Link to="/giving" onClick={closeMenu}><button className='bg-[#007681] px-3 py-2 rounded-md text-sm'>Worship In Giving</button></Link>
@@ -138,16 +138,16 @@ const NavMd = () => {
                                 </MenuItem>
                                 <Link to="/events" onClick={closeMenu}><MenuItem label="Events" /></Link>
                                 <MenuItem label="Resources" >
-                                    <Link to=""><MenuItem label="News" /></Link>
+                                    <Link to="" onClick={closeMenu}><MenuItem label="News" /></Link>
                                     <Link to="/childregistration" onClick={closeMenu}><MenuItem label="Dediaction Form" /></Link>
-                                    <Link to=""><MenuItem label="Bennevolence Form" /></Link>
-                                    <Link to=""><MenuItem label="Library" /></Link>
+                                    <Link to="" onClick={closeMenu}><MenuItem label="Bennevolence Form" /></Link>
+                                    <Link to="/churchLibrary" onClick={closeMenu}><MenuItem label="Library" /></Link>
                                 </MenuItem>
                                 <MenuItem label="Ministries">
-                                    <Link to=""><MenuItem label="Adventurers Club" /></Link>
-                                    <Link to=""><MenuItem label="Pathfinder Club" /></Link>
-                                    <Link to=""><MenuItem label="Ambassodrs Club" /></Link>
-                                    <Link to=""><MenuItem label="Youth Ministry" /></Link>
+                                    <Link to="/adventurersClub" onClick={closeMenu}><MenuItem label="Adventurers Club" /></Link>
+                                    <Link to="/pathfindersClub" onClick={closeMenu}><MenuItem label="Pathfinder Club" /></Link>
+                                    <Link to="/ambassadorsClub" onClick={closeMenu}><MenuItem label="Ambassodrs Club" /></Link>
+                                    <Link to="/youthsCorner" onClick={closeMenu}><MenuItem label="Youth's Corner" /></Link>
                                 </MenuItem>
                                 <Link to="/contactUs" onClick={closeMenu}><MenuItem label="Contact Us" /></Link>
                                 <Link to="/giving" onClick={closeMenu}><button className='bg-[#007681] px-3 py-2 rounded-md text-sm'>Worship In Giving</button></Link>
@@ -231,7 +231,7 @@ const NavLg = () => {
                                         <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">News</Link>
                                         <Link to="/childregistration" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Dedication Form</Link>
                                         <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem"> Bennovolence Form</Link>
-                                        <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Library</Link>
+                                        <Link to="/churchLibrary" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Library</Link>
                                     </div>
                                 </div>
                             </div>
@@ -243,10 +243,10 @@ const NavLg = () => {
                                 </div>
                                 <div className='hidden bg-Main-400 text-black absolute origin-top -left-[40px] top-[55px] group-hover:block transition-all duration-300'>
                                     <div className=" w-[190px] divide-y" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                        <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Adventurers Club</Link>
-                                        <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Pathfinders Club</Link>
-                                        <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Ambassdaors Club</Link>
-                                        <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Youth Ministry</Link>
+                                        <Link to="/adventurersClub" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Adventurers Club</Link>
+                                        <Link to="/pathfindersClub" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Pathfinders Club</Link>
+                                        <Link to="/ambassadorsClub" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Ambassdaors Club</Link>
+                                        <Link to="/youthsCorner" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Youth's Corner</Link>
                                     
                                     </div>
                                 </div>

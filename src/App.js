@@ -23,8 +23,16 @@ import YouthChoir from './Pages/MediaPages/YouthChoir';
 import LessonDiscussion from './Pages/MediaPages/LessonDiscussion';
 import ChurchChoir from './Pages/MediaPages/ChurchChoir';
 
+//Ministries
+import AdventureresClub from './Pages/MinistriesPages/AdventureresClub';
+import PathfindersClub from './Pages/MinistriesPages/PathfindersClub';
+import AmbassadorsClub from './Pages/MinistriesPages/Ambassadors';
+import YouthsCorner from './Pages/MinistriesPages/YouthsCorner';
+
 //Resources Pages
 import DedicationForm from './Pages/ResourcesPages/DedicationForm';
+import Library from './Pages/ResourcesPages/Library';
+
 
 function App() {
   return (
@@ -44,7 +52,13 @@ function App() {
           <Route exact path="/lessonDiscussion" element={<LessonDiscussion  />} />
           <Route exact path="/churchChoir" element={<ChurchChoir  />} />
 
+          <Route exact path="/adventurersClub" element={<AdventureresClub  />} />
+          <Route exact path="/pathfindersClub" element={<PathfindersClub  />} />
+          <Route exact path="/ambassadorsClub" element={<AmbassadorsClub  />} />
+          <Route exact path="/youthsCorner" element={<YouthsCorner  />} />
+
           <Route exact path="/childregistration" element={<DedicationForm  />} />
+          <Route exact path="/churchLibrary" element={<Library  />} />
         </Routes>
         <ScrollToTop />
         <Footer />
