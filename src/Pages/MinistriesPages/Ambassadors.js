@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
+//Components
+import AmbCarousel from '../../Components/MinCarousel/AmbCarousel';
+
 const AmbassadorsClub = () => {
   return (
     <>
@@ -28,11 +31,17 @@ const AmbassadorsClub = () => {
                 </div>
             </section>
 
+
+            {/* Gallery */}
+            <section className='mt-[50px]'>
+                <AmbCarousel />
+            </section>
+
             <section className='w-[80%] mx-auto bg-[#997B36] border-l-4 border-r-4 border-[#F0B323] p-5 mt-[50px] grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-y-0 md:divide-x-2 divide-[#F0B323]'>
                 <div className='text-center text-white flex flex-col items-center space-y-4'>
                     <h1 className='text-3xl font-semibold'>CONTACT:</h1>
                     <h2 className='text-2xl mt-[10px]'>Mrs. Jeniffer Ndunge</h2>
-                    <p className='text-md w-[50%] mx-auto'>
+                    <p className='text-md w-[70%] md:w-[50%] mx-auto'>
                         Director, Kahawa Wendani SDA Church Ambassadors
                     </p>
                     <div className='flex gap-2'>
@@ -45,7 +54,7 @@ const AmbassadorsClub = () => {
                 <div className='mt-[10px] md:mt-0'>
                     <div className='ml-2 text-center text-white flex flex-col items-center space-y-4'>
                         <h1 className='text-2xl font-semibold'>Sis. Lorine Dede</h1>
-                        <p className='text-md w-[50%] mx-auto'>
+                        <p className='text-md w-[70%] md:w-[50%] mx-auto'>
                             Assistant Director, Kahawa Wendani SDA Church Ambassadors
                         </p>
                         <div className='flex gap-2'>

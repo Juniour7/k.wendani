@@ -46,11 +46,13 @@ const NavSm = () => {
             <nav className='w-full fixed top-0 z-50'>
                 <div className='bg-[#007681] h-[80px] flex justify-between p-3 my-auto'>
                     <div className='w-[190px] max-h-[60px] z-50'>
-                        <img 
-                            src={require('../../Assets/Logos/wsdalogo6.png')} 
-                            alt="Seventh-Day Advemtist Logo"
-                            className='w-full h-full'
-                        />
+                        <Link to="/">
+                            <img 
+                                src={require('../../Assets/Logos/wsdalogo6.png')} 
+                                alt="Seventh-Day Advemtist Logo"
+                                className='w-full h-full'
+                            />
+                        </Link>
                     </div>
                     <div className='text-5xl font-bold my-auto hover:cursor-pointer z-50'  top>
                         <ion-icon onClick={toggleMenu} name={`${isOpen ? "close" : "menu"}`}></ion-icon>
@@ -108,12 +110,14 @@ const NavMd = () => {
         <>
            <nav className='w-full fixed top-0 z-50'>
                 <div className='bg-[#007681] p-3 flex justify-between'>
-                    <div className='w-[250px] max-h-[85px]'>
-                        <img 
-                            src={require('../../Assets/Logos/wsdalogo6.png')} 
-                            alt="Seventh-Day Advemtist Logo"
-                            className='w-full h-full'
-                        />
+                    <div className='w-[250px] max-h-[7y0px]'>
+                        <Link to="/">
+                            <img 
+                                src={require('../../Assets/Logos/wsdalogo6.png')} 
+                                alt="Seventh-Day Advemtist Logo"
+                                className='w-full h-full'
+                            />
+                        </Link>
                     </div>
                     <div className='text-7xl font-bold my-auto hover:cursor-pointer z-50' onClick={toggleMenu}>
                         <ion-icon name={`${isOpen ? "close" : "menu"}`}></ion-icon>

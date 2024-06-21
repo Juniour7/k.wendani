@@ -31,30 +31,30 @@ const HomePage = () => {
                     </div>
                     <div className='relative'>
                         <div className='w-full'>
-                            <img src="https://images.unsplash.com/photo-1552587154-0291006dedbd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt='' className='w-full h-full object-cover' />
+                            <img src={require('../Assets/SlideShow/Launch.jpg')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
-                        <div className='absolute bottom-0 h-[60%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>4rd July, 2024</h5>
+                        <div className='absolute bottom-0 h-[50%] w-full bg-white bg-opacity-50 p-2'>
+                            <h5 className='text-sm text-[#4D3C3C]'>4th July, 2024</h5>
                             <h3 className='text-xl'>Church Choir Launch</h3>
                             <p></p>
                         </div>
                     </div>
                     <div className='relative'>
                         <div className='w-full'>
-                            <img src="https://images.unsplash.com/photo-1552587154-0291006dedbd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt='' className='w-full h-full object-cover' />
+                            <img src={require('../Assets/SlideShow/Launch.jpg')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
-                        <div className='absolute bottom-0 h-[60%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>4rd July, 2024</h5>
+                        <div className='absolute bottom-0 h-[50%] w-full bg-white bg-opacity-50 p-2'>
+                            <h5 className='text-sm text-[#4D3C3C]'>4th July, 2024</h5>
                             <h3 className='text-xl'>Church Choir Launch</h3>
                             <p></p>
                         </div>
                     </div>
                     <div className='relative'>
                         <div className='w-full'>
-                            <img src="https://images.unsplash.com/photo-1552587154-0291006dedbd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt='' className='w-full h-full object-cover' />
+                            <img src={require('../Assets/SlideShow/Launch.jpg')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
-                        <div className='absolute bottom-0 h-[60%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>4rd July, 2024</h5>
+                        <div className='absolute bottom-0 h-[50%] w-full bg-white bg-opacity-50 p-2'>
+                            <h5 className='text-sm text-[#4D3C3C]'>4th July, 2024</h5>
                             <h3 className='text-xl'>Church Choir Launch</h3>
                             <p></p>
                         </div>

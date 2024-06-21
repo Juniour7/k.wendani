@@ -10,7 +10,7 @@ const DedicationForm = () => {
             </Helmet>
             <body className='mt-[80px] lg:mt-[100px] bg-[#F8F8F8] pb-[50px]'>
                <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52'>
-                    <div className='text-center absolute top-[30%] left-[15%] lg:left-[32%] text-md'>
+                    <div className='text-center absolute top-[30%] left-[10%] lg:left-[32%] text-md'>
                         <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
                         <Link className='text-[#F0B323]'>Registration Form</Link>
                         <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>REGISTRATION FORM</h1>
@@ -38,7 +38,7 @@ const DedicationForm = () => {
                             <input type='text' name='Childs FName' placeholder='First Name' className='border bg-[#F8F8F8] p-2 w-[350px]' required />
                             <input type='text' name='Childs MName' placeholder='Middle Name' className='border bg-[#F8F8F8] p-2 w-[350px]' />
                             <input type='text' name='Childs LName' placeholder='Last Name' className='border bg-[#F8F8F8] p-2 w-[350px]' required />
-                            <input type='date' name='Childs DOB'  className='border bg-[#F8F8F8] p-2 w-[350px]' required />
+                            <input type='date' name='Childs DOB' placeholder='Date Of Birth' className='border bg-[#F8F8F8] p-2 w-[350px]' required />
                         </div>
                         <h1 className='text-[#F0B323] text-3xl'>2. Details of The Father</h1>
                         <div className='mt-[30px] mr-[10px] flex flex-wrap gap-4 mb-[20px]'>
