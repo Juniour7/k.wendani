@@ -30,7 +30,7 @@ const YouthsCorner = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.</p>
                 </div>
-                <div className='basis-[40%]'>
+                <div className='basis-[40%] h-[300px]'>
                     <img src={require('../../Assets/Youth Corner/WhatsApp Image 2024-06-21 at 10.57.30_b0da969c.jpg')} alt='adevntureres' className='w-full h-full object-cover' />
                 </div>
             </section>
@@ -54,6 +54,9 @@ const YouthsCorner = () => {
 
             {/* Gallery */}
             <section className='mt-[70px]'>
+                <div className='w-[98%] md:w-[95%] lg:w-[90%] mx-auto'>
+                    <h1 className='text-2xl md:text-5xl bg-[#F0B323] py-2 md:py-4 w-[40%] lg:w-[25%] px-3'>Our Gallery</h1>
+                </div>
                 <YouthCarousel />
             </section>
 

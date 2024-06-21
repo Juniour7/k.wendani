@@ -43,7 +43,7 @@ const PathCarousel = () => {
   return (
     <>
         <div className="flex justify-center items-center lg:w-[90%] md:w-[95%] w-[98%] mx-auto bg-black p-2 md:p-5 gap-2 md:gap-5">
-      <div className="w-[20%] h-[300px] md:h-[500px] lg:h-screen overflow-hidden">
+      <div className="w-[20%] h-[200px] md:h-[400px] lg:h-[75vh] overflow-hidden">
         <Slider
           {...thumbSettings}
           ref={(slider) => setThumbSlider(slider)}
