@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -186,23 +186,33 @@ const NavLg = () => {
         <>
             <nav className='bg-[#007681] h-[100px] w-full bg-opacity-50 flex justify-center items-center space-x-[100px] p-4 fixed top-0 z-50'>
                 <div className='w-[295px] h-[80px] my-auto'>
-                    <img 
-                        src={require('../../Assets/Logos/wsdalogo6.png')} 
-                        alt="Seventh-Day Advemtist Logo"
-                        className='h-full w-full'
-                    />
+                    <Link to="/">
+                        <img 
+                            src={require('../../Assets/Logos/wsdalogo6.png')} 
+                            alt="Seventh-Day Advemtist Logo"
+                            className='h-full w-full'
+                        />
+                    </Link>
                 </div>
                 <header className='my-auto'>
                     <ul className='inline-flex text-white text-lg font-semibold space-x-7 font-["Roboto"]'>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
-                            <Link to="/" className='my-auto'>
+                            <NavLink to="/" 
+                                className={({ isActive }) => [
+                                    "my-auto text-white", isActive ? " text-[#F0B323]" : ""
+                                ]}
+                            >
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
-                            <Link to="/aboutUs" className='my-auto'>
+                            <NavLink to="/aboutUs"
+                                className={({ isActive }) => [
+                                    "my-auto text-white", isActive ? " text-[#F0B323]" : ""
+                                ]}
+                            >
                                 About Us
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] transition-colors duration-300'>
                             <div className='relative text-left inline-block group'>
@@ -221,9 +231,13 @@ const NavLg = () => {
                             </div>
                         </li>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
-                            <Link to="/events" className='my-auto'>
+                            <NavLink to="/events"
+                                className={({ isActive }) => [
+                                    "my-auto text-white", isActive ? " text-[#F0B323]" : ""
+                                ]}
+                            >
                                 Events
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='hover:text-Main-400 transition-colors duration-300'>
                             <div className='relative text-left inline-block group'>
@@ -257,14 +271,18 @@ const NavLg = () => {
                             </div>
                         </li>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] transition-colors duration-300 py-4'>
-                            <Link to="/contactUs" className='my-auto'>
+                            <NavLink to="/contactUs" 
+                                className={({ isActive }) => [
+                                    "my-auto text-white", isActive ? " text-[#F0B323]" : ""
+                                ]}
+                            >
                                 Contact Us
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </header>
                 <div className=''>
-                    <Link to="/giving"><button className='px-4 py-2 bg-[#F0B323] text-white text-md font-semibold rounded-md'>Worship In Giving</button></Link>
+                    <Link to="/giving"><button className='px-4 py-2 bg-[#F0B323] text-white text-md font-semibold rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Worship In Giving</button></Link>
                 </div>
             </nav>
         </>

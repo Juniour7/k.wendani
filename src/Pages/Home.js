@@ -29,7 +29,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className='relative'>
-                        <div className='w-full'>
+                        <div className='w-full h-full'>
                             <img src={require('../Assets/SlideShow/Launch.jpg')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
                         <div className='absolute bottom-0 h-[50%] w-full bg-white bg-opacity-50 p-2'>
@@ -39,22 +39,22 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className='relative'>
-                        <div className='w-full'>
-                            <img src={require('../Assets/SlideShow/Launch.jpg')} alt='event poster' className='w-full h-full object-cover' />
+                        <div className='w-full h-full'>
+                            <img src={require('../Assets/Events/pcmbanner.png')} alt='event poster' className='w-full h-full object-cover object-center' />
                         </div>
-                        <div className='absolute bottom-0 h-[50%] w-full bg-white bg-opacity-50 p-2'>
+                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
                             <h5 className='text-sm text-[#4D3C3C]'>4th July, 2024</h5>
-                            <h3 className='text-xl'>Church Choir Launch</h3>
+                            <h3 className='text-xl'>Public Campus Ministry Day</h3>
                             <p></p>
                         </div>
                     </div>
                     <div className='relative'>
-                        <div className='w-full'>
-                            <img src={require('../Assets/SlideShow/Launch.jpg')} alt='event poster' className='w-full h-full object-cover' />
+                        <div className='w-full h-full'>
+                            <img src={require('../Assets/Children Ministry/Pathfinders/PathfinderBanner.webp')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
-                        <div className='absolute bottom-0 h-[50%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>4th July, 2024</h5>
-                            <h3 className='text-xl'>Church Choir Launch</h3>
+                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
+                            <h5 className='text-sm text-Main-900'>21st Sep, 2024</h5>
+                            <h3 className='text-xl'>World PathfinderDay</h3>
                             <p></p>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const HomePage = () => {
                     <hr className='flex-grow'/>
                 </div>
                 <section className='lg:flex gap-3 p-3 lg:p-5 font-body'>
-                    <div className='bg-emerald-200 w-[90%] md:w-[75%] lg:w-[90%] mb-3 mx-auto'>
+                    <div className='bg-emerald-200 w-[98%] md:w-[75%] lg:w-[90%] mb-3 mx-auto'>
                         <div className='w-full h-[200px] md:h-[330px] lg:h-[250px]'>
                             <img 
                                 src="https://plus.unsplash.com/premium_photo-1681505195930-388c317b7a76?q=80&w=1384&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
@@ -80,7 +80,9 @@ const HomePage = () => {
                             <p className=''>Our Mission is to foster a community of believers who are pasionate about living out the teachings of Jesus Christ in harmony with the distinctive beliefs
                                 of the Seventh-day Adventists. We uphold the core tenets of the sventh-day adventist faith, including the observance of the Sabbath, imminent return of Christ and the importance of healthful living.
                             </p>
-                            <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Read More</Link></button>
+                            <div className='flex flex-col justify-center items-center'>
+                                <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Learn More +</Link></button>                              
+                            </div>
                         </div>
                     </div>
                     <div className='bg-emerald-200 w-[90%] md:w-[75%] lg:w-[90%] mb-3 mx-auto'>
@@ -96,7 +98,9 @@ const HomePage = () => {
                             <p>Our Mission is to foster a community of believers who are pasionate about living out the teachings of Jesus Christ in harmony with the distinctive beliefs
                                 of the Seventh-day Adventists. We uphold the core tenets of the sventh-day adventist faith, including the observance of the Sabbath, imminent return of Christ and the importance of healthful living.
                             </p>
-                            <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Read More</Link></button>
+                            <div className='flex flex-col justify-center items-center'>
+                                <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Learn More +</Link></button>                              
+                            </div>
                         </div>
                     </div>
                     <div className='bg-emerald-200 w-[90%] md:w-[75%] lg:w-[90%]  mb-3 mx-auto'>
@@ -112,7 +116,9 @@ const HomePage = () => {
                             <p>Our Mission is to foster a community of believers who are pasionate about living out the teachings of Jesus Christ in harmony with the distinctive beliefs
                                 of the Seventh-day Adventists. We uphold the core tenets of the sventh-day adventist faith, including the observance of the Sabbath, imminent return of Christ and the importance of healthful living.
                             </p>
-                            <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Read More</Link></button>
+                            <div className='flex flex-col justify-center items-center'>
+                                <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Learn More +</Link></button>                              
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -141,9 +147,9 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className='mt-5'>
-                            <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[270px]'>Stewardsip Week Of Prayer</h1>
+                            <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[30%]'>Sermon</h1>
                             <div className='w-full h-[200px] md:w-[400px] md:h-[260px]'>
-                                <iframe width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/jscgT7eAxf0" title="Stewardship Revival Week || Day 1  || Sunday 19th May 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/YX-BrUYc24A?si=Ua8Pn1qHnfjw-tp7&amp;start=18505" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div className='mt-5'>
@@ -172,7 +178,7 @@ const HomePage = () => {
 
                 {/* Pages Preview */}
                 <section>
-                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 w-[80%] md:w-[60%] lg:w-[80%] mx-auto my-[50px]'>
+                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 w-[80%] md:w-[60%] lg:w-[90%] mx-auto my-[50px]'>
                         <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl pb-10 hover:bg-[#007681] hover:text-white transition-all duration-300'>
                             <span className='text-7xl text-[#F0B323]'>
                                 <MdOutlineArticle />
@@ -181,7 +187,7 @@ const HomePage = () => {
                                 <h1 className='text-3xl font-semibold'>Our Blogs</h1>
                                 <p className=''>Discover the rich tapestry of Christian thought and inspiration through our diverse collection of articles that illuminate faith, challenge the mind, and nurture the soul.</p>
                                 <Link to="">
-                                    <button  className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px]'>Learn More +</button>
+                                    <button className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
@@ -193,7 +199,7 @@ const HomePage = () => {
                                 <h1 className='text-3xl font-semibold'>Church Library</h1>
                                 <p className=''>Discover a treasure trove of inspiration and knowledge at our church library your sanctuary for spiritual growth, enlightening reads, and community connection. Explore now on our website!</p>
                                 <Link to="/churchLibrary">
-                                    <button  className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px]'>Learn More +</button>
+                                    <button  className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
@@ -205,14 +211,14 @@ const HomePage = () => {
                                 <h1 className='text-3xl font-semibold'>Ministries</h1>
                                 <p className=''>Discover the rich tapestry of Christian thought and inspiration through our diverse collection of articles that illuminate faith, challenge the mind, and nurture the soul.</p>
                                 <Link to="">
-                                    <button  className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px]'>Learn More +</button>
+                                    <button  className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* reach out */}
+                {/* Reach out */}
                 <section className='w-full relative h-[500px] md:h-[370px] mt-[150px]'>
                     <img src={require('../Assets/Construction Drive/7.jpg')} alt='' className='w-full h-full object-none object-center' />
                     <div className='absolute top-0 w-full h-full bg-[#007681] bg-opacity-[63%]'>
@@ -238,7 +244,7 @@ const HomePage = () => {
                         <h1 className='font-semibold text-3xl'>HAVE ANY QUESTIONS?</h1>
                         <p className='md:w-[95%] lg:w-[60%] text-sm'>Discover a warm, welcoming community where faith and fellowship thrive! Whether you're seeking spiritual growth, meaningful connections, or simply want to learn more about our mission, we're here for you. Reach out to us today by phone, email, or by filling out our easy online form. Join us and be part of a vibrant SDA family dedicated to making a difference together. Let's connect and grow in faith and friendship!</p>
                         <Link to="/contactUs">
-                            <button  className='bg-[#F0B323] text-lg font-bold px-4 py-2 rounded-lg mt-[30px]'>Reach Out</button>
+                            <button  className='bg-[#F0B323] text-lg font-bold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Reach Out</button>
                         </Link>
                     </div>
                 </section>

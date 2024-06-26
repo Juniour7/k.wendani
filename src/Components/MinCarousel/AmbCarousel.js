@@ -9,33 +9,37 @@ import Image3 from "../../Assets/SlideShow/Ambassadors.jpg";
 import Image4 from "../../Assets/Ambassadors/amb3.jpg";
 import Image5 from "../../Assets/Ambassadors/amb4.jpg";
 import Image6 from "../../Assets/Ambassadors/amb5.jpg";
+import Image7 from "../../Assets/Ambassadors/amb6.jpg";
+import Image8 from "../../Assets/Ambassadors/amb7.jpg";
 
 
 //Slider Styling
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const images = [Image1, Image2, Image3, Image4, Image5, Image6];
+const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8];
 
 const AmbCarousel = () => {
     const [mainSlider, setMainSlider] = useState(null);
   const [thumbSlider, setThumbSlider] = useState(null);
 
   const mainSettings = {
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     lazyLoad: true,
     autoplay: true,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
     pauseOnHover: false,
     asNavFor: thumbSlider,
   };
 
   const thumbSettings = {
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: mainSlider,
     focusOnSelect: true,

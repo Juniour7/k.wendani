@@ -20,14 +20,15 @@ const PathCarousel = () => {
   const [thumbSlider, setThumbSlider] = useState(null);
 
   const mainSettings = {
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     lazyLoad: true,
     autoplay: true,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
+    autoplaySpeed: 5000,
     pauseOnHover: false,
     asNavFor: thumbSlider,
   };

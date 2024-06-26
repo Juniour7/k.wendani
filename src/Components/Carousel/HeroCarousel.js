@@ -19,7 +19,6 @@ function SampleNextArrow(props)  {
 
 
 const HeroCarousel = () => {
-    const navigate = useNavigate();
     const settings = {
         fade: true,
         dots: false,
@@ -34,9 +33,6 @@ const HeroCarousel = () => {
         nextArrow: <SampleNextArrow to="next"/>
     }
 
-    const handleSubmit = () => {
-        navigate("/sermon")
-    };
 
     return (
         <>
@@ -96,39 +92,45 @@ const HeroCarousel = () => {
                         <img 
                             src={require('../../Assets/SlideShow/IMG_0004.JPG')}
                             alt=""
-                            className='w-full h-full'
+                            className='w-full h-full object-cover'
                         />
-                        <div className='absolute bottom-0 text-white p-2 leading-loose'>
-                            <p>Communicate with God</p>
-                            <h1 className='text-xl font-bold '>WEEKLY PRAYER</h1>
-                            <p>Join us for prayers every Wednesday evening from 5 to 6</p>
-                            <button className='bg-transparent text-lg px-3 py-2 border-[1px] my-5 border-white hover:cursor-pointer hover:bg-white hover:text-black hover:border-none'>Read More</button>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose w-full h-full bg-black bg-opacity-[50%] space-y-[20px]'>
+                            <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>
+                            <h1 className='text-5xl font-semibold font-body'>WEEKLY PRAYERS</h1>
+                            <p>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
+                            <Link to="/sermon">
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Our Sermons</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='relative h-[500px] w-full'>
                         <img 
-                            src={require('../../Assets/Construction Drive/3.jpg')}
+                            src={require('../../Assets/Construction Drive/2.jpg')}
                             alt=""
-                            className='w-full h-full'
+                            className='w-full h-full object-cover'
                         />
-                        <div className='absolute bottom-0 text-white p-2 leading-loose'>
-                            <p>Communicate with God</p>
-                            <h1 className='text-xl font-bold '>WEEKLY PRAYER</h1>
-                            <p>Join us for prayers every Wednesday evening from 5 to 6</p>
-                            <button className='bg-transparent text-lg px-3 py-2 border-[1px] my-5 border-white hover:cursor-pointer hover:bg-white hover:text-black hover:border-none'>Read More</button>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[50%]'>
+                            <p className='text-Main-700 font-semibold'>WORSHIP IN GIVING</p>
+                            <h1 className='text-5xl font-semibold font-body'>JOIN THE CONSTRUCTION DRIVE</h1>
+                            <p className='w-[85%] mx-auto text-center'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together</p>
+                            <Link to="/giving">
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Contribute</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='relative h-[500px] w-full'>
                         <img 
                             src={require('../../Assets/SlideShow/Ambassadors.jpg')}
                             alt=""
-                            className='w-full h-full'
+                            className='w-full h-full object-cover'
                         />
-                        <div className='absolute bottom-0 text-white p-2 leading-loose'>
-                            <p>Communicate with God</p>
-                            <h1 className='text-xl font-bold '>WEEKLY PRAYER</h1>
-                            <p>Join us for prayers every Wednesday evening from 5 to 6</p>
-                            <button className='bg-transparent text-lg px-3 py-2 border-[1px] my-5 border-white hover:cursor-pointer hover:bg-white hover:text-black hover:border-none'>Read More</button>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[50%]'>
+                            <p className='text-Main-700 '>AT WENDANI SDA CHURCH COMMUNITY</p>
+                            <h1 className='text-6xl font-semibold font-body text-center'>EVERY HEART FINDS HOME</h1>
+                            <p>We invite you to experience the grace, joy and love that defines our faith community</p>
+                            <Link to="/giving">
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Ministries</button>
+                            </Link>
                         </div>
                     </div>
                 </Slider>
@@ -147,13 +149,13 @@ const HeroCarousel = () => {
                             <h1 className='text-5xl font-semibold font-body'>WEEKLY PRAYERS</h1>
                             <p>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
                             <Link to="/sermon">
-                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md transition-colors duration-200'>Our Sermons</button>
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Our Sermons</button>
                             </Link>
                         </div>
                     </div>
                     <div className='relative h-screen font-[Poppins]'>
                         <img 
-                            src={require('../../Assets/Construction Drive/3.jpg')}
+                            src={require('../../Assets/Construction Drive/2.jpg')}
                             alt="Hero"
                             className='w-full h-full object-cover'
                         />
@@ -162,7 +164,7 @@ const HeroCarousel = () => {
                             <h1 className='text-5xl font-semibold font-body'>JOIN THE CONSTRUCTION DRIVE</h1>
                             <p className='w-[65%] mx-auto text-center'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together</p>
                             <Link to="/giving">
-                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md transition-colors duration-200'>Contribute</button>
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Contribute</button>
                             </Link>
                         </div>
                     </div>
@@ -177,7 +179,7 @@ const HeroCarousel = () => {
                             <h1 className='text-6xl font-semibold font-body'>EVERY HEART FINDS HOME</h1>
                             <p>We invite you to experience the grace, joy and love that defines our faith community</p>
                             <Link to="/giving">
-                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md transition-colors duration-200'>Ministries</button>
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Ministries</button>
                             </Link>
                         </div>
                     </div>

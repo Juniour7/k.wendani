@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 
 //Images
-import Image1 from "../../Assets/Children Ministry/teachers.jpg";
+import Image1 from "../../Assets/Children Ministry/class2.jpg";
 import Image2 from "../../Assets/Children Ministry/childrem.jpg";
 import Image3 from "../../Assets/Children Ministry/campout.jpg";
 import Image4 from "../../Assets/Children Ministry/advneturers.jpg";
@@ -21,14 +21,15 @@ const ChildrenCarousel = () => {
   const [thumbSlider, setThumbSlider] = useState(null);
 
   const mainSettings = {
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     lazyLoad: true,
     autoplay: true,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
+    autoplaySpeed: 5000,
     pauseOnHover: false,
     asNavFor: thumbSlider,
   };
@@ -44,7 +45,7 @@ const ChildrenCarousel = () => {
   return (
     <>
         <div className="flex justify-center items-center lg:w-[90%] md:w-[95%] w-[98%] mx-auto bg-black p-2 md:p-5 gap-2 md:gap-5">
-            <div className="w-[20%] h-[200px] md:h-[400px] lg:h-[75vh] overflow-hidden">
+          <div className="w-[20%] h-[200px] md:h-[400px] lg:h-[75vh] overflow-hidden">
         <Slider
           {...thumbSettings}
           ref={(slider) => setThumbSlider(slider)}
