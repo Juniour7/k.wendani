@@ -30,11 +30,11 @@ const HomePage = () => {
                     </div>
                     <div className='relative'>
                         <div className='w-full h-[250px] md:h-full'>
-                            <img src={require('../Assets/SlideShow/Launch.jpg')} alt='event poster' className='w-full h-full object-cover' />
+                            <img src={require('../Assets/Events/music.jpg')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
-                        <div className='absolute bottom-0 h-[50%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>4th July, 2024</h5>
-                            <h3 className='text-xl'>Church Choir Launch</h3>
+                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
+                            <h5 className='text-sm text-[#4D3C3C]'>30th June to 6th July, 2024</h5>
+                            <h3 className='text-xl'>Music Week of Prayer</h3>
                             <p></p>
                         </div>
                     </div>
