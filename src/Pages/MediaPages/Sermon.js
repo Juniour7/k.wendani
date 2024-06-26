@@ -18,8 +18,9 @@ const Sermon = () => {
                     </div>
                 </section>
 
-                <section className="w-[90%] mx-auto mt-[50px]">
-                    <h1 className="text-5xl">Sermons</h1>
+                <section className="w-[90%] mx-auto mt-[20px] md:mt-[50px]">
+                    <h1 className="text-3xl md:text-5xl">Sermons</h1>
+                    <hr className="border border-[#F0B323] w-[30%] lg:w-[10%] mb-[10px]"></hr>
                     <p className="md:w-[60%]">Dive into our inspiring collection of past sermons and experience the uplifting messages that have touched countless hearts in our SDA community—watch now and feel the power of faith!</p>
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         <div className="h-[250px]">

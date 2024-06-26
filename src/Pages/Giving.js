@@ -22,8 +22,8 @@ const Giving = () => {
                     <h1 className='text-2xl md:text-5xl'>Church Account Info</h1>
                     <p className='text-sm md:text-md'>After payment indicate the M-pesa ref. Code  in the Envelope.</p>
                 </div>
-                <div className='mt-5 md:mt-[70px] h-[180px] md:h-[400px] lg:h-screen w-full'>
-                    <img src={require('../Assets/Logos/WhatsApp Image 2024-06-13 at 07.24.10_8ccff282.jpg')} alt='church account info' className='w-full h-full object-cover' />
+                <div className='mt-5 md:mt-[70px] h-[220px] md:h-[400px] lg:h-screen w-full'>
+                    <img src={require('../Assets/Logos/WhatsApp Image 2024-06-13 at 07.24.10_8ccff282.jpg')} alt='church account info' className='w-full h-full' />
                 </div>
             </section>
         </body>

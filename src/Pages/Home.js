@@ -29,7 +29,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className='relative'>
-                        <div className='w-full h-full'>
+                        <div className='w-full h-[250px] md:h-full'>
                             <img src={require('../Assets/SlideShow/Launch.jpg')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
                         <div className='absolute bottom-0 h-[50%] w-full bg-white bg-opacity-50 p-2'>
@@ -38,8 +38,8 @@ const HomePage = () => {
                             <p></p>
                         </div>
                     </div>
-                    <div className='relative'>
-                        <div className='w-full h-full'>
+                    <div className='relative '>
+                        <div className='w-full h-[250px] md:h-full'>
                             <img src={require('../Assets/Events/pcmbanner.png')} alt='event poster' className='w-full h-full object-cover object-center' />
                         </div>
                         <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
@@ -49,7 +49,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className='relative'>
-                        <div className='w-full h-full'>
+                        <div className='w-full h-[250px] md:h-full'>
                             <img src={require('../Assets/Children Ministry/Pathfinders/PathfinderBanner.webp')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
                         <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
@@ -85,12 +85,12 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-emerald-200 w-[90%] md:w-[75%] lg:w-[90%] mb-3 mx-auto'>
+                    <div className='bg-emerald-200 w-[98%] md:w-[75%] lg:w-[90%] mb-3 mx-auto'>
                         <div className='w-full h-[200px] md:h-[340px]  lg:h-[250px]'>
                             <img 
-                                src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                src={require('../Assets/SlideShow/vision.png')} 
                                 alt=""
-                                className='w-full h-full'    
+                                className='w-full h-full object-cover'    
                             />
                         </div>
                         <div className='p-3'>
@@ -103,12 +103,12 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-emerald-200 w-[90%] md:w-[75%] lg:w-[90%]  mb-3 mx-auto'>
+                    <div className='bg-emerald-200 w-[98%] md:w-[75%] lg:w-[90%]  mb-3 mx-auto'>
                         <div className='w-full h-[200px] md:h-[340px] lg:h-[250px]'>
                             <img 
-                                src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                src={require('../Assets/SlideShow/mission.jpg')} 
                                 alt=""
-                                className='w-full h-full'    
+                                className='w-full h-full object-cover'    
                             />
                         </div>
                         <div className='p-3'>
