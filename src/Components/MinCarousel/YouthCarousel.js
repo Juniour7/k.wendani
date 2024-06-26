@@ -5,29 +5,33 @@ import Slider from 'react-slick';
 //Images
 import Image1 from "../../Assets/Youth Corner/WhatsApp Image 2024-06-21 at 10.57.30_b0da969c.jpg";
 import Image2 from "../../Assets/Youth Corner/Youths.jpg";
-import Image3 from "../../Assets/Children Ministry/campout.jpg";
-import Image4 from "../../Assets/Children Ministry/camporee.jpg";
-import Image5 from "../../Assets/Children Ministry/drills.jpg";
+import Image3 from "../../Assets/Youth Corner/youth3.jpg";
+import Image4 from "../../Assets/Youth Corner/youth1.jpg";
+import Image5 from "../../Assets/Youth Corner/youth4.jpg";
+import Image6 from "../../Assets/Youth Corner/youth2.jpg";
+import Image7 from "../../Assets/Youth Corner/youth5.jpg";
 
 //Slider Styling
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const images = [Image1, Image2, Image3, Image4, Image5];
+const images = [Image1,Image7, Image2, Image3, Image4, Image5, Image6];
 
 const YouthCarousel = () => {
     const [mainSlider, setMainSlider] = useState(null);
   const [thumbSlider, setThumbSlider] = useState(null);
 
   const mainSettings = {
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     lazyLoad: true,
     autoplay: true,
     infinite: true,
-    speed: 2000,
+    speed: 1500,
+    autoplaySpeed: 6000,
+    cssEase: "linear",
     pauseOnHover: false,
     asNavFor: thumbSlider,
   };

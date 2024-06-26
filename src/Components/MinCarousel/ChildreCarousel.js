@@ -28,8 +28,9 @@ const ChildrenCarousel = () => {
     lazyLoad: true,
     autoplay: true,
     infinite: true,
-    speed: 1000,
-    autoplaySpeed: 5000,
+    speed: 1500,
+    autoplaySpeed: 6000,
+    cssEase: "linear",
     pauseOnHover: false,
     asNavFor: thumbSlider,
   };
