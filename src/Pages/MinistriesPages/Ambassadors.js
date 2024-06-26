@@ -22,7 +22,7 @@ const AmbassadorsClub = () => {
             </section>
 
             <section className='mt-[50px] w-[90%] mx-auto md:flex justify-center gap-3 mb-[20px]'>
-                <div className='basis-[50%] text-md space-y-4'>
+                <div className='basis-[50%] text-md space-y-4 text-center md:text-left'>
                     <p>Welcome to the Ambassador's Club, brethren. As it is written in Psalm 122:1, "I was glad when they said unto me, Let us go into the house of the Lord." Our club is a place where we come together to worship, learn, and grow in our faith. We hold our choir meetings every Sunday, Tuesday, and Thursday at 3:00 p.m (EAT)., offering an opportunity for all members to lift their voices in praise and worship. Additionally, our Bible studies are scheduled on Sundays, Tuesdays, and Wednesdays from 8:30 (EAT) to 9:30 p.m., providing a dedicated time for us to delve deeper into God's word and strengthen our understanding of His teachings.</p>
                     <p>Beyond these regular meetings, the Ambassador's Club is filled with a variety of enriching activities designed to foster fellowship and spiritual growth. We enjoy nature Sabbaths, which allow us to appreciate God's creation, and Social Sundays, where we engage in community-building activities. Cookery days offer a chance to share culinary skills and enjoy meals together. These activities, and many more, make our club a vibrant and welcoming community. Feel at the feet of Jesus as we journey together in faith, learning, and love.</p>
                 </div>
@@ -76,12 +76,6 @@ const AmbassadorsClub = () => {
                         <p className='text-md w-[70%] md:w-[50%] mx-auto'>
                             Assistant Director, Kahawa Wendani SDA Church Ambassadors
                         </p>
-                        <div className='flex gap-2'>
-                            <h2 className='text-xl'>Phone:</h2>
-                            <a href='tel:0798886972' className='my-auto text-md hover:text-[#00162E] transition-colors duration-200'>
-                                0798886972
-                            </a>
-                        </div>
                     </div>
                 </div>
             </section>

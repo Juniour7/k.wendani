@@ -43,8 +43,8 @@ const AdventureresClub = () => {
                 </div>
             </section>
 
-            <section className='mt-[50px] w-[90%] mx-auto md:flex gap-3 mb-[20px]'>
-                <div className='basis-[50%] text-md space-y-4'>
+            <section className='mt-[50px] w-[97%] md:w-[90%] mx-auto md:flex gap-3 mb-[20px]'>
+                <div className='basis-[50%] text-md space-y-4 text-center md:text-left'>
                     <p>Over one million children worldwide have found joy and excitement in one of the most engaging clubs ever created just for them—the Adventurer Club. Tailored for kids aged 4-9, this club offers specialized weekly activities that cater to the unique psychological needs of this age group, fostering stronger parent-child bonds. Parents also benefit from this experience, gaining valuable parenting skills and enjoying memorable activities alongside their children. The Adventurer Club is more than just a fun experience; it’s a meaningful journey for families to grow and learn together.</p>
                     <p>We encourage each child to fully engage in all our activities, with parents and guardians actively participating alongside them through various assignments. Our Adventurer program offers a diverse array of age-appropriate challenges, including games, outdoor adventures, nature exploration, family camping, field trips, and community service projects. The program is structured around a five-level, age-specific curriculum, complemented by around 80 specialized award areas that cover crafts, nature, recreation, spiritual development, and home arts. This comprehensive approach ensures a well-rounded and enriching experience for every participant.</p>
                 </div>
