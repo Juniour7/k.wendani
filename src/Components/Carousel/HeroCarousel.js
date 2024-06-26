@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import Slider from "react-slick";
 
 // Import css files
@@ -17,6 +19,7 @@ function SampleNextArrow(props)  {
 
 
 const HeroCarousel = () => {
+    const navigate = useNavigate();
     const settings = {
         fade: true,
         dots: false,
@@ -25,9 +28,15 @@ const HeroCarousel = () => {
         arrows: false,
         autoplay: true,
         infinite: true,
-        speed: 800,
+        speed: 1000,
+        cssEase: "linear",
+        autoplaySpeed: 5000,
         nextArrow: <SampleNextArrow to="next"/>
     }
+
+    const handleSubmit = () => {
+        navigate("/sermon")
+    };
 
     return (
         <>
@@ -35,28 +44,47 @@ const HeroCarousel = () => {
                 <Slider {...settings}>
                     <div className='relative h-[280px] w-full z-0'>
                         <img 
-                            src="https://images.unsplash.com/photo-1600288480699-0b0d8a456dd8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={require('../../Assets/SlideShow/IMG_0004.JPG')}
                             alt=""
                             className='w-full h-full'
                         />
-                        <div className='absolute bottom-0 text-white p-2 leading-relaxed'>
-                            <p>Communicate with God</p>
-                            <h1 className='text-xl font-bold '>WEEKLY PRAYER</h1>
-                            <p>Join us for prayers every Wednesday evening from 5 to 6</p>
-                            <button className='bg-transparent text-lg px-3 py-2 border-[1px] my-5 border-white hover:cursor-pointer hover:bg-white hover:text-black hover:border-none'>Read More</button>
-                        </div>
+                        <motion.div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 w-full h-full bg-black bg-opacity-[50%] space-y-[5px]'>
+                            <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>
+                            <h1 className='text-2xl font-semibold font-body'>WEEKLY PRAYERS</h1>
+                            <p className='text-center'>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
+                            <Link to="/sermon">
+                                <button className='bg-[#F0B323] text-md px-5 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Our Sermons</button>
+                            </Link>
+                        </motion.div>
                     </div>
                     <div className='relative h-[280px] w-full'>
                         <img 
-                            src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={require('../../Assets/Construction Drive/3.jpg')}
                             alt=""
                             className='w-full h-full'
                         />
-                        <div className='absolute bottom-0 text-white p-2 leading-relaxed'>
-                            <p>Communicate with God</p>
-                            <h1 className='text-xl font-bold '>WEEKLY PRAYER</h1>
-                            <p>Join us for prayers every Wednesday evening from 5 to 6</p>
-                            <button className='bg-transparent text-lg px-3 py-2 border-[1px] my-5 border-white hover:cursor-pointer hover:bg-white hover:text-black hover:border-none'>Read More</button>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 space-y-[5px] w-full h-full bg-black bg-opacity-[50%]'>
+                            <p className='text-Main-700 font-semibold'>WORSHIP IN GIVING</p>
+                            <h1 className='text-2xl font-semibold text-center font-body'>JOIN THE CONSTRUCTION DRIVE</h1>
+                            <p className='w-[95%] mx-auto text-center'>Join us in building a beacon of faith and community!</p>
+                            <Link to="/giving">
+                                <button className='bg-[#F0B323] text-md px-5 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Contribute</button>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className='relative h-[280px] font-[Poppins]'>
+                        <img 
+                            src={require('../../Assets/SlideShow/Ambassadors.jpg')}
+                            alt=""
+                            className='w-full h-full object-cover'
+                        />
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 space-y-[5px] w-full h-full bg-black bg-opacity-[50%]'>
+                            <p className='text-Main-700 '>AT WENDANI SDA CHURCH COMMUNITY</p>
+                            <h1 className='text-2xl text-center font-semibold font-body'>EVERY HEART FINDS HOME</h1>
+                            <p className='text-center'>We invite you to experience the grace, joy and love that defines our faith community</p>
+                            <Link to="/giving">
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Ministries</button>
+                            </Link>
                         </div>
                     </div>
                 </Slider>
@@ -66,7 +94,7 @@ const HeroCarousel = () => {
                 <Slider {...settings}>
                     <div className='relative h-[500px] w-full'>
                         <img 
-                            src="https://images.unsplash.com/photo-1600288480699-0b0d8a456dd8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={require('../../Assets/SlideShow/IMG_0004.JPG')}
                             alt=""
                             className='w-full h-full'
                         />
@@ -79,7 +107,7 @@ const HeroCarousel = () => {
                     </div>
                     <div className='relative h-[500px] w-full'>
                         <img 
-                            src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={require('../../Assets/Construction Drive/3.jpg')}
                             alt=""
                             className='w-full h-full'
                         />
@@ -92,7 +120,7 @@ const HeroCarousel = () => {
                     </div>
                     <div className='relative h-[500px] w-full'>
                         <img 
-                            src="https://plus.unsplash.com/premium_photo-1673002094195-f18084be89ce?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={require('../../Assets/SlideShow/Ambassadors.jpg')}
                             alt=""
                             className='w-full h-full'
                         />
@@ -111,40 +139,46 @@ const HeroCarousel = () => {
                     <div className='relative h-screen font-[Poppins] '>
                         <img 
                             src={require('../../Assets/SlideShow/IMG_0004.JPG')}
-                            alt=""
+                            alt="Hero"
                             className=' max-h-screen w-full object-cover overflow-hidden'
                         />
-                        <div className='absolute top-[280px] ml-[100px] w-[70%] text-white p-5 leading-loose'>
-                            <p>Communicate with God</p>
-                            <h1 className='text-6xl font-semibold font-["Roboto"]'>WEEKLY PRAYERS</h1>
-                            <p>Join us for prayers every Wednesday anf Friday evening from 5pm to 6pm.</p>
-                            <button className='bg-transparent text-xl px-3 py-2 border-[1px] my-5 border-white hover:cursor-pointer hover:bg-white hover:text-black  transition-colors duration-200'>Read More</button>
+                        <motion.div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose w-full h-full bg-black bg-opacity-[50%] space-y-[20px]'>
+                            <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>
+                            <h1 className='text-5xl font-semibold font-body'>WEEKLY PRAYERS</h1>
+                            <p>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
+                            <Link to="/sermon">
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md transition-colors duration-200'>Our Sermons</button>
+                            </Link>
+                        </motion.div>
+                    </div>
+                    <div className='relative h-screen font-[Poppins]'>
+                        <img 
+                            src={require('../../Assets/Construction Drive/3.jpg')}
+                            alt="Hero"
+                            className='w-full h-full object-cover'
+                        />
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[50%]'>
+                            <p className='text-Main-700 font-semibold'>WORSHIP IN GIVING</p>
+                            <h1 className='text-5xl font-semibold font-body'>JOIN THE CONSTRUCTION DRIVE</h1>
+                            <p className='w-[65%] mx-auto text-center'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together</p>
+                            <Link to="/giving">
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md transition-colors duration-200'>Contribute</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='relative h-screen font-[Poppins]'>
                         <img 
-                            src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={require('../../Assets/SlideShow/Ambassadors.jpg')}
                             alt=""
-                            className='w-full h-full'
+                            className='w-full h-full object-cover'
                         />
-                        <div className='absolute top-[280px] ml-[100px] w-[70%] mx-auto text-white p-5 leading-loose'>
-                            <p>Communicate with God</p>
-                            <h1 className='text-6xl font-semibold '>SABBATH WORSHIP</h1>
-                            <p>Join us for prayers every Wednesday evening from 5 to 6</p>
-                            <button className='bg-transparent text-xl px-3 py-2 my-5 border-[1px] border-white hover:cursor-pointer hover:bg-white hover:text-black  transition-colors duration-200'>Read More</button>
-                        </div>
-                    </div>
-                    <div className='relative h-screen font-[Poppins] '>
-                        <img 
-                            src="https://plus.unsplash.com/premium_photo-1673002094195-f18084be89ce?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt=""
-                            className='w-full h-full'
-                        />
-                        <div className='absolute top-[280px] ml-[100px] w-[70%] mx-auto text-white p-5 leading-loose'>
-                            <p>Communicate with God</p>
-                            <h1 className='text-6xl font-semibold '>JOIN OUR COMMUNITY</h1>
-                            <p>Join us for prayers every Wednesday evening from 5 to 6</p>
-                            <button className='bg-transparent text-xl px-3 py-2 my-5 border-[1px] border-white hover:cursor-pointer hover:bg-white hover:text-black  transition-colors duration-200'>Read More</button>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[50%]'>
+                            <p className='text-Main-700 '>AT WENDANI SDA CHURCH COMMUNITY</p>
+                            <h1 className='text-6xl font-semibold font-body'>EVERY HEART FINDS HOME</h1>
+                            <p>We invite you to experience the grace, joy and love that defines our faith community</p>
+                            <Link to="/giving">
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md transition-colors duration-200'>Ministries</button>
+                            </Link>
                         </div>
                     </div>
                 </Slider>

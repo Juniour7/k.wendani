@@ -8,13 +8,14 @@ import Image2 from "../../Assets/Ambassadors/amb2.jpg";
 import Image3 from "../../Assets/SlideShow/Ambassadors.jpg";
 import Image4 from "../../Assets/Ambassadors/amb3.jpg";
 import Image5 from "../../Assets/Ambassadors/amb4.jpg";
+import Image6 from "../../Assets/Ambassadors/amb5.jpg";
 
 
 //Slider Styling
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const images = [Image1, Image2, Image3, Image4, Image5];
+const images = [Image1, Image2, Image3, Image4, Image5, Image6];
 
 const AmbCarousel = () => {
     const [mainSlider, setMainSlider] = useState(null);

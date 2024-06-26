@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet-async';
 import { MdOutlineArticle, MdOutlineHeadsetMic  } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa6";
 import { GoBook } from "react-icons/go";
-import { TfiHeadphoneAlt } from "react-icons/tfi";
 
 //Components
 import HeroCarousel from '../Components/Carousel/HeroCarousel';
@@ -124,7 +123,7 @@ const HomePage = () => {
                         <h4 className='text-md'>You're Welcome</h4>
                         <h1 className='text-[#007681] text-3xl md:text-5xl'>Join The Drive</h1>
                         <p className='text-wrap mt-4 md:mt-10'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together. Your generous support will help lay the foundation for a church that not only serves as a place of spiritual nourishment but also stands as a testament to our shared commitment and unity. Together, let's construct a space where love, hope, and faith flourish for generations to come. Donate today and be a cornerstone of our collective mission!    </p>
-                        <Link to="/giving"><button className='bg-[#007681] text-white text-xl font-semibold px-6 py-2 mt-[100px]'>Donate Now</button></Link>
+                        <Link to="/giving"><button className='bg-[#F8F8F8]  text-[#007681] border border-[#007681] rounded-full text-xl font-semibold px-6 py-2 mt-[100px]'>Donate Now</button></Link>
                     </div>
                     <div className='lg:w-[50%] h-[250px] lg:h-[500px]'>
                         <img src={require('../Assets/Construction Drive/4.jpg')} alt='Construction Drive' className='w-full h-full object-ceover' />
@@ -157,12 +156,17 @@ const HomePage = () => {
                 </section>
 
                 {/* Dedication Form */}
-                <section className='bg-[#007681] w-full p-9'>
-                    <div className='w-[95%] md:w-[85%] mx-auto'>
-                        <div className='w-[90%] md:w-[60%] mx-auto'>
+                <section className='bg-[#007681] w-full p-9 md:flex justify-center'>
+                    <div className='w-[95%] md:w-[85%] basis-[60%]'>
+                        <div className='w-[90%] md:w-[80%] mx-auto'>
                             <img src={require('../Assets/Logos/Baby-Dedication-Form.webp')} alt='Dedication Form' className='w-full h-full bject-cover' />
                         </div>
-                        <p className='text-white mt-5 text-center'>We are thrilled to invite you to participate in a cherished tradition—our monthly Child Dedication Ceremony, held every first Sabbath of the month. This is a wonderful opportunity for parents to dedicate their children to God's guidance and blessing in the presence of our loving church family. To ensure your child's inclusion in this special ceremony, please take a moment to fill out the attached form. Your prompt response will help us prepare a memorable and heartfelt dedication experience for you and your little ones. Let's come together in faith and celebrate the gift of our children!</p>
+                        <p className='text-white mt-5 font-body'>Kahawa Wendani Seventh-day Adventist Church believes children are a gift from God, and we are very excited that you are interested in dedicating your child at our church.</p>
+                        <p className='flex text-white mt-[20px]'>Dedications take place the <h1 className='text-[#F0B323] font-semibold mx-3'>1st Saturday</h1> of each month.</p>
+                    </div>
+                    <div className='basis-[30%] text-white'>
+                        <p>This service gives you as the parent(s) the opportunity to express publicly your desires to spiritually nurture your child through the aid of the Holy Spirit, so your child will develop a desire to love God and to love their fellowmen.</p>
+                        <p className=''>Please <Link to="/childregistration" className='text-[#F0B323] font-bold cursor-pointer'>CLICK THIS LINK</Link> to download a copy of the form.</p>
                     </div>
                 </section>
 
@@ -186,9 +190,9 @@ const HomePage = () => {
                                 <GoBook />
                             </span>
                             <div className='text-center space-y-4'>
-                                <h1 className='text-3xl font-semibold'>Lesson Resources</h1>
-                                <p className=''>Discover the rich tapestry of Christian thought and inspiration through our diverse collection of articles that illuminate faith, challenge the mind, and nurture the soul.</p>
-                                <Link to="">
+                                <h1 className='text-3xl font-semibold'>Church Library</h1>
+                                <p className=''>Discover a treasure trove of inspiration and knowledge at our church library your sanctuary for spiritual growth, enlightening reads, and community connection. Explore now on our website!</p>
+                                <Link to="/churchLibrary">
                                     <button  className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px]'>Learn More +</button>
                                 </Link>
                             </div>
