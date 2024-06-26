@@ -142,14 +142,14 @@ const HeroCarousel = () => {
                             alt="Hero"
                             className=' max-h-screen w-full object-cover overflow-hidden'
                         />
-                        <motion.div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose w-full h-full bg-black bg-opacity-[50%] space-y-[20px]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose w-full h-full bg-black bg-opacity-[50%] space-y-[20px]'>
                             <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>
                             <h1 className='text-5xl font-semibold font-body'>WEEKLY PRAYERS</h1>
                             <p>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
                             <Link to="/sermon">
                                 <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md transition-colors duration-200'>Our Sermons</button>
                             </Link>
-                        </motion.div>
+                        </div>
                     </div>
                     <div className='relative h-screen font-[Poppins]'>
                         <img 
