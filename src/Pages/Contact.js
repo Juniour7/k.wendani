@@ -15,9 +15,11 @@ const ContactPage = () => {
             </Helmet>
             <body className='mt-[60px] lg:mt-[100px] w-full bg-[#F8F8F8] pb-[50px]'>
                 <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52'>
-                    <div className='text-center absolute top-[30%] left-[25%] md:left-[40%] text-md'>
+                    <div className='text-center absolute inset-0 flex flex-col justify-center items-center text-md'>
+                        <div>
                         <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
                         <Link className='text-[#F0B323]'>Contact Us</Link>
+                        </div>
                         <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>Contact Us</h1>
                     </div>
                 </section>

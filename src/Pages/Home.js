@@ -60,6 +60,25 @@ const HomePage = () => {
                     </div>
                 </section>
 
+                {/* Who We Are */}
+                <section className='w-[90%] mx-auto md:flex justify-center items-center gap-3 pt-[30px] mb-[30px]'>
+                    <div className='basis-[50%] text-[#8D9297]'>
+                        <h4 className='text-[#F0B323] text-md font-semibold'>Who We Are</h4>
+                        <h1 className='text-[#007681] text-2xl md:text-4xl font-semibold mb-[20px]'>Welcome To Seventh-Day Adventist Church Kahawa Wendani Community</h1>
+                        <div className='space-y-[10px]'>
+                            <p>Welcome to Seventh Day Adventist Church Kahawa Wendani , where you can connect with a caring church community and participate in our diverse range of community events and services. During your time here, we trust you'll discover enriching experiences for your mind, spirit, and body. We also encourage you to consider joining us in person for our weekly Sabbath worship.</p>
+                            <p>At our church, we hold the Scriptures in high regard and approach their study with reverence. Our services follow a traditional format, including congregational singing of cherished hymns and communal prayer. While many members opt for business or business casual attire, we invite you to dress comfortably according to your preference.</p>
+                            <p>Join us in fellowship as together we seek to discern our unique roles in serving the Almighty God and humanity.</p>
+                        </div>
+                        <Link to="/aboutUs">
+                            <button className='bg-[#F0B323] text-white text-lg font-semibold px-5 py-2 rounded-md mt-[40px] hover:bg-black transition-colors duration-300'>Learn More</button>
+                        </Link>
+                    </div>
+                    <div className='w-[70%] hidden md:block h-[350px] basis-[40%]'>
+                        <img src={require('../Assets/Construction Drive/2.jpg')} alt='' className='w-full h-full object-cover' />
+                    </div>
+                </section>
+
                 {/* About US */}
                 <div className='flex items-center w-[70%] mx-auto text-Main-800'>
                     <hr className='flex-grow '/>
@@ -126,10 +145,10 @@ const HomePage = () => {
                 {/* Development Section */}
                 <section className='bg-[#F8F8F8] w-full p-5 flex flex-wrap lg:flex-nowrap gap-5 justify-center'>
                     <div className='lg:basis-[40%]'>
-                        <h4 className='text-md'>You're Welcome</h4>
+                        <h4 className='text-md text-[#F0B323]'>You're Welcome</h4>
                         <h1 className='text-[#007681] text-3xl md:text-5xl'>Join The Drive</h1>
                         <p className='text-wrap mt-4 md:mt-10'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together. Your generous support will help lay the foundation for a church that not only serves as a place of spiritual nourishment but also stands as a testament to our shared commitment and unity. Together, let's construct a space where love, hope, and faith flourish for generations to come. Donate today and be a cornerstone of our collective mission!    </p>
-                        <Link to="/giving"><button className='bg-[#F8F8F8]  text-[#007681] border border-[#007681] rounded-full text-xl font-semibold px-6 py-2 mt-[100px]'>Donate Now</button></Link>
+                        <Link to="/giving"><button className='bg-[#F8F8F8]  text-[#F0B323] border border-[#F0B323] rounded-full text-xl font-semibold px-6 py-2 mt-[100px]  hover:bg-[#007681] hover:text-white hover:border-0 transition-colors duration-700'>Donate Now</button></Link>
                     </div>
                     <div className='lg:w-[50%] h-[250px] lg:h-[500px]'>
                         <img src={require('../Assets/Construction Drive/4.jpg')} alt='Construction Drive' className='w-full h-full object-ceover' />

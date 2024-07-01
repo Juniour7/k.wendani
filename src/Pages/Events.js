@@ -2,8 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 //Components
-import NavBar from '../Components/NavBar/NavBar';
-import Footer from '../Components/Footer/Footer';
 
 const EventPage = () => {
     return (
@@ -24,8 +22,8 @@ const EventPage = () => {
                     <div className='md:flex flex-wrap gap-3 lg:p-5'>
                         <div className='mt-5 bg-gray-200 w-[80%] md:w-[70%] lg:w-[32%] mx-auto'>
                             <div className='flex '>
-                                <div className='basis-[70%] h-[150px] md:h-[230px] lg:h-[220px]'>
-                                    <img src="https://www.croydonadventist.org/wp2/wp-content/uploads/2018/09/17_Communion_web-tiny.jpg" alt="" className='w-full h-full object-cover'/>
+                                <div className='basis-[70%] h-[150px] md:h-[230px] lg:h-[220px] overflow-hidden'>
+                                    <img src="https://www.croydonadventist.org/wp2/wp-content/uploads/2018/09/17_Communion_web-tiny.jpg" alt="" className='w-full h-full object-cover hover:scale-125 transition-all duration-500 ease-linear cursor-pointer'/>
                                 </div>
                                 <div className='bg-Hero-800 flex flex-col justify-center items-center  text-3xl md:text-5xl lg:text-3xl font-bold text-center text-white basis-[30%] pt-3 space-y-3'>
                                     <h1>29</h1>
@@ -41,7 +39,7 @@ const EventPage = () => {
                         <div className='mt-5 bg-gray-200 w-[80%] md:w-[70%] lg:w-[32%] mx-auto'>
                             <div className='flex '>
                                 <div className='basis-[70%] h-[150px] md:h-[230px] lg:h-[220px]'>
-                                    <img src={require('../Assets/Events/music.jpg')} alt="" className='w-full h-full object-cover'/>
+                                    <img src={require('../Assets/Events/music.jpg')} alt="" className='w-full h-full object-cover object-left'/>
                                 </div>
                                 <div className='bg-Hero-800 text-lg md:text-5xl lg:text-3xl flex flex-col justify-center items-center font-bold text-center text-white basis-[30%] space-y-2'>
                                     <h1>30</h1>

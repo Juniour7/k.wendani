@@ -16,7 +16,7 @@ const YouthsCorner = () => {
                 <div className='absolute top-0 h-full w-full bg-black bg-opacity-[]'>
                     <div className='absolute bottom-[5%] lg:bottom-[30%] left-[5%] text-white'>
                         <h1 className='text-2xl md:text-5xl font-semibold'>Remember Your Creator</h1>
-                        <p className='text-gray-[500] w-[85%] md:w-[65%] mt-[10px]'>The Seventh-day Adventist Church began like a start-up led by young people with vision and passion for a cause.</p>
+                        <p className='text-[#D9D9D9] w-[95%] md:w-[65%] mt:mt-[5px] md:mt-[10px]'>The Seventh-day Adventist Church began like a start-up led by young people with vision and passion for a cause.</p>
                         <a href='tel:0712203840'>
                             <button className='bg-[#F0B323] text-white px-4 py-2 rounded-full font-semibold mt-[20px]'>Contact The Youth Leader</button>
                         </a>
@@ -55,7 +55,7 @@ const YouthsCorner = () => {
             {/* Gallery */}
             <section className='mt-[70px]'>
                 <div className='w-[98%] md:w-[95%] lg:w-[90%] mx-auto'>
-                    <h1 className='text-2xl md:text-5xl bg-[#F0B323] py-2 md:py-4 w-[40%] lg:w-[25%] px-3'>Our Gallery</h1>
+                    <h1 className='text-2xl md:text-5xl bg-[#F0B323] py-2 md:py-4 w-[40%] lg:w-[25%] pl-2'>Our Gallery</h1>
                 </div>
                 <YouthCarousel />
             </section>

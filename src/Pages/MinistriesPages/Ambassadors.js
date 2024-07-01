@@ -51,7 +51,7 @@ const AmbassadorsClub = () => {
             {/* Gallery */}
             <section className='mt-[50px]'>
                 <div className='w-[98%] md:w-[95%] lg:w-[90%] mx-auto'>
-                    <h1 className='text-2xl md:text-5xl bg-[#F0B323] py-2 md:py-4 w-[40%] lg:w-[25%] pl-3'>Our Gallery</h1>
+                    <h1 className='text-2xl md:text-5xl bg-[#F0B323] py-2 md:py-4 w-[40%] lg:w-[25%] pl-2'>Our Gallery</h1>
                 </div>
                 <AmbCarousel />
             </section>

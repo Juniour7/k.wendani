@@ -9,8 +9,8 @@ const ChurchChoir = () => {
                 <title>Church Choir | Kahawa Wendani SDA Church</title>
             </Helmet>
             <body className="mt-[60px] lg:mt-[100px] bg-[#F8F8F8] pb-[50px]">
-                <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52'>
-                    <div className='text-center absolute top-[30%] left-[15%] lg:left-[32%] text-md'>
+                <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52 flex flex-col justify-center items-center'>
+                    <div className='text-center text-md'>
                         <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
                         <Link className='text-[#F0B323]'>Church Choir</Link>
                         <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>OUR CHURCH CHOIR</h1>

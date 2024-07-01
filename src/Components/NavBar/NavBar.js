@@ -84,7 +84,7 @@ const NavSm = () => {
                                 <MenuItem label="Ministries">
                                     <Link to="/adventurersClub" onClick={closeMenu}><MenuItem label="Adventurers Club" /></Link>
                                     <Link to="/pathfindersClub" onClick={closeMenu}><MenuItem label="Pathfinder Club" /></Link>
-                                    <Link to="/ambassadorsClub" onClick={closeMenu}><MenuItem label="Ambassdors Club" /></Link>
+                                    <Link to="/ambassadorsClub" onClick={closeMenu}><MenuItem label="Ambassadors Club" /></Link>
                                     <Link to="/youthsCorner" onClick={closeMenu}><MenuItem label="Youth's Corner" /></Link>
                                 </MenuItem>
                                 <Link to="/contactUs" onClick={closeMenu}><MenuItem label="Contact Us" /></Link>
