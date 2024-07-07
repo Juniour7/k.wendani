@@ -12,7 +12,7 @@ const Sermon = () => {
             <body className="mt-[60px] lg:mt-[100px] bg-[#F8F8F8] pb-[50px]">
                 <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52 flex flex-col justify-center items-center'>
                     <div className='text-center text-md'>
-                        <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
+                        <Link to="/" className='hover:text-[#F0B323] mr-3'>Home >></Link>
                         <Link className='text-[#F0B323]'>Sermon</Link>
                         <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>SERMON</h1>
                     </div>
@@ -23,6 +23,12 @@ const Sermon = () => {
                     <hr className="border border-[#F0B323] w-[30%] lg:w-[10%] mb-[10px]"></hr>
                     <p className="md:w-[60%]">Dive into our inspiring collection of past sermons and experience the uplifting messages that have touched countless hearts in our SDA community—watch now and feel the power of faith!</p>
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
+                        <div className="h-[250px]">
+                        <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/xznABAKukxY?si=Nk06dAKS6fbLkCMK&amp;start=3430" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div className="h-[250px]">
+                            <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/wB_cRKpPfks?si=b--Qz-hol2Qfc6nl&amp;start=12831" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                         <div className="h-[250px]">
                             <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/YX-BrUYc24A?si=Ua8Pn1qHnfjw-tp7&amp;start=18505" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>

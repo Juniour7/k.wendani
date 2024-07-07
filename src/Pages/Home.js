@@ -30,11 +30,11 @@ const HomePage = () => {
                     </div>
                     <div className='relative'>
                         <div className='w-full h-[250px] md:h-full'>
-                            <img src={require('../Assets/Events/music.jpg')} alt='event poster' className='w-full h-full object-cover' />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloaoR9WViQ3xVfEUeWg5DRfX8W7vifKsQrw&s" alt='event poster' className='w-full h-full object-cover' />
                         </div>
                         <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>30th June to 6th July, 2024</h5>
-                            <h3 className='text-xl'>Music Week of Prayer</h3>
+                            <h5 className='text-sm text-[#4D3C3C]'>13th June, 2024</h5>
+                            <h3 className='text-xl'>Youths Music Concert</h3>
                             <p></p>
                         </div>
                     </div>
@@ -243,7 +243,7 @@ const HomePage = () => {
                     <div className='absolute top-0 w-full h-full bg-[#007681] bg-opacity-[63%]'>
                         
                     </div>
-                    <div className='absolute -top-[75px] left-[30px] lg:left-[100px] bg-[#F0B323] text-white rounded-md lg:w-[24%] mx-auto p-4 flex flex-col items-center justify-center'>
+                    <div className='absolute -top-[75px] left-[30px] lg:left-[100px] bg-[#F0B323] text-white rounded-md lg:w-[24%] mx-auto p-4 flex flex-col items-center justify-center hover:-translate-y-9 transition-all duration-700 cursor-pointer ease-in-out'>
                         <span className='text-7xl my-[20px] md:my-[30px]'>
                             <MdOutlineHeadsetMic  />
                         </span>

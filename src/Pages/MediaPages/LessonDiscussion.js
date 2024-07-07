@@ -15,7 +15,7 @@ const LessonDiscussion = () => {
       <body className="mt-[60px] lg:mt-[100px] bg-[#F8F8F8] pb-[50px]">
         <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52 flex flex-col justify-center items-center'>
           <div className='text-center text-md'>
-            <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
+            <Link to="/" className='hover:text-[#F0B323] mr-3'>Home >></Link>
             <Link className='text-[#F0B323]'>Lesson Discussion</Link>
             <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>Lesson Discussion</h1>
           </div>
@@ -25,6 +25,12 @@ const LessonDiscussion = () => {
           <h1 className='text-4xl'>Lesson Discussion</h1>
           <p className='md:w-[60%] mt-[15px]'>Dive into our engaging SDA community discussions and enrich your faith by watching our insightful past lesson videos today!</p>
           <div className='grid md:grid-cols-3 gap-3 mt-[30px]'>
+            <div className='h-[250px]'>
+            <iframe width="560" height="315" className='w-full h-full' src="https://www.youtube.com/embed/o9ubVE_Rinc?si=us3LatXFB4wK04NQ&amp;start=2019" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div className='h-[250px]'>
+              <iframe width="560" height="315" className='w-full h-full' src="https://www.youtube.com/embed/wB_cRKpPfks?si=Zkz_B3HpoLuj8ZH0&amp;start=2965" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <div className='h-[250px]'>
               <iframe width="560" height="315" className='w-full h-full' src="https://www.youtube.com/embed/7JWwjy-5NsI?si=lAw2q9qirZd5R8kZ&amp;start=4053" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>

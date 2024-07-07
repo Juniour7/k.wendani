@@ -11,7 +11,7 @@ const ChurchChoir = () => {
             <body className="mt-[60px] lg:mt-[100px] bg-[#F8F8F8] pb-[50px]">
                 <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52 flex flex-col justify-center items-center'>
                     <div className='text-center text-md'>
-                        <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
+                        <Link to="/" className='hover:text-[#F0B323] mr-3'>Home >> </Link>
                         <Link className='text-[#F0B323]'>Church Choir</Link>
                         <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>OUR CHURCH CHOIR</h1>
                     </div>
@@ -21,6 +21,9 @@ const ChurchChoir = () => {
                 <section className="w-[90%] mx-auto mt-[50px]">
                     <h1 className="text-3xl md:text-5xl">Church Choir</h1>
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
+                        <div className="h-[250px]">
+                            <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/sWoh5GGsdRg?si=2mr2JX9kPJ8bmDIG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                         <div className="h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/bBk9d4FfVfk" title="UMEFEDHEHESHWA? || KAHAWA WENDANI SDA CHURCH CHOIR (Official video 4K)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>

@@ -195,7 +195,7 @@ const NavLg = () => {
                     </Link>
                 </div>
                 <header className='my-auto'>
-                    <ul className='inline-flex text-white text-lg font-semibold space-x-7 font-["Roboto"]'>
+                    <ul className='inline-flex text-white text-lg font-semibold space-x-4'>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
                             <NavLink to="/" 
                                 className={({ isActive }) => [
