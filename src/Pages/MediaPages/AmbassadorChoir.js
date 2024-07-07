@@ -21,31 +21,31 @@ const AmbassadorChoir = () => {
                 <section className="w-[90%] mx-auto mt-[50px]">
                     <h1 className="text-3xl md:text-5xl">Ambassadors Choir</h1>
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/UyXrGFvm9mc" title="MAMBO YA KALE - KAHAWA WENDANI SDA AMBASSADORS || OFFICIAL VIDEO  #sda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/Ca4mHveIszI" title="WEWE UMETUAMURU - KAHAWA WENDANI SDA AMBASSADORS || OFFICIAL VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/IPmI2PmGU30?list=RDGMEMMib4QpREwENw3_jAc0YgNw" title="Wanaisraeli - KAHAWA WENDANI SDA AMBASSADORS || OFFICIAL VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/0JWl_Y237Co" title="OLE WAO - KAHAWA WENDANI SDA AMBASSADORS || OFFICIAL VIDEO  #sda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/quzdmqQoXGk" title="TAMKA NENO - KAHAWA WENDANI SDA AMBASSADORS || OFFICIAL VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/jU3uUZVredo" title="KINYONGE HAKITAINGIA - KAHAWA WENDANI AMBASSADORS || OFFICIAL VIDEO #sda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/ytn4vlWEVrw" title="MWIMBIENI BWANA - KAHAWA WENDANI SDA AMBASSADORS || OFFICIAL VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/62ymMrRyZq0" title="ULINIUMBA - KAHAWA WENDANI SDA AMBASSADORS || OFFICIAL VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div className="h-[250px]">
+                        <div className="h-[200px] md:h-[250px]">
                             <iframe width="853" height="480" className="w-full h-full" src="https://www.youtube.com/embed/-oFPgEwDvSs" title="Kahawa Wendani Ambassadors//Maisha Ya Dunia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>

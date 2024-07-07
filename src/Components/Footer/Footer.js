@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className='w-[270px] h-[75px]'>
                         <img src={require('../../Assets/Logos/wsdalogo6.png')} alt='logo' className='w-full h-full' />
                     </div>
-                    <div className='text-wrap font-about'>
+                    <div className='tex font-about'>
                         <p>At SDA Church Kahawa Wendani, we are a vibrant and close-knit community dedicated to spreading the message of love, faith and service in accordance with the fundamental tenets of Seventh-Day Adventism. Our church, situated in the heart of Kahawa Wendani, is not just a place of worship but a home where individuals and families come together to grow spiritually.</p>
                     </div>
                     <div className='mt-[30px] flex gap-3'>
