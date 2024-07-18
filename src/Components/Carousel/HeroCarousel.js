@@ -38,22 +38,22 @@ const HeroCarousel = () => {
         <>
             <div className='md:hidden mt-[70px] z-0'>
                 <Slider {...settings}>
-                    <div className='relative h-[280px] w-full z-0'>
+                    <div className='relative h-[230px] w-full z-0'>
                         <img 
                             src={require('../../Assets/SlideShow/IMG_0004.JPG')}
                             alt=""
                             className='w-full h-full'
                         />
-                        <motion.div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 w-full h-full bg-black bg-opacity-[50%] space-y-[5px]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 w-full h-full bg-black bg-opacity-[50%] space-y-[5px]'>
                             <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>
                             <h1 className='text-2xl font-semibold font-body'>WEEKLY PRAYERS</h1>
                             <p className='text-center'>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
                             <Link to="/sermon">
                                 <button className='bg-[#F0B323] text-md px-5 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Our Sermons</button>
                             </Link>
-                        </motion.div>
+                        </div>
                     </div>
-                    <div className='relative h-[280px] w-full'>
+                    <div className='relative h-[230px] w-full'>
                         <img 
                             src={require('../../Assets/Construction Drive/3.jpg')}
                             alt=""
@@ -68,16 +68,16 @@ const HeroCarousel = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='relative h-[280px] font-[Poppins]'>
+                    <div className='relative h-[230px] font-[Poppins]'>
                         <img 
                             src={require('../../Assets/SlideShow/Ambassadors.jpg')}
                             alt=""
                             className='w-full h-full object-cover'
                         />
-                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 space-y-[5px] w-full h-full bg-black bg-opacity-[50%]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-3 w-full h-full bg-black bg-opacity-[50%]'>
                             <p className='text-Main-700 '>AT WENDANI SDA CHURCH COMMUNITY</p>
-                            <h1 className='text-2xl text-center font-semibold font-body'>EVERY HEART FINDS HOME</h1>
-                            <p className='text-center'>We invite you to experience the grace, joy and love that defines our faith community</p>
+                            <h1 className='text-xl text-center font-semibold font-body'>EVERY HEART FINDS HOME</h1>
+                            <p className='text-center text-sm'>We invite you to experience the grace, joy and love that defines our faith community</p>
                             <Link to="/giving">
                                 <button className='bg-[#F0B323] text-xl px-5 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Ministries</button>
                             </Link>

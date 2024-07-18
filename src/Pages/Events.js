@@ -1,7 +1,16 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-//Components
+
+
+const EventsData = [
+    {
+        src : "",
+        date: "",
+        month: ""
+    }
+]
+
 
 const EventPage = () => {
     return (

@@ -46,11 +46,12 @@ function App() {
           <Route exact path="/contactUs" element={<ContactPage  />} />
           <Route exact path="/giving" element={<Giving  />} />
 
-          <Route exact path="/sermon" element={<Sermon  />} />
-          <Route exact path="/ambChoir" element={<AmbassadorChoir  />} />
-          <Route exact path="/youthChoir" element={<YouthChoir  />} />
-          <Route exact path="/lessonDiscussion" element={<LessonDiscussion  />} />
-          <Route exact path="/churchChoir" element={<ChurchChoir  />} />
+
+          <Route exact path="/media/sermon" element={<Sermon  />} />
+          <Route exact path="/media/ambChoir" element={<AmbassadorChoir  />} />
+          <Route exact path="/media/youthChoir" element={<YouthChoir  />} />
+          <Route exact path="/media/lessonDiscussion" element={<LessonDiscussion  />} />
+          <Route exact path="/media/churchChoir" element={<ChurchChoir  />} />
 
           <Route exact path="/adventurersClub" element={<AdventureresClub  />} />
           <Route exact path="/pathfindersClub" element={<PathfindersClub  />} />

@@ -68,11 +68,11 @@ const NavSm = () => {
                                 <Link to="/" onClick={closeMenu}><MenuItem label="Home" /></Link>
                                 <Link to="/aboutUs" onClick={closeMenu}><MenuItem label="About Us" /></Link>
                                 <MenuItem label="Media">
-                                    <Link to="/sermon" onClick={closeMenu}><MenuItem label="Sermon" /></Link>
-                                    <Link to="/lessonDiscussion" onClick={closeMenu}><MenuItem label="Lesson Discussion" /></Link>
-                                    <Link to="/churchChoir" onClick={closeMenu}><MenuItem label="Church Choir" /></Link>
-                                    <Link to="/youthChoir" onClick={closeMenu}><MenuItem label="Youth Choir" /></Link>
-                                    <Link to="/ambChoir" onClick={closeMenu}><MenuItem label="Ambassadors Choir" /></Link>
+                                    <Link to="/media/sermon" onClick={closeMenu}><MenuItem label="Sermon" /></Link>
+                                    <Link to="/media/lessonDiscussion" onClick={closeMenu}><MenuItem label="Lesson Discussion" /></Link>
+                                    <Link to="/media/churchChoir" onClick={closeMenu}><MenuItem label="Church Choir" /></Link>
+                                    <Link to="/media/youthChoir" onClick={closeMenu}><MenuItem label="Youth Choir" /></Link>
+                                    <Link to="/media/ambChoir" onClick={closeMenu}><MenuItem label="Ambassadors Choir" /></Link>
                                 </MenuItem>
                                 <Link to="/events" onClick={closeMenu}><MenuItem label="Events" /></Link>
                                 <MenuItem label="Resources" >
@@ -134,11 +134,11 @@ const NavMd = () => {
                                 <Link to="/" onClick={closeMenu}><MenuItem label="Home" /></Link>
                                 <Link to="/aboutUs" onClick={closeMenu}><MenuItem label="About Us" /></Link>
                                 <MenuItem label="Media">
-                                    <Link to="/sermon" onClick={closeMenu}><MenuItem label="Sermon" /></Link>
-                                    <Link to="/lessonDiscussion" onClick={closeMenu}><MenuItem label="Lesson Discussion" /></Link>
-                                    <Link to="/churchChoir" onClick={closeMenu}><MenuItem label="Church Choir" /></Link>
-                                    <Link to="/youthChoir" onClick={closeMenu}><MenuItem label="Youth Choir" /></Link>
-                                    <Link to="/ambChoir" onClick={closeMenu}><MenuItem label="Ambassadors Choir" /></Link>
+                                    <Link to="/media/sermon" onClick={closeMenu}><MenuItem label="Sermon" /></Link>
+                                    <Link to="/media/lessonDiscussion" onClick={closeMenu}><MenuItem label="Lesson Discussion" /></Link>
+                                    <Link to="/media/churchChoir" onClick={closeMenu}><MenuItem label="Church Choir" /></Link>
+                                    <Link to="/media/youthChoir" onClick={closeMenu}><MenuItem label="Youth Choir" /></Link>
+                                    <Link to="/media/ambChoir" onClick={closeMenu}><MenuItem label="Ambassadors Choir" /></Link>
                                 </MenuItem>
                                 <Link to="/events" onClick={closeMenu}><MenuItem label="Events" /></Link>
                                 <MenuItem label="Resources" >
@@ -221,11 +221,11 @@ const NavLg = () => {
                                 </div>
                                 <div className='hidden bg-Main-400 absolute origin-top -left-[40px] top-[55px] group-hover:block transition-all duration-300 text-black'>
                                     <div className="w-[200px] divide-y" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                        <Link to="/sermon" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Sermon</Link>
-                                        <Link to="/lessonDiscussion" className="block text-md font-light hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Lesson Discussion</Link>
-                                        <Link to="/churchChoir" className="block text-md font-light hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Church Choir</Link>
-                                        <Link to="/youthChoir" className="block text-md font-light hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Youth Choir</Link>
-                                        <Link to="/ambChoir" className="block text-md font-light hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Ambassador Choir</Link>
+                                        <Link to="/media/sermon" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Sermon</Link>
+                                        <Link to="/media/lessonDiscussion" className="block text-md font-light hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Lesson Discussion</Link>
+                                        <Link to="/media/churchChoir" className="block text-md font-light hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Church Choir</Link>
+                                        <Link to="/media/youthChoir" className="block text-md font-light hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Youth Choir</Link>
+                                        <Link to="/media/ambChoir" className="block text-md font-light hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Ambassador Choir</Link>
                                     </div>
                                 </div>
                             </div>

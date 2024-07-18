@@ -197,40 +197,40 @@ const HomePage = () => {
 
                 {/* Pages Preview */}
                 <section>
-                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 w-[80%] md:w-[60%] lg:w-[90%] mx-auto my-[50px]'>
-                        <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl pb-10 hover:bg-[#007681] hover:text-white transition-all duration-300'>
+                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 w-[90%] md:w-[60%] lg:w-[90%] mx-auto my-[50px]'>
+                        <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl hover:bg-[#007681] hover:text-white transition-all duration-300'>
                             <span className='text-7xl text-[#F0B323]'>
                                 <MdOutlineArticle />
                             </span>
-                            <div className='text-center space-y-4'>
+                            <div className='text-center space-y-2 md:space-y-4'>
                                 <h1 className='text-3xl font-semibold'>Our Blogs</h1>
                                 <p className=''>Discover the rich tapestry of Christian thought and inspiration through our diverse collection of articles that illuminate faith, challenge the mind, and nurture the soul.</p>
                                 <Link to="">
-                                    <button className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
+                                    <button className='bg-[#F0B323] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
-                        <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl pb-10 hover:bg-[#007681] hover:text-white transition-all duration-300'>
+                        <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl hover:bg-[#007681] hover:text-white transition-all duration-300'>
                             <span className='text-7xl text-[#F0B323]'>
                                 <GoBook />
                             </span>
-                            <div className='text-center space-y-4'>
+                            <div className='text-center space-y-2 md:space-y-4'>
                                 <h1 className='text-3xl font-semibold'>Church Library</h1>
                                 <p className=''>Discover a treasure trove of inspiration and knowledge at our church library your sanctuary for spiritual growth, enlightening reads, and community connection. Explore now on our website!</p>
                                 <Link to="/churchLibrary">
-                                    <button  className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
+                                    <button  className='bg-[#F0B323] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
-                        <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl pb-10 hover:bg-[#007681] hover:text-white transition-all duration-300'>
+                        <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl hover:bg-[#007681] hover:text-white transition-all duration-300'>
                             <span className='text-7xl text-[#F0B323]'>
                                 <FaRegBell />
                             </span>
-                            <div className='text-center space-y-4'>
+                            <div className='text-center space-y-2 md:space-y-4'>
                                 <h1 className='text-3xl font-semibold'>Ministries</h1>
                                 <p className=''>Discover the rich tapestry of Christian thought and inspiration through our diverse collection of articles that illuminate faith, challenge the mind, and nurture the soul.</p>
                                 <Link to="">
-                                    <button  className='bg-[#F0B323] text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
+                                    <button  className='bg-[#F0B323] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
