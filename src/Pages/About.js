@@ -3,21 +3,21 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 
-//Components
-
-
 const AboutPage = () => {
     return (
         <>
             <Helmet>
                 <title>About Us | Kahawa Wendani SDA Church</title>
             </Helmet>
-            <body className='mt-[80px] lg:mt-[100px] bg-[#F8F8F8] pb-[100px]'>
-                <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] w-full h-32 md:h-52 flex flex-col justify-center items-center'>
-                    <div className='text-center'>
-                        <Link to="/" className='hover:text-[#F0B323] mr-3'>Home >></Link>
-                        <Link className='text-[#F0B323]'>About Us</Link>
-                        <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>Who We Are</h1>
+            <body className='bg-[#F8F8F8] pb-[100px]'>
+                <section className='w-full h-32 md:h-[300px] bg-fixed bg-center relative'
+                    style={{ backgroundImage: "url(https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}
+                >
+                    <div className='absolute w-full h-full bg-black bg-opacity-30'>
+                        <div className='absolute bottom-[20%] left-[5%]'>
+
+                        <h1 className='text-white text-xl md:text-5xl font-semibold'>Who We Are</h1>
+                        </div>
                     </div>
                 </section>
 

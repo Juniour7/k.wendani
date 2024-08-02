@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 
 //icons
 import { MdOutlineArticle, MdOutlineHeadsetMic  } from "react-icons/md";
+import { FaPlay } from "react-icons/fa";
 import { FaRegBell } from "react-icons/fa6";
 import { GoBook } from "react-icons/go";
 
@@ -63,9 +64,9 @@ const HomePage = () => {
                 {/* Who We Are */}
                 <section className='w-[90%] mx-auto md:flex justify-center items-center gap-3 pt-[30px] mb-[30px]'>
                     <div className='basis-[50%] text-[#8D9297]'>
-                        <h4 className='text-[#F0B323] text-md font-semibold'>Who We Are</h4>
-                        <h1 className='text-[#007681] text-2xl md:text-4xl font-semibold mb-[20px]'>Welcome To Seventh-Day Adventist Church Kahawa Wendani Community</h1>
-                        <div className='space-y-[10px]'>
+                        <h4 className='text-[#F0B323] text-md font-semibold'>WELCOME TO:</h4>
+                        <h1 className='text-[#007681] text-2xl md:text-3xl font-semibold mb-[20px]'>Seventh-Day Adventist Church Kahawa Wendani Community</h1>
+                        <div className='space-y-[10px] text-sm text-black/50'>
                             <p>Welcome to Seventh Day Adventist Church Kahawa Wendani , where you can connect with a caring church community and participate in our diverse range of community events and services. During your time here, we trust you'll discover enriching experiences for your mind, spirit, and body. We also encourage you to consider joining us in person for our weekly Sabbath worship.</p>
                             <p>At our church, we hold the Scriptures in high regard and approach their study with reverence. Our services follow a traditional format, including congregational singing of cherished hymns and communal prayer. While many members opt for business or business casual attire, we invite you to dress comfortably according to your preference.</p>
                             <p>Join us in fellowship as together we seek to discern our unique roles in serving the Almighty God and humanity.</p>

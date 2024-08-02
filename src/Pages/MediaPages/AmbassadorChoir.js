@@ -47,21 +47,27 @@ const AmbassadorChoir = () => {
             <Helmet>
                 <title>Ambassadors Choir | Kahawa Wendani SDA Church</title>
             </Helmet>
-            <body className="mt-[60px] lg:mt-[100px] bg-[#F8F8F8] pb-[50px]">
-                <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52 flex flex-col justify-center items-center'>
-                    <div className='text-center  text-md'>
-                        <Link to="/" className='hover:text-[#F0B323] mr-3'>Home >></Link>
-                        <Link className='text-[#F0B323]'>Ambassadors Choir</Link>
-                        <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>AMBASSADORS CHOIR</h1>
+            <body className="bg-[#F8F8F8] pb-[50px]">
+                <section className='relative w-full h-32 md:h-[450px] bg-center bg-cover bg-no-repeat bg-fixed'
+                    style={{ backgroundImage: "url(https://i.pinimg.com/564x/71/4e/28/714e28b350602d10bb83b1c3349d5eb0.jpg)" }}
+                >
+                    <div className='absolute w-full h-full bg-black bg-opacity-30'>
+                        <div className='absolute left-[5%] bottom-[45%]'>
+                            <h1 className='text-center text-white text-3xl md:text-5xl font-semibold'>The Ambassadors Choir</h1>
+                        </div>
+                        <div className="bg-[#F8F8F8] absolute bottom-0 w-full  rounded-tl-full rounded-tr-full p-3 py-6">
+                            <div className="flex flex-col justify-center items-center text-center space-y-3">
+                                <h1 className="text-3xl md:text-5xl">Ambassadors Choir</h1>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 {/* Ambassadors Choir */}
                 <section className="w-[90%] mx-auto mt-[50px]">
-                    <h1 className="text-3xl md:text-5xl">Ambassadors Choir</h1>
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         {AmbVideoData.map((video, index) => (
-                            <div key={index} className="h-[230px] md:h-[250px]">
+                            <div key={index} className="h-[190px] md:h-[150px] lg:h-[230px]">
                                 <iframe
                                     className="w-full h-full"
                                     src={video.src}

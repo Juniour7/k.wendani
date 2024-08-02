@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 
 const LessonVideoData = [
   {
+    src: "https://www.youtube.com/embed/T3lFJIF8FZk?si=DFRifdTspp-jqKSG&amp;start=2342"
+  },
+  {
     src: "https://www.youtube.com/embed/phdOotN8G4w?si=XpdJiohVJ0UpZOiz&amp;start=2793",
     title: ""
   },
@@ -45,21 +48,27 @@ const LessonDiscussion = () => {
       <Helmet>
         <title>Lessson | Kahawa Wendani SDA Church</title>
       </Helmet>
-      <body className="mt-[60px] lg:mt-[100px] bg-[#F8F8F8] pb-[50px]">
-        <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52 flex flex-col justify-center items-center'>
-          <div className='text-center text-md'>
-            <Link to="/" className='hover:text-[#F0B323] mr-3'>Home >></Link>
-            <Link className='text-[#F0B323]'>Lesson Discussion</Link>
-            <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>Lesson Discussion</h1>
+      <body className=" bg-[#F8F8F8] pb-[50px]">
+        <section className='relative w-full h-[400px] md:h-[450px] bg-blend-screen md:bg-bottom bg-cover bg-no-repeat bg-fixed'
+          style={{ backgroundImage: "url(https://media.istockphoto.com/id/155096043/photo/young-adults-in-a-bible-study.webp?b=1&s=170667a&w=0&k=20&c=N7lVeO-FcojnGMSzWa2f_jUbD_m9Uj1gCySMRUl4ksU=)" }}
+        >
+          <div className='absolute w-full h-full bg-black bg-opacity-30'>
+            <div className='absolute left-[5%] bottom-[55%] md:bottom-[45%]'>
+              <h1 className='text-center text-white text-3xl md:text-5xl font-semibold'>Lesson Disscusion</h1>
+            </div>
+            <div className="bg-[#F8F8F8] absolute bottom-0 w-full rounded-tl-3xl rounded-tr-3xl md:rounded-tl-full md:rounded-tr-full p-3 md:py-6">
+              <div className="flex flex-col justify-center items-center text-center space-y-3">
+                <h1 className="text-3xl md:text-3xl">Our Video Lesson Discussion</h1>
+                <p className="md:w-[60%] text-sm font-light">Dive into our engaging SDA community discussions and enrich your faith by watching our insightful past lesson videos today!</p>
+              </div>
+            </div>
           </div>
         </section>
 
         <section className='mt-[50px] w-[90%] mx-auto'>
-          <h1 className='text-4xl'>Lesson Discussion</h1>
-          <p className='md:w-[60%] mt-[15px]'>Dive into our engaging SDA community discussions and enrich your faith by watching our insightful past lesson videos today!</p>
           <div className='grid md:grid-cols-3 gap-3 mt-[30px]'>
             {LessonVideoData.map((video,index) => (
-              <div key={index} className='h-[230px] md:h-[250px]'>
+              <div key={index} className='h-[190px] md:h-[150px] lg:h-[250px]'>
                 <iframe
                   className="w-full h-full"
                   src={video.src}

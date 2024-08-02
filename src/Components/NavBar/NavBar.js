@@ -1,11 +1,11 @@
 import React, {useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+
 
 
 
 const MenuItem = ({ label, children }) => {
     const [isOpen, setIsOpen] = useState(false);
-  
     const toggleSubmenu = () => {
       setIsOpen(!isOpen);
     };
@@ -102,9 +102,11 @@ const NavMd = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
     const closeMenu = () => {
         setIsOpen(false);
     };
+
 
     return (
         <>
@@ -166,6 +168,12 @@ const NavMd = () => {
 
 const NavLg = () => {
     const [scrolled, setScrolled] = useState(false);
+    const navigate = useNavigate();
+
+    const GivingClick = () => {
+        navigate('/giving')
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             const offset = window.scrollY;
@@ -195,7 +203,7 @@ const NavLg = () => {
                     </Link>
                 </div>
                 <header className='my-auto'>
-                    <ul className='inline-flex text-white text-lg font-semibold space-x-4'>
+                    <ul className='inline-flex text-white text-md font-medium space-x-4'>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
                             <NavLink to="/" 
                                 className={({ isActive }) => [
@@ -282,7 +290,7 @@ const NavLg = () => {
                     </ul>
                 </header>
                 <div className=''>
-                    <Link to="/giving"><button className='px-4 py-2 bg-[#F0B323] text-white text-md font-semibold rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Worship In Giving</button></Link>
+                    <button onClick={GivingClick} className='px-4 py-2 border border-[#F0B323] text-white text-md font-semibold hover:bg-[#F0B323] transition-colors duration-300'>Worship In Giving</button>
                 </div>
             </nav>
         </>
