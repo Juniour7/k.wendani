@@ -1,7 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-
+import Image1 from "../Assets/Events/Camp Meeting.jpg";
+import Image2 from "../Assets/Events/WhatsApp Image 2024-07-29 at 13.12.15_fe352e91.jpg";
 
 const EventsData = [
     {
@@ -12,6 +13,26 @@ const EventsData = [
         tmonth: "",
         time: "8:00 AM",
         title: "Ambassadors Sabbath",
+        content: "Join us for a week dedicated to prayer through the beauty of music. Uplifting music and spiritual reflection will fill our daily services as we come together in prayer."
+    },
+    {
+        src : Image1,
+        from: "08",
+        month: "AUG",
+        to: "",
+        tmonth: "",
+        time: "8:00 AM",
+        title: "Camp Meeting",
+        content: "Join us for a week dedicated to prayer through the beauty of music. Uplifting music and spiritual reflection will fill our daily services as we come together in prayer."
+    },
+    {
+        src : Image2,
+        from: "08",
+        month: "AUG",
+        to: "",
+        tmonth: "",
+        time: "8:00 AM",
+        title: "Children Camp Meeting",
         content: "Join us for a week dedicated to prayer through the beauty of music. Uplifting music and spiritual reflection will fill our daily services as we come together in prayer."
     },
 ]

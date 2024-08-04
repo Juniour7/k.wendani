@@ -2,8 +2,10 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
-
 const LessonVideoData = [
+  {
+    src: "https://www.youtube.com/embed/3SCXtlSLd38?si=vVlABnIBp5khA06Q&amp;start=3012"
+  },
   {
     src: "https://www.youtube.com/embed/T3lFJIF8FZk?si=DFRifdTspp-jqKSG&amp;start=2342"
   },

@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 
 const SermonData = [
     {
+        src: "https://www.youtube.com/embed/3SCXtlSLd38?si=9LhCXfqWSTsS5QhI&amp;start=15318"
+    },
+    {
         src: "https://www.youtube.com/embed/T3lFJIF8FZk?si=PN3NtoFtZYbXfjsl&amp;start=13588"
     },
     {

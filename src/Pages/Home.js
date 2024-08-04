@@ -31,21 +31,21 @@ const HomePage = () => {
                     </div>
                     <div className='relative'>
                         <div className='w-full h-[250px] md:h-full'>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloaoR9WViQ3xVfEUeWg5DRfX8W7vifKsQrw&s" alt='event poster' className='w-full h-full object-cover' />
+                            <img src={require('../Assets/Events/Ambassadors Sabbath.jpg')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
                         <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>13th June, 2024</h5>
-                            <h3 className='text-xl'>Youths Music Concert</h3>
+                            <h5 className='text-sm text-[#4D3C3C]'>03th Aug, 2024</h5>
+                            <h3 className='text-xl'>Ambassadors Sabbath</h3>
                             <p></p>
                         </div>
                     </div>
                     <div className='relative '>
                         <div className='w-full h-[250px] md:h-full'>
-                            <img src={require('../Assets/Events/pcmbanner.png')} alt='event poster' className='w-full h-full object-cover object-center' />
+                            <img src={require('../Assets/Events/Camp Meeting.jpg')} alt='event poster' className='w-full h-full object-cover object-center' />
                         </div>
                         <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>4th July, 2024</h5>
-                            <h3 className='text-xl'>Public Campus Ministry Day</h3>
+                            <h5 className='text-sm text-[#4D3C3C]'>8th Aug, 2024</h5>
+                            <h3 className='text-xl'>Camp Meeting</h3>
                             <p></p>
                         </div>
                     </div>
