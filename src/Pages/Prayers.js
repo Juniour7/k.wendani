@@ -16,8 +16,8 @@ const Prayers = () => {
                     <hr className='border-[1px] mt-3 border-Hero-900'/>
                 </div>
             </div>
-            <section className='my-[50px]'>
-                <div className='w-[90%] md:w-[50%] mx-auto bg-white border border-[#D9D9D9] rounded-md p-2 md:p-4'>
+            <section className='my-[50px] md:flex justify-center gap-5'>
+                <div className='w-[98%] md:basis-[50%] bg-white border border-[#D9D9D9] rounded-md  md:p-4'>
                     <iframe 
                         src="https://docs.google.com/forms/d/e/1FAIpQLSemRFA8A1_rJmLqHYG3k3Cm4OsqtMvM74J4rqfaZ6SMC4k6oQ/viewform?embedded=true" 
                         className='w-full'
@@ -28,6 +28,10 @@ const Prayers = () => {
                     >
                         Loading…
                     </iframe>
+                </div>
+                <div className='basis-[30%] p-2'>
+                    <h1 className='text-xl'>Our Contacts</h1>
+
                 </div>
             </section>
         </body>
