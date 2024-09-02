@@ -60,8 +60,8 @@ const NavSm = () => {
                 </div>
                 <div className="relative">
                         <div 
-                            className={`absolute top-0 right-[-12px] w-72 h-screen bg-Main-500 bg-blur-lg text-white text-lg shadow-lg transition-all duration-300 z-50 ${
-                            isOpen ? 'right-[-100%]' : 'right-[-700%]'
+                            className={`absolute top-0 right-0 w-72 h-screen bg-Main-500 bg-blur-lg text-white text-lg shadow-lg transition-all transform duration-500 ease-in-out z-50 ${
+                            isOpen ? 'translate-x-0' : 'translate-x-full'
                             }`}
                         >
                             <ul className="flex flex-col p-2 space-y-2">

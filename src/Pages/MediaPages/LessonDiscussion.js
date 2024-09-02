@@ -2,7 +2,24 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
+
+//icons
+import { IoIosPlay } from "react-icons/io";
+
+
 const LessonVideoData = [
+  {
+    src: "https://www.youtube.com/embed/hbw5nSO37iw?si=KIqZO0k1GvUPg9qp"
+  },
+  {
+    src: "https://www.youtube.com/embed/QGfFS6f0YKY?si=KuTm1V_I8Sj6L5hD&amp;start=3484"
+  },
+  {
+    src: "https://www.youtube.com/embed/AtARIfHwNAw?si=8__1WpEwQ_ZcfdhB"
+  },
+  {
+    src: "https://www.youtube.com/embed/T_tp9LDFAik?si=yfI057pYecjlh8pL&amp;start=3323"
+  },
   {
     src: "https://www.youtube.com/embed/3SCXtlSLd38?si=vVlABnIBp5khA06Q&amp;start=3012"
   },
@@ -67,7 +84,13 @@ const LessonDiscussion = () => {
           </div>
         </section>
 
-        <section className='mt-[50px] w-[90%] mx-auto'>
+        <section className='mt-[50px] w-[90%] md:w-[85%] mx-auto'>
+          <div className='flex items-center gap-1'>
+            <span className='text-2xl my-auto'>
+              <IoIosPlay />
+            </span>
+            <h1 className='text-xl'>The Book Mark</h1>
+          </div>
           <div className='grid md:grid-cols-3 gap-3 mt-[30px]'>
             {LessonVideoData.map((video,index) => (
               <div key={index} className='h-[215px] md:h-[150px] lg:h-[210px] shadow-md'>

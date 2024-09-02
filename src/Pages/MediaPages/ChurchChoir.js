@@ -68,7 +68,7 @@ const ChurchChoir = () => {
                 </section>
                 
                 {/* Church Choir */}
-                <section className="w-[90%] mx-auto mt-[50px]">
+                <section className="w-[90%] md:w-[85%] mx-auto mt-[50px]">
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         {ChurchVideoData.map(( video, index) => (
                             <div key={index} className="h-[215px] md:h-[150px] lg:h-[210px] shadow-md">
@@ -83,6 +83,17 @@ const ChurchChoir = () => {
                                 ></iframe>
                             </div>
                         ))}
+                    </div>
+                    <div className="mt-[30px]">
+                        <h1 className="text-xl">Our Contacts</h1>
+                        <ol className="list-disc ml-[20px] text-lg">
+                            <li>
+                                Youtube: <a href="https://www.youtube.com/@KahawaWendaniSDAChurchOfficial" target="_blank" className="text-blue-500 italic hover:text-[#FF0000] transition-colors transform duration-300 ease-in-out">kahawawendanichurchchoir</a>
+                            </li>
+                            <li>
+                                Phone: <a href="tel:" className=" italic hover:text-blue-500 transition-colors transform duration-300 ease-in-out">(+254)</a>
+                            </li>
+                        </ol>
                     </div>
                 </section>
             </body>
