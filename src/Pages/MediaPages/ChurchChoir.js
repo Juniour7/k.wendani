@@ -52,7 +52,7 @@ const ChurchChoir = () => {
                 <title>Church Choir | Kahawa Wendani SDA Church</title>
             </Helmet>
             <body className="bg-[#F8F8F8] pb-[50px]">
-            <section className='relative w-full h-32 md:h-[450px] bg-center bg-cover bg-no-repeat bg-fixed'
+            <section className='relative w-full h-[300px] md:h-[450px] bg-center bg-cover bg-no-repeat bg-fixed'
                     style={{ backgroundImage: "url(https://i.pinimg.com/564x/71/4e/28/714e28b350602d10bb83b1c3349d5eb0.jpg)" }}
                 >
                     <div className='absolute w-full h-full bg-black bg-opacity-30'>
@@ -71,7 +71,7 @@ const ChurchChoir = () => {
                 <section className="w-[90%] mx-auto mt-[50px]">
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         {ChurchVideoData.map(( video, index) => (
-                            <div key={index} className="h-[190px] md:h-[150px] lg:h-[230px]">
+                            <div key={index} className="h-[215px] md:h-[150px] lg:h-[210px] shadow-md">
                                 <iframe
                                     className="w-full h-full"
                                     src={video.src}

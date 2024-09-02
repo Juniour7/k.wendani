@@ -23,23 +23,23 @@ const HeroCarousel = () => {
     const CustomPrevArrow = ({ onClick }) => {
         return (
           <div
-            className="absolute left-[5%] w-[40px] h-[40px] top-1/2 transform -translate-y-1/2 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white p-2 rounded-full cursor-pointer hover:bg-[#F0B323] hover:bg-opacity-60 z-10"
+            className="absolute left-[3%] md:left-[5%] w-[35px] h-[35px] md:w-[60px] md:h-[60px] top-1/2 transform -translate-y-1/2 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white p-2 cursor-pointer hover:bg-opacity-60 z-10"
             onClick={onClick}
           >
-            <span className='text-4xl'>
+            <span className='text-2xl md:text-4xl'>
                 <GoChevronLeft />
             </span>
           </div>
-        );
+        );  
     };
 
     const CustomNextArrow = ({ onClick }) => {
         return (
           <div
-            className="absolute right-[5%] w-[40px] h-[40px] top-1/2 transform -translate-y-1/2 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white p-2 rounded-full cursor-pointer hover:bg-[#F0B323] hover:bg-opacity-60 z-10"
+            className="absolute right-[3%] md:right-[5%] w-[35px] h-[35px] md:w-[60px] md:h-[60px] top-1/2 transform -translate-y-1/2 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white p-2 cursor-pointer hover:bg-opacity-60 z-10"
             onClick={onClick}
           >
-            <span className='text-4xl'>
+            <span className='text-2xl md:text-4xl'>
                 <FiChevronRight />
             </span>
           </div>
@@ -47,15 +47,17 @@ const HeroCarousel = () => {
     };
 
     const settings = {
-        fade: true,
-        dots: false,
+        arrows: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        infinite: true,
-        speed: 1000,
+        fade: true,
+        speed: 2000,
+        infinte: true,
+        pauseOnHover: false,
+        autoplaySpeed: 6000,
         cssEase: "linear",
-        autoplaySpeed: 5000,
+        arrows: true,
         nextArrow: <CustomNextArrow />,
         prevArrow: <CustomPrevArrow />,
     }
@@ -74,7 +76,7 @@ const HeroCarousel = () => {
                         <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 w-full h-full bg-black bg-opacity-[50%] space-y-[5px]'>
                             <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>
                             <h1 className='text-xl font-semibold font-body'>WEEKLY PRAYERS</h1>
-                            <p className='text-center text-sm'>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
+                            <p className='text-center text-sm w-[90%]'>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
                             <Link to="/media/sermon">
                                 <button className='bg-[#F0B323] text-sm px-3 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Our Sermons</button>
                             </Link>
@@ -88,7 +90,7 @@ const HeroCarousel = () => {
                         />
                         <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 space-y-[5px] w-full h-full bg-black bg-opacity-[50%]'>
                             <p className='text-Main-700 font-semibold'>WORSHIP IN GIVING</p>
-                            <h1 className='text-xl font-semibold text-center font-body'>JOIN THE CONSTRUCTION DRIVE</h1>
+                            <h1 className='text-xl font-semibold text-center font-body w-[90%]'>JOIN THE CONSTRUCTION DRIVE</h1>
                             <p className='w-[95%] mx-auto text-center text-sm'>Join us in building a beacon of faith and community!</p>
                             <button onClick={GivingClick} className='bg-[#F0B323] text-sm px-3 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Contribute</button>
                         </div>
@@ -167,7 +169,7 @@ const HeroCarousel = () => {
                         <img 
                             src={require('../../Assets/SlideShow/IMG_0004.JPG')}
                             alt="Hero"
-                            className=' h-full w-full object-cover overflow-hidden'
+                            className='h-full w-full object-cover overflow-hidden'
                         />
                         <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose w-full h-full bg-black bg-opacity-[50%] space-y-[20px]'>
                             <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>

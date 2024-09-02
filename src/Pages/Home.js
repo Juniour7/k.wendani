@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 
 //icons
 import { MdOutlineArticle, MdOutlineHeadsetMic  } from "react-icons/md";
-import { FaPlay } from "react-icons/fa";
 import { FaRegBell } from "react-icons/fa6";
 import { GoBook } from "react-icons/go";
 
@@ -22,38 +21,40 @@ const HomePage = () => {
             <HeroCarousel />
             <body className=''>
                 {/*Upcoming Events */}
-                <section className='grid grid-cols-1 md:grid-cols-4 divide-x divide-y'>
+                <section className='grid grid-cols-1 md:grid-cols-4 '>
                     <div className='bg-[#007681] text-white p-5'>
-                        <div className='my-10'>
-                            <h3 className='text-xl'>Upcoming</h3>
-                            <h1 className='text-7xl font-semibold'>Events</h1>
+                        <div className='py-[70px] flex flex-col justify-center items-center text-left'>
+                            <div className='text-left'>
+                                <h3 className='text-lg font-light text-left'>Upcoming</h3>
+                                <h1 className='text-5xl font-semibold'>Events</h1>
+                            </div>
                         </div>
                     </div>
-                    <div className='relative'>
+                    <div className='relative group hover:cursor-pointer'>
                         <div className='w-full h-[250px] md:h-full'>
                             <img src={require('../Assets/Events/Ambassadors Sabbath.jpg')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
-                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
+                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2 group-hover:h-[100%] group-hover:bg-opacity-90 transition-all duration-700 '>
                             <h5 className='text-sm text-[#4D3C3C]'>03th Aug, 2024</h5>
                             <h3 className='text-xl'>Ambassadors Sabbath</h3>
-                            <p></p>
+                            <p className='hidden group-hover:block transition-all duration-300 delay-700 ease-in-out'>jknscdjkncskdjcn</p>
                         </div>
                     </div>
-                    <div className='relative '>
+                    <div className='relative group hover:cursor-pointer'>
                         <div className='w-full h-[250px] md:h-full'>
                             <img src={require('../Assets/Events/Camp Meeting.jpg')} alt='event poster' className='w-full h-full object-cover object-center' />
                         </div>
-                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
-                            <h5 className='text-sm text-[#4D3C3C]'>8th Aug, 2024</h5>
+                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2 group-hover:h-[100%] group-hover:bg-opacity-90 transition-all duration-700'>
+                            <h5 className='text-sm text-[#4D3C3C]'>11th Aug, 2024</h5>
                             <h3 className='text-xl'>Camp Meeting</h3>
                             <p></p>
                         </div>
                     </div>
-                    <div className='relative'>
+                    <div className='relative group hover:cursor-pointer'>
                         <div className='w-full h-[250px] md:h-full'>
                             <img src={require('../Assets/Children Ministry/Pathfinders/PathfinderBanner.webp')} alt='event poster' className='w-full h-full object-cover' />
                         </div>
-                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2'>
+                        <div className='absolute bottom-0 h-[30%] w-full bg-white bg-opacity-50 p-2 group-hover:h-[100%] group-hover:bg-opacity-90 transition-all duration-700'>
                             <h5 className='text-sm text-Main-900'>21st Sep, 2024</h5>
                             <h3 className='text-xl'>World PathfinderDay</h3>
                             <p></p>

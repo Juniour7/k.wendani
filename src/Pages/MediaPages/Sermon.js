@@ -2,8 +2,19 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-
 const SermonData = [
+    {
+        src: "https://www.youtube.com/embed/5vB4s6buJro?si=mjkgCJftv0v0wYwB"
+    },
+    {
+        src: "https://www.youtube.com/embed/urbxcbw8FrI?si=93zq7qoOdeljow3P"
+    },
+    {
+        src: "https://www.youtube.com/embed/hwbcAwd9xg4?si=relK5eGn2oKcyfQj"
+    },
+    {
+        src: "https://www.youtube.com/embed/T_tp9LDFAik?si=xYWyhvkSziC_M-zi&amp;start=13609"
+    },
     {
         src: "https://www.youtube.com/embed/3SCXtlSLd38?si=9LhCXfqWSTsS5QhI&amp;start=15318"
     },
@@ -59,10 +70,10 @@ const Sermon = () => {
                     </div>
                 </section>
 
-                <section className="w-[90%] mx-auto mt-[20px] md:mt-[50px]  ">
+                <section className="w-[90%] lg:w-[85%] mx-auto mt-[20px] md:mt-[50px]  ">
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         {SermonData.map((video,index) => (
-                            <div key={index} className="h-[190px] md:h-[150px] lg:h-[250px]">
+                            <div key={index} className="h-[215px] md:h-[150px] lg:h-[210px] shadow-md">
                                 <iframe
                                     className="w-full h-full"
                                     src={video.src}

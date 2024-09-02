@@ -48,7 +48,7 @@ const AmbassadorChoir = () => {
                 <title>Ambassadors Choir | Kahawa Wendani SDA Church</title>
             </Helmet>
             <body className="bg-[#F8F8F8] pb-[50px]">
-                <section className='relative w-full h-32 md:h-[450px] bg-center bg-cover bg-no-repeat bg-fixed'
+                <section className='relative w-full h-[300px] md:h-[450px] bg-center bg-cover bg-no-repeat bg-fixed'
                     style={{ backgroundImage: "url(https://i.pinimg.com/564x/71/4e/28/714e28b350602d10bb83b1c3349d5eb0.jpg)" }}
                 >
                     <div className='absolute w-full h-full bg-black bg-opacity-30'>
@@ -64,10 +64,10 @@ const AmbassadorChoir = () => {
                 </section>
 
                 {/* Ambassadors Choir */}
-                <section className="w-[90%] mx-auto mt-[50px]">
+                <section className="w-[90%] md:w-[85%] mx-auto mt-[50px]">
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         {AmbVideoData.map((video, index) => (
-                            <div key={index} className="h-[190px] md:h-[150px] lg:h-[230px]">
+                            <div key={index} className="h-[215px] md:h-[150px] lg:h-[210px] shadow-md">
                                 <iframe
                                     className="w-full h-full"
                                     src={video.src}
@@ -79,6 +79,17 @@ const AmbassadorChoir = () => {
                                 ></iframe>
                             </div>
                         ))}
+                    </div>
+                    <div className="mt-[30px]">
+                        <h1 className="text-xl">Our Contacts</h1>
+                        <ol className="list-disc ml-[20px] text-lg">
+                            <li>
+                                Youtube: <a href="https://www.youtube.com/@kahawawendanisdaambassadors" target="_blank" className="text-blue-500 italic hover:text-[#FF0000] transition-colors transform duration-300 ease-in-out">kahawawendanisdaambassadors</a>
+                            </li>
+                            <li>
+                                Phone: <a href="tel:0707965257" className=" italic hover:text-blue-500 transition-colors transform duration-300 ease-in-out">(+254)707965257</a>
+                            </li>
+                        </ol>
                     </div>
                 </section>
             </body>

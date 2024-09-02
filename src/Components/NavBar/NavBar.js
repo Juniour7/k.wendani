@@ -177,7 +177,7 @@ const NavLg = () => {
     useEffect(() => {
         const handleScroll = () => {
             const offset = window.scrollY;
-            if(offset > 50){
+            if(offset > 150){
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -192,8 +192,8 @@ const NavLg = () => {
 
     return (
         <>
-            <nav className='bg-[#007681] h-[100px] w-full bg-opacity-50 flex justify-center items-center space-x-[100px] p-4 fixed top-0 z-50'>
-                <div className='w-[295px] h-[80px] my-auto'>
+            <nav className={`bg-[#007681] h-[100px] w-full bg-opacity-50 flex justify-center items-center space-x-[100px] p-4 fixed top-0 z-50 transition-all duration-700 ${scrolled ? 'bg-opacity-100 h-[80px]' : ''}`}>
+                <div className={`w-[295px] h-[80px] py-auto transition-all duration-700 ease-in-out ${scrolled ? 'max-w-[250px] max-h-[70px] my-auto' : ''}`}>
                     <Link to="/">
                         <img 
                             src={require('../../Assets/Logos/wsdalogo6.png')} 
@@ -203,7 +203,7 @@ const NavLg = () => {
                     </Link>
                 </div>
                 <header className='my-auto'>
-                    <ul className='inline-flex text-white text-md font-medium space-x-4'>
+                    <ul className='inline-flex text-white text-lg font-semibold space-x-4'>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
                             <NavLink to="/" 
                                 className={({ isActive }) => [

@@ -70,7 +70,7 @@ const LessonDiscussion = () => {
         <section className='mt-[50px] w-[90%] mx-auto'>
           <div className='grid md:grid-cols-3 gap-3 mt-[30px]'>
             {LessonVideoData.map((video,index) => (
-              <div key={index} className='h-[190px] md:h-[150px] lg:h-[250px]'>
+              <div key={index} className='h-[215px] md:h-[150px] lg:h-[210px] shadow-md'>
                 <iframe
                   className="w-full h-full"
                   src={video.src}
