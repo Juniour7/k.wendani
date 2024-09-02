@@ -23,7 +23,7 @@ const HomePage = () => {
                 {/*Upcoming Events */}
                 <section className='grid grid-cols-1 md:grid-cols-4 '>
                     <div className='bg-[#007681] text-white p-5'>
-                        <div className='py-[70px] flex flex-col justify-center items-center text-left'>
+                        <div className='py-[20px] md:py-[70px] flex flex-col justify-center items-center text-left'>
                             <div className='text-left'>
                                 <h3 className='text-lg font-light text-left'>Upcoming</h3>
                                 <h1 className='text-5xl font-semibold'>Events</h1>
@@ -158,29 +158,31 @@ const HomePage = () => {
                 </section>
 
                 {/* Media Section */}
+                <div className=' pb-[50px]'>
                 <section className='w-[90%] mx-auto pb-[50px]'>
                     <h1 className='text-xl font-bold text-white bg-[#007681] py-4 px-3 w-[250px]'>In Case You Missed It</h1>
                     <div className='md:flex flex-wrap lg:flex-nowrap gap-4 justify-center'>
                         <div className='mt-5'>
-                            <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[270px]'>Stewardsip Week Of Prayer</h1>
-                            <div className='w-full h-[200px] md:w-[400px] md:h-[260px]'>
-                                <iframe  width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/jscgT7eAxf0" title="Stewardship Revival Week || Day 1  || Sunday 19th May 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[270px]'>Camp Meeting 2024</h1>
+                            <div className='w-full h-[200px] md:w-[400px] md:h-[228px]'>
+                                <iframe  width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/videoseries?si=uBr5WEjZ0RZAGZTk&amp;list=PLVMwUA2etYjF0Tgkg8TI45yIDsWyh3QYV" title="Stewardship Revival Week || Day 1  || Sunday 19th May 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div className='mt-5'>
                             <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[30%]'>Sermon</h1>
-                            <div className='w-full h-[200px] md:w-[400px] md:h-[260px]'>
-                                <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/YX-BrUYc24A?si=Ua8Pn1qHnfjw-tp7&amp;start=18505" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div className='w-full h-[200px] md:w-[400px] md:h-[228px]'>
+                                <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/5vB4s6buJro?si=mjkgCJftv0v0wYwB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div className='mt-5'>
                             <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[270px]'>Worship in Music</h1>
-                            <div className='w-full h-[200px] md:w-[400px] md:h-[260px]'>
-                                <iframe width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/NTR0MNiplAY" title="NILIPOTEA KATIKA GIZA LA DHAMBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div className='w-full h-[200px] md:w-[400px] md:h-[228px]'>
+                                <iframe width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/bBk9d4FfVfk" title="NILIPOTEA KATIKA GIZA LA DHAMBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </section>
+                </div>
 
                 {/* Dedication Form */}
                 <section className='bg-[#007681] w-full p-9 md:flex justify-center'>

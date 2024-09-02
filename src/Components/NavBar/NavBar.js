@@ -75,6 +75,7 @@ const NavSm = () => {
                                     <Link to="/media/ambChoir" onClick={closeMenu}><MenuItem label="Ambassadors Choir" /></Link>
                                 </MenuItem>
                                 <Link to="/events" onClick={closeMenu}><MenuItem label="Events" /></Link>
+                                <Link to="/prayers" onClick={closeMenu}><MenuItem label="Prayers" /></Link>
                                 <MenuItem label="Resources" >
                                     <Link to="" onClick={closeMenu}><MenuItem label="News" /></Link>
                                     <Link to="/childregistration" onClick={closeMenu}><MenuItem label="Dediaction Form" /></Link>
@@ -143,6 +144,7 @@ const NavMd = () => {
                                     <Link to="/media/ambChoir" onClick={closeMenu}><MenuItem label="Ambassadors Choir" /></Link>
                                 </MenuItem>
                                 <Link to="/events" onClick={closeMenu}><MenuItem label="Events" /></Link>
+                                <Link to="/prayers" onClick={closeMenu}><MenuItem label="Prayers" /></Link>
                                 <MenuItem label="Resources" >
                                     <Link to="" onClick={closeMenu}><MenuItem label="News" /></Link>
                                     <Link to="/childregistration" onClick={closeMenu}><MenuItem label="Dediaction Form" /></Link>
@@ -203,7 +205,7 @@ const NavLg = () => {
                     </Link>
                 </div>
                 <header className='my-auto'>
-                    <ul className='inline-flex text-white text-lg font-semibold space-x-4'>
+                    <ul className='inline-flex text-white text-lg space-x-3'>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
                             <NavLink to="/" 
                                 className={({ isActive }) => [
@@ -245,6 +247,15 @@ const NavLg = () => {
                                 ]}
                             >
                                 Events
+                            </NavLink>
+                        </li>
+                        <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
+                            <NavLink to="/prayers"
+                                className={({ isActive }) => [
+                                    "my-auto text-white", isActive ? " text-[#F0B323]" : ""
+                                ]}
+                            >
+                                Prayers
                             </NavLink>
                         </li>
                         <li className='hover:text-Main-400 transition-colors duration-300'>

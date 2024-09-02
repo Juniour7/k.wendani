@@ -15,6 +15,7 @@ import AboutPage from './Pages/About';
 import EventPage from './Pages/Events';
 import ContactPage from './Pages/Contact';
 import Giving from './Pages/Giving';
+import Prayers from './Pages/Prayers';
 
 //Media Pages
 import Sermon from './Pages/MediaPages/Sermon';
@@ -45,6 +46,7 @@ function App() {
           <Route exact path="/events" element={<EventPage  />} />
           <Route exact path="/contactUs" element={<ContactPage  />} />
           <Route exact path="/giving" element={<Giving  />} />
+          <Route exact path="/prayers" element={<Prayers  />} />
 
 
           <Route exact path="/media/sermon" element={<Sermon  />} />
