@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { MdChevronRight } from 'react-icons/md';
 
 const Prayers = () => {
   return (
@@ -8,12 +9,11 @@ const Prayers = () => {
             <title>Prayers | Kahawa Wendani SDA Church</title>
         </Helmet>
         <body className='pb-[50px] bg-[#F8F8F8]'>
-            <div className='bg-fixed relative bg-cover bg-center bg-no-repeat w-full h-72 z-0'
-                style={{backgroundImage: "url(https://images.unsplash.com/photo-1632772998001-cc9bf6f7c852?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"}}
+            <div className='bg-fixed relative bg-cover bg-center md:bg-bottom bg-no-repeat w-full h-[250px] md:h-[400px] z-0'
+                style={{backgroundImage: "url(https://i.pinimg.com/564x/08/50/12/085012675083030ec20a604dd2c107f9.jpg)"}}
             >
-                <div className='absolute bottom-[25px] left-[50px] p-10 h-32 '>
-                    <h1 className='text-2xl md:text-5xl font-semibold text-Hero-900'>Prayer Requests</h1>
-                    <hr className='border-[1px] mt-3 border-Hero-900'/>
+                <div className='absolute bottom-[15%] left-[50px] p-5 md:p-10 md:h-32 border-t-2 border-b-2'>
+                    <h1 className='text-2xl md:text-5xl font-semibold text-white'>Prayer Requests</h1>
                 </div>
             </div>
             <section className='my-[50px] md:flex justify-center gap-5'>
@@ -29,9 +29,24 @@ const Prayers = () => {
                         Loading…
                     </iframe>
                 </div>
-                <div className='basis-[30%] p-2'>
+                <div className='basis-[30%] p-2 mt-[30px] md:mt-0'>
                     <h1 className='text-xl'>Our Contacts</h1>
-
+                    <div className='m'>
+                        <ol className='ml-1'>
+                            <li className='flex items-center gap-1'>
+                                <span className=' text-3xl text-[#007681]'>
+                                    <MdChevronRight />
+                                </span>
+                                <h3 className='my-auto'>Phone: <a href='tel:' className='text-[#]'>(+254)</a></h3>
+                            </li>
+                            <li className='flex items-center gap-1'>
+                                <span className=' text-3xl text-[#007681]'>
+                                    <MdChevronRight />
+                                </span>
+                                <h3 className='my-auto'>Email: <a href='mailto:kahawawendanisdachurch@gmail.com' className='text-[#]'>kahawawendanisdachurch@gmail.com</a></h3>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </section>
         </body>

@@ -13,21 +13,21 @@ const ContactPage = () => {
             <Helmet>
                 <title>Contact Us | Kahawa Wendani SDA Church</title>
             </Helmet>
-            <body className='mt-[60px] lg:mt-[100px] w-full bg-[#F8F8F8] pb-[50px]'>
-                <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52'>
-                    <div className='text-center absolute inset-0 flex flex-col justify-center items-center text-md'>
-                        <div>
-                            <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
-                            <Link className='text-[#F0B323]'>Contact Us</Link>
+            <body className='mt-[60px] lg:mt-0 w-full bg-[#F8F8F8] pb-[50px]'>
+                <div className='bg-fixed relative bg-cover bg-center bg-no-repeat w-full h-[250px] md:h-[400px] z-0'
+                    style={{backgroundImage: "url(https://images.unsplash.com/photo-1577563820627-bc12aa2139de?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"}}
+                >
+                    <div className='absolute inset-0 flex flex-col justify-center items-center'>
+                        <div className=' py-5 md:py-7  border-t-[0.2px] border-b-[0.2px]  w-[50%] mx-auto'>
+                            <h1 className='text-2xl md:text-5xl font-semibold text-white text-center'>CONTACT</h1>
                         </div>
-                        <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>Contact Us</h1>
                     </div>
-                </section>
+                </div>
 
                 <section className='mt-[30px] w-[90%] mx-auto p-5'>
-                    <h4 className='text-[#F0B323] text-lg mb-[15px]'>GET IN TOUCH</h4>
+                    <h4 className='text-[#FFE001] text-lg mb-[15px]'>GET IN TOUCH</h4>
                     <div className=' grid grid-cols-1 md:grid-cols-3 gap-4'>
-                        <div className='bg-[#007681] text-white rounded-lg flex flex-col items-center justify-center p-6 hover:bg-[#F0B323] hover:cursor-pointer transition-all duration-300'>
+                        <div className='bg-[#007681] text-white rounded-lg flex flex-col items-center justify-center p-6 hover:bg-[#FFE001] hover:cursor-pointer transition-all duration-300'>
                             <span className='text-6xl my-[20px] mb-[20px]'>
                                 <TfiHeadphoneAlt />
                             </span>
@@ -36,14 +36,14 @@ const ContactPage = () => {
                                 <p className='text-[#F9F9F9] hover:text-black transition-colors duration-300'>(+254716794363)</p>
                             </a>
                         </div>
-                        <div className='bg-[#007681] text-white rounded-lg flex flex-col items-center justify-center p-6 hover:bg-[#F0B323] hover:cursor-pointer transition-all duration-300'>
+                        <div className='bg-[#007681] text-white rounded-lg flex flex-col items-center justify-center p-6 hover:bg-[#FFE001] hover:cursor-pointer transition-all duration-300'>
                             <span className='text-6xl my-[20px] mb-[20px]'>
                                 <CiLocationOn />
                             </span>
                             <h3 className='text-2xl mb-[10px]'>Address</h3>
                             <p className='text-[#F9F9F9]'>P.O. BOX 25685-00100 Nairobi</p>
                         </div>
-                        <div className='bg-[#007681] text-white rounded-lg flex flex-col items-center justify-center p-6 hover:bg-[#F0B323] hover:cursor-pointer transition-all duration-300'>
+                        <div className='bg-[#007681] text-white rounded-lg flex flex-col items-center justify-center p-6 hover:bg-[#FFE001] hover:cursor-pointer transition-all duration-300'>
                             <span className='text-6xl my-[20px] mb-[20px]'>
                                 <MdOutlineMailOutline />
                             </span>

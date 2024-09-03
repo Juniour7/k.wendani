@@ -74,7 +74,7 @@ const AboutPage = () => {
                 <section className='mt-[70px]'>
                     <h1 className='text-3xl md:text-5xl text-[#007681] font-About mb-[40px] text-center mt-[20px]'>Meet Our Leaders</h1>
                     <div className='grid md:grid-cols-3 gap-4 font-About w-[85%] mx-auto'>
-                        <div className='relative'>
+                        <div className='relative z-10'>
                             <h4 className='text-3xl'>First Elder</h4>
                             <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
                                 <img src={require('../Assets/Leaders/1st Elder.png')} alt='first elder' className='w-full h-full object-cover' />
@@ -84,7 +84,7 @@ const AboutPage = () => {
                                 <h1>Eld. Ooonge</h1>
                             </div>
                         </div>
-                        <div className='relative'>
+                        <div className='relative z-10'>
                             <h4 className='text-3xl'>Pastor</h4>
                             <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
                                 <img src={require('../Assets/Leaders/Pastor.jpg')} alt='first elder' className='w-full h-full object-cover' />
@@ -94,7 +94,7 @@ const AboutPage = () => {
                                 <h1>Pst.Macjoe  Masesi</h1>
                             </div>
                         </div>
-                        <div className='relative'>
+                        <div className='relative z-10'>
                             <h4 className='text-3xl'>Church Leader</h4>
                             <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
                                 <img src={require('../Assets/Leaders/Church Leader.jpeg')} alt='first elder' className='w-full h-full object-cover' />
