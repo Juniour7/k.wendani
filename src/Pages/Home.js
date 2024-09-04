@@ -9,7 +9,7 @@ import { GoBook } from "react-icons/go";
 
 //Components
 import HeroCarousel from '../Components/Carousel/HeroCarousel';
-
+import Development from '../Components/Carousel/Development';
 
 
 const HomePage = () => {
@@ -145,7 +145,7 @@ const HomePage = () => {
                 </section>
 
                 {/* Development Section */}
-                <section className='bg-[#F8F8F8] w-full p-5 flex flex-wrap lg:flex-nowrap gap-5 justify-center'>
+                {/* <section className='bg-[#F8F8F8] w-full p-5 flex flex-wrap lg:flex-nowrap gap-5 justify-center'>
                     <div className='lg:basis-[40%]'>
                         <h4 className='text-md text-[#FFE001]'>You're Welcome</h4>
                         <h1 className='text-[#007681] text-3xl md:text-5xl'>Join The Drive</h1>
@@ -155,7 +155,8 @@ const HomePage = () => {
                     <div className='lg:w-[50%] h-[250px] lg:h-[500px]'>
                         <img src={require('../Assets/Construction Drive/4.jpg')} alt='Construction Drive' className='w-full h-full object-ceover' />
                     </div>
-                </section>
+                </section> */}
+                <Development />
 
                 {/* Media Section */}
                 <div className=' pb-[50px]'>

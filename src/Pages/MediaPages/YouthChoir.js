@@ -3,6 +3,9 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 
+//components
+import Construction from "../../Components/Construction";
+
 const YouthChoir = () => {
     return (
         <>
@@ -25,7 +28,7 @@ const YouthChoir = () => {
                     </div>
                 </section>
 
-                {/* Church Choir */}
+                
                 <section className="w-[90%] md:w-[95%] lg:w-[85%] mx-auto mt-[50px]">
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         
