@@ -8,12 +8,14 @@ const Prayers = () => {
         <Helmet>
             <title>Prayers | Kahawa Wendani SDA Church</title>
         </Helmet>
-        <body className='pb-[50px] bg-[#F8F8F8]'>
+        <body className='pb-[50px] bg-[#F8F8F8] mt-[60px] lg:mt-0'>
             <div className='bg-fixed relative bg-cover bg-center md:bg-bottom bg-no-repeat w-full h-[250px] md:h-[400px] z-0'
-                style={{backgroundImage: "url(https://i.pinimg.com/564x/08/50/12/085012675083030ec20a604dd2c107f9.jpg)"}}
+                style={{backgroundImage: "url(https://images.unsplash.com/photo-1527027132744-cd2af7b16f7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"}}
             >
-                <div className='absolute bottom-[15%] left-[50px] p-5 md:p-10 md:h-32 border-t-2 border-b-2'>
-                    <h1 className='text-2xl md:text-5xl font-semibold text-white'>Prayer Requests</h1>
+                <div className='absolute inset-0 flex flex-col items-center justify-center '>
+                    <div className='py-5 md:py-4  border-t-[1px] border-b-[0.5px] md:w-[40%] border-gray-500'>
+                        <h1 className='text-2xl md:text-5xl font-semibold text-white text-center'>Prayer Requests</h1>
+                    </div>
                 </div>
             </div>
             <section className='my-[50px] md:flex justify-center gap-5'>

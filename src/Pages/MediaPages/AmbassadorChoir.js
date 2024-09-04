@@ -47,15 +47,15 @@ const AmbassadorChoir = () => {
             <Helmet>
                 <title>Ambassadors Choir | Kahawa Wendani SDA Church</title>
             </Helmet>
-            <body className="bg-[#F8F8F8] pb-[50px]">
-                <section className='relative w-full h-[300px] md:h-[450px] bg-center bg-cover bg-no-repeat bg-fixed'
-                    style={{ backgroundImage: "url(https://i.pinimg.com/564x/71/4e/28/714e28b350602d10bb83b1c3349d5eb0.jpg)" }}
+            <body className="bg-[#F8F8F8] pb-[50px] mt-[60px] lg:mt-0">
+                <section className='relative w-full h-[300px] md:h-[450px] bg-bottom md:bg-cover bg-no-repeat bg-fixed'
+                    style={{ backgroundImage: "url(https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}
                 >
                     <div className='absolute w-full h-full bg-black bg-opacity-30'>
-                        <div className='absolute left-[5%] bottom-[45%]'>
-                            <h1 className='text-center text-white text-3xl md:text-5xl font-semibold'>The Ambassadors Choir</h1>
+                        <div className='absolute left-[5%] bottom-[35%] md:bottom-[40%] lg:bottom-[45%] border-t-[1px] border-b-[1px] py-4'>
+                            <h1 className='text-center text-white text-2xl md:text-5xl font-semibold'>The Ambassadors Choir</h1>
                         </div>
-                        <div className="bg-[#F8F8F8] absolute bottom-0 w-full  rounded-tl-full rounded-tr-full p-3 py-6">
+                        <div className="bg-[#F8F8F8] absolute bottom-0 w-full  rounded-tl-full  p-3 py-6">
                             <div className="flex flex-col justify-center items-center text-center space-y-3">
                                 <h1 className="text-3xl md:text-5xl">Ambassadors Choir</h1>
                             </div>
@@ -64,7 +64,7 @@ const AmbassadorChoir = () => {
                 </section>
 
                 {/* Ambassadors Choir */}
-                <section className="w-[90%] md:w-[85%] mx-auto mt-[50px]">
+                <section className="w-[90%] md:w-[95%] lg:w-[85%] mx-auto mt-[50px]">
                     <div className="grid md:grid-cols-3 gap-3 mt-[30px]">
                         {AmbVideoData.map((video, index) => (
                             <div key={index} className="h-[215px] md:h-[150px] lg:h-[210px] shadow-md">

@@ -8,14 +8,17 @@ const Giving = () => {
         <Helmet>
             <title>Giving | Kahawa Wendani SDA Church</title>
         </Helmet>
-        <body className='mt-[60px] lg:mt-[100px] w-full bg-[#F8F8F8] pb-[50px]'>
-            <section className='bg-gradient-to-r from-[#007681] to-[#1050F3] relative w-full h-32 md:h-52 flex flex-col justify-center items-center'>
-                <div className='text-center text-md'>
-                    <Link to="/" className='hover:text-[#F0B323] mr-3'>Home /</Link>
-                    <Link className='text-[#F0B323]'>Worship In Giving</Link>
-                    <h1 className='text-center text-white text-3xl md:text-6xl font-semibold'>Giving</h1>
+        <body className='mt-[60px] lg:mt-0 w-full bg-[#F8F8F8] pb-[50px]'>
+            <div className='bg-fixed relative bg-cover bg-bottom bg-no-repeat w-full h-[250px] md:h-[400px] z-0'
+                style={{backgroundImage: "url(https://images.unsplash.com/photo-1534951009808-766178b47a4f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"}}
+            >
+                <div className='absolute inset-0 flex flex-col justify-center items-center'>
+                    <div className=' py-5 md:py-7  border-t-[0.2px] border-b-[0.2px]  w-[50%] mx-auto'>
+                        <h1 className='text-2xl md:text-5xl font-semibold text-white text-center'>GIVING</h1>
+                    </div>
                 </div>
-            </section>
+            </div>
+
             <section className='w-[97%] md:w-[90%] lg:w-[95%] mx-auto p-'>
                 <div className='mt-5'>
                     <h4 className='text-[#F0B323] text-md font-["Roboto"]'>Worship In Giving</h4>

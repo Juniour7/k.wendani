@@ -25,7 +25,7 @@ const Footer = () => {
                     </div>
                     <div className='mt-[30px] flex gap-3'>
                         <div className='text-4xl bg-[#F0B323] w-[40px] h-[40px] flex flex-col items-center' target='_blank'>
-                            <a href='tel:' className='m-auto cursor-pointer'>
+                            <a href='tel:0715209523' className='m-auto cursor-pointer'>
                                 <FcCallback />
                             </a>
                         </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/sermon" className='hover:text-[#F0B323] flex items-center'>
+                            <Link to="/media/sermon" className='hover:text-[#F0B323] flex items-center'>
                                 <span>
                                     <MdChevronRight />
                                 </span>
@@ -70,7 +70,7 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/churchChoir" className='hover:text-[#F0B323] flex items-center'>
+                            <Link to="/media/churchChoir" className='hover:text-[#F0B323] flex items-center'>
                                 <span>
                                     <MdChevronRight />
                                 </span>
@@ -116,8 +116,8 @@ const Footer = () => {
                         <span className='text-4xl text-[#F0B323]'>
                             <TfiHeadphoneAlt />
                         </span>
-                        <a href='tel:' className='hover:text-gray-700 my-auto'>
-                            +2547xxxxxxx
+                        <a href='tel:0715209523' className='hover:text-gray-700 my-auto'>
+                            (+254)715209523
                         </a>
                     </div>
                 </div>

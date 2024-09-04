@@ -63,7 +63,7 @@ function App() {
           <Route exact path="/childregistration" element={<DedicationForm  />} />
           <Route exact path="/churchLibrary" element={<Library  />} />
         </Routes>
-        <ScrollToTop />
+        <ScrollToTop /> 
         <Footer />
       </Router>
     </HelmetProvider>

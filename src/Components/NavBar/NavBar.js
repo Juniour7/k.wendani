@@ -49,7 +49,7 @@ const NavSm = () => {
                         <Link to="/">
                             <img 
                                 src={require('../../Assets/Logos/wsdalogo6.png')} 
-                                alt="Seventh-Day Advemtist Logo"
+                                alt="Seventh-Day Adventist Logo"
                                 className='w-full h-full'
                             />
                         </Link>
@@ -113,11 +113,11 @@ const NavMd = () => {
         <>
            <nav className='w-full fixed top-0 z-50'>
                 <div className='bg-[#007681] p-3 flex justify-between'>
-                    <div className='w-[250px] max-h-[7y0px]'>
+                    <div className='w-[250px] max-h-[70px]'>
                         <Link to="/">
                             <img 
                                 src={require('../../Assets/Logos/wsdalogo6.png')} 
-                                alt="Seventh-Day Advemtist Logo"
+                                alt="Seventh-Day Adventist Logo"
                                 className='w-full h-full'
                             />
                         </Link>
@@ -199,7 +199,7 @@ const NavLg = () => {
                     <Link to="/">
                         <img 
                             src={require('../../Assets/Logos/wsdalogo6.png')} 
-                            alt="Seventh-Day Advemtist Logo"
+                            alt="Seventh-Day Adventist Logo"
                             className='h-full w-full'
                         />
                     </Link>
