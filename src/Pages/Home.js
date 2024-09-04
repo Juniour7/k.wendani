@@ -210,7 +210,7 @@ const HomePage = () => {
                             <div className='text-center space-y-2 md:space-y-4'>
                                 <h1 className='text-3xl font-semibold'>Our Blogs</h1>
                                 <p className=''>Discover the rich tapestry of Christian thought and inspiration through our diverse collection of articles that illuminate faith, challenge the mind, and nurture the soul.</p>
-                                <Link to="">
+                                <Link to="/blog">
                                     <button className='bg-[#FFE001] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#FFE001] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>

@@ -8,6 +8,7 @@ import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
 import ScrollToTop from './Components/ScrollToTop';
+import BackToTopButton from './Components/BackToTopButton ';
 
 //Pages
 import HomePage from './Pages/Home';
@@ -16,6 +17,10 @@ import EventPage from './Pages/Events';
 import ContactPage from './Pages/Contact';
 import Giving from './Pages/Giving';
 import Prayers from './Pages/Prayers';
+import Blogs from './Pages/Blogs';
+
+//Blog Pages
+import TheSabbath from './Pages/Blogs/TheSabbath';
 
 //Media Pages
 import Sermon from './Pages/MediaPages/Sermon';
@@ -47,7 +52,11 @@ function App() {
           <Route exact path="/contactUs" element={<ContactPage  />} />
           <Route exact path="/giving" element={<Giving  />} />
           <Route exact path="/prayers" element={<Prayers  />} />
+          <Route exact path="/blog" element={<Blogs  />} />
 
+          <Route path="/blog">
+            <Route path="theSabbath" element={<TheSabbath />} />
+          </Route>
 
           <Route exact path="/media/sermon" element={<Sermon  />} />
           <Route exact path="/media/ambChoir" element={<AmbassadorChoir  />} />
@@ -63,6 +72,7 @@ function App() {
           <Route exact path="/childregistration" element={<DedicationForm  />} />
           <Route exact path="/churchLibrary" element={<Library  />} />
         </Routes>
+        <BackToTopButton />
         <ScrollToTop /> 
         <Footer />
       </Router>
