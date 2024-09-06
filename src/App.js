@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
-
+import './Custom.css';
 
 //Components
 import NavBar from './Components/NavBar/NavBar';
@@ -21,6 +21,8 @@ import Blogs from './Pages/Blogs';
 
 //Blog Pages
 import TheSabbath from './Pages/Blogs/TheSabbath';
+import StateofDead from './Pages/Blogs/StateofDead';
+import HowPrayer from './Pages/Blogs/HowPrayer';
 
 //Media Pages
 import Sermon from './Pages/MediaPages/Sermon';
@@ -56,6 +58,8 @@ function App() {
 
           <Route path="/blog">
             <Route path="theSabbath" element={<TheSabbath />} />
+            <Route path="stateofTheDead" element={<StateofDead />} />
+            <Route path="prayerWorks" element={<HowPrayer />} />
           </Route>
 
           <Route exact path="/media/sermon" element={<Sermon  />} />

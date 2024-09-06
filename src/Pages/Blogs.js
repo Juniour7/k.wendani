@@ -14,13 +14,13 @@ const CardData = [
         src: "https://images.unsplash.com/photo-1518381057566-9acabd658f10?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         title: "Death, the State of the Dead, and Resurrection",
         content: "The Bible has a lot to say about death and how it affects us as humans. What’s more, the idea of death doesn’t stop at dying. Our minds are confronted with the unknown—what happens after death, and what do we do when we’ve lost someone we love?",
-        url: "/"  
+        url: "stateofTheDead"  
     },
     {
         src: "https://images.unsplash.com/photo-1527027132744-cd2af7b16f7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         title: "How Does Prayer Work?",
         content: "Prayer works because God, through His love for us, wills it to work. He makes Himself accessible and available for us when we want to commune with Him.",
-        url: "/"  
+        url: "prayerWorks"  
       }
 ]
 
