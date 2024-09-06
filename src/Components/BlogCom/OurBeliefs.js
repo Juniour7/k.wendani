@@ -147,12 +147,12 @@ const Beliefs = [
 const OurBeliefs = () => {
   return (
     <>
-        <div className='bg-[#007681] text-white p-3 w-full'>
+        <div className='bg-[#007681] text-white p-3 w-full shadow-md'>
             <h1 className='text-center text-2xl font-semibold underline'>Our Beliefs</h1>
             <p>Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole.</p>
         </div>
 
-        <div className='bg-white mt-[30px] border-l-2 border-[#007681] p-2'>
+        <div className='bg-white mt-[30px] border-l-2 border-[#007681] p-2 shadow-md'>
             <ol className='list-decimal ml-6 underline underline-offset-2 space-y-2'>
                 {Beliefs.map((Data, Index) => (
                     <li key={Index}>
