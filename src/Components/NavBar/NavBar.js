@@ -78,6 +78,7 @@ const NavSm = () => {
                                 <Link to="/prayers" onClick={closeMenu}><MenuItem label="Prayers" /></Link>
                                 <MenuItem label="Resources" >
                                     <Link to="" onClick={closeMenu}><MenuItem label="Downloads" /></Link>
+                                    <Link to="/blog" onClick={closeMenu}><MenuItem label="Blogs" /></Link>
                                     <Link to="/childregistration" onClick={closeMenu}><MenuItem label="Dediaction Form" /></Link>
                                     <Link to="" onClick={closeMenu}><MenuItem label="Bennevolence Form" /></Link>
                                     <Link to="/churchLibrary" onClick={closeMenu}><MenuItem label="Library" /></Link>
@@ -147,6 +148,7 @@ const NavMd = () => {
                                 <Link to="/prayers" onClick={closeMenu}><MenuItem label="Prayers" /></Link>
                                 <MenuItem label="Resources" >
                                     <Link to="" onClick={closeMenu}><MenuItem label="Downloads" /></Link>
+                                    <Link to="/blog" onClick={closeMenu}><MenuItem label="Blogs" /></Link>
                                     <Link to="/childregistration" onClick={closeMenu}><MenuItem label="Dediaction Form" /></Link>
                                     <Link to="" onClick={closeMenu}><MenuItem label="Bennevolence Form" /></Link>
                                     <Link to="/churchLibrary" onClick={closeMenu}><MenuItem label="Library" /></Link>
@@ -265,7 +267,8 @@ const NavLg = () => {
                                 </div>
                                 <div className='hidden bg-Main-400 text-black absolute origin-top -left-[40px] top-[55px] text-left group-hover:block transition-all duration-300'>
                                     <div className="w-[190px] divide-y" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                        <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Downloads</Link>
+                                        <Link to="/" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Downloads</Link>
+                                        <Link to="/blog" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Blogs</Link>
                                         <Link to="/childregistration" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Dedication Form</Link>
                                         <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem"> Bennovolence Form</Link>
                                         <Link to="/churchLibrary" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Library</Link>
