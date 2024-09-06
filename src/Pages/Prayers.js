@@ -1,6 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+
+//icons
 import { MdChevronRight } from 'react-icons/md';
+
+
+//components
+import OurBeliefs from '../Components/BlogCom/OurBeliefs';
 
 const Prayers = () => {
   return (
@@ -18,6 +24,7 @@ const Prayers = () => {
                     </div>
                 </div>
             </div>
+
             <section className='my-[50px] md:flex justify-center gap-5'>
                 <div className='w-[98%] md:basis-[50%] bg-white border border-[#D9D9D9] rounded-md  md:p-4'>
                     <iframe 
@@ -31,7 +38,12 @@ const Prayers = () => {
                         Loading…
                     </iframe>
                 </div>
+
+                {/* Right Side */}
                 <div className='basis-[30%] p-2 mt-[30px] md:mt-0'>
+                    <div className='mb-2'>
+                        <OurBeliefs />
+                    </div>
                     <h1 className='text-xl'>Our Contacts</h1>
                     <div className='m'>
                         <ol className='ml-1'>

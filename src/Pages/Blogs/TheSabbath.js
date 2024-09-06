@@ -25,7 +25,7 @@ const TheSabbath = () => {
         <section className='mt-[50px] '>
           <div className='w-[90%] mx-auto md:flex justify-center '>
             <div className='basis-[70%]'>
-              <div className='border-[10px] border-white w-[95%] h-[450px]'>
+              <div className='border-[10px] border-white md:w-[95%] h-[220px] md:h-[450px] mb-[20px] md:mb-0'>
                 <img 
                   src='https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                   alt='the sabbath'
