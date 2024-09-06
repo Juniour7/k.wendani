@@ -38,14 +38,14 @@ const Development = () => {
             <div className='text-center mb-2 md:mb-6'>
                 <h4 className='text-md text-[#FFE001]'>You're Welcome</h4>
                 <h1 className='text-[#007681] text-2xl md:text-4xl'>Invitation to Contribute to Our Church's Construction</h1>
-                <div className="h-[250px] md:h-[400px] flex-shrink-0 rounded-lg mt-[20px] lg:hidden">
+                <div className="h-[250px] md:h-[400px] flex-shrink-0 rounded-lg mt-[20px] lg:hidden overflow-hidden">
                     <Slider {...settings}>
                         {images.map((image, index) => (
                         <div key={index} className='h-[220px] md:h-[400px] w-full'>
                             <img
                             src={image}
                             alt={`Step ${index + 1}`}
-                            className='w-full h-full object-cover rounded-lg'
+                            className='w-full h-full object-cover'
                         />
                         </div>
                     ))}

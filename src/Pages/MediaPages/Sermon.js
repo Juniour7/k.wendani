@@ -10,7 +10,7 @@ const SermonData = [
         src: "https://www.youtube.com/embed/urbxcbw8FrI?si=93zq7qoOdeljow3P"
     },
     {
-        src: "https://www.youtube.com/embed/hwbcAwd9xg4?si=relK5eGn2oKcyfQj"
+        src: "https://www.youtube.com/embed/vsydrT4a6uQ?si=yEWPC2k2-pCNpTIG"
     },
     {
         src: "https://www.youtube.com/embed/T_tp9LDFAik?si=xYWyhvkSziC_M-zi&amp;start=13609"
