@@ -65,7 +65,7 @@ const HomePage = () => {
                 {/* Who We Are */}
                 <section className='w-[90%] mx-auto md:flex justify-center items-center gap-3 pt-[30px] mb-[30px]'>
                     <div className='basis-[50%] text-[#8D9297]'>
-                        <h4 className='text-[#FFE001] text-md font-semibold'>WELCOME TO:</h4>
+                        <h4 className='text-[#F0B323] text-md font-semibold'>WELCOME TO:</h4>
                         <h1 className='text-[#007681] text-2xl md:text-3xl font-semibold mb-[20px]'>Seventh-Day Adventist Church Kahawa Wendani Community</h1>
                         <div className='space-y-[10px] text-sm text-black/50'>
                             <p>Welcome to Seventh Day Adventist Church Kahawa Wendani , where you can connect with a caring church community and participate in our diverse range of community events and services. During your time here, we trust you'll discover enriching experiences for your mind, spirit, and body. We also encourage you to consider joining us in person for our weekly Sabbath worship.</p>
@@ -73,7 +73,7 @@ const HomePage = () => {
                             <p>Join us in fellowship as together we seek to discern our unique roles in serving the Almighty God and humanity.</p>
                         </div>
                         <Link to="/aboutUs">
-                            <button className='bg-[#FFE001] text-white text-lg font-semibold px-5 py-2 rounded-md mt-[40px] hover:bg-black transition-colors duration-300'>Learn More</button>
+                            <button className='bg-[#F0B323] text-white text-lg font-semibold px-5 py-2 rounded-md mt-[40px] hover:bg-black transition-colors duration-300'>Learn More</button>
                         </Link>
                     </div>
                     <div className='w-[70%] hidden md:block h-[350px] basis-[40%]'>
@@ -145,17 +145,6 @@ const HomePage = () => {
                 </section>
 
                 {/* Development Section */}
-                {/* <section className='bg-[#F8F8F8] w-full p-5 flex flex-wrap lg:flex-nowrap gap-5 justify-center'>
-                    <div className='lg:basis-[40%]'>
-                        <h4 className='text-md text-[#FFE001]'>You're Welcome</h4>
-                        <h1 className='text-[#007681] text-3xl md:text-5xl'>Join The Drive</h1>
-                        <p className='text-wrap mt-4 md:mt-10'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together. Your generous support will help lay the foundation for a church that not only serves as a place of spiritual nourishment but also stands as a testament to our shared commitment and unity. Together, let's construct a space where love, hope, and faith flourish for generations to come. Donate today and be a cornerstone of our collective mission!    </p>
-                        <Link to="/giving"><button className='bg-[#F8F8F8]  text-[#FFE001] border border-[#FFE001] rounded-full text-xl font-semibold px-6 py-2 mt-[100px]  hover:bg-[#007681] hover:text-white hover:border-0 transition-colors duration-700'>Donate Now</button></Link>
-                    </div>
-                    <div className='lg:w-[50%] h-[250px] lg:h-[500px]'>
-                        <img src={require('../Assets/Construction Drive/4.jpg')} alt='Construction Drive' className='w-full h-full object-ceover' />
-                    </div>
-                </section> */}
                 <Development />
 
                 {/* Media Section */}
@@ -192,11 +181,11 @@ const HomePage = () => {
                             <img src={require('../Assets/Logos/Baby-Dedication-Form.webp')} alt='Dedication Form' className='w-full h-full bject-cover' />
                         </div>
                         <p className='text-white mt-5 font-body'>Kahawa Wendani Seventh-day Adventist Church believes children are a gift from God, and we are very excited that you are interested in dedicating your child at our church.</p>
-                        <p className='flex text-white mt-[20px]'>Dedications take place the <h1 className='text-[#FFE001] font-semibold mx-3'>1st Saturday</h1> of each month.</p>
+                        <p className=' text-white mt-[20px]'>Dedications take place the <span className='text-[#F0B323] font-semibold'>1st Saturday</span> of each month.</p>
                     </div>
                     <div className='basis-[30%] text-white'>
                         <p>This service gives you as the parent(s) the opportunity to express publicly your desires to spiritually nurture your child through the aid of the Holy Spirit, so your child will develop a desire to love God and to love their fellowmen.</p>
-                        <p className=''>Please <Link to="/childregistration" className='text-[#FFE001] font-bold cursor-pointer'>CLICK THIS LINK</Link> to download a copy of the form.</p>
+                        <p className=''>Please <Link to="/childregistration" className='text-[#F0B323] font-bold cursor-pointer'>CLICK THIS LINK</Link> to download a copy of the form.</p>
                     </div>
                 </section>
 
@@ -204,38 +193,38 @@ const HomePage = () => {
                 <section>
                     <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 w-[90%] md:w-[60%] lg:w-[90%] mx-auto my-[50px]'>
                         <div className='bg-white text-[#007681] p-3 pb-5 rounded-lg flex flex-col items-center shadow-xl hover:bg-[#007681] hover:text-white transition-all duration-300'>
-                            <span className='text-7xl text-[#FFE001]'>
+                            <span className='text-7xl text-[#F0B323]'>
                                 <MdOutlineArticle />
                             </span>
                             <div className='text-center space-y-2 md:space-y-4'>
                                 <h1 className='text-3xl font-semibold'>Our Blogs</h1>
                                 <p className=''>Discover the rich tapestry of Christian thought and inspiration through our diverse collection of articles that illuminate faith, challenge the mind, and nurture the soul.</p>
                                 <Link to="/blog">
-                                    <button className='bg-[#FFE001] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#FFE001] transition-colors duration-300'>Learn More +</button>
+                                    <button className='bg-[#F0B323] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
                         <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl hover:bg-[#007681] hover:text-white transition-all duration-300'>
-                            <span className='text-7xl text-[#FFE001]'>
+                            <span className='text-7xl text-[#F0B323]'>
                                 <GoBook />
                             </span>
                             <div className='text-center space-y-2 md:space-y-4'>
                                 <h1 className='text-3xl font-semibold'>Church Library</h1>
                                 <p className=''>Discover a treasure trove of inspiration and knowledge at our church library your sanctuary for spiritual growth, enlightening reads, and community connection. Explore now on our website!</p>
                                 <Link to="/churchLibrary">
-                                    <button  className='bg-[#FFE001] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#FFE001] transition-colors duration-300'>Learn More +</button>
+                                    <button  className='bg-[#F0B323] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
                         <div className='bg-white text-[#007681] p-3 rounded-lg flex flex-col items-center shadow-xl hover:bg-[#007681] hover:text-white transition-all duration-300'>
-                            <span className='text-7xl text-[#FFE001]'>
+                            <span className='text-7xl text-[#F0B323]'>
                                 <FaRegBell />
                             </span>
                             <div className='text-center space-y-2 md:space-y-4'>
                                 <h1 className='text-3xl font-semibold'>Ministries</h1>
                                 <p className=''>Discover the rich tapestry of Christian thought and inspiration through our diverse collection of articles that illuminate faith, challenge the mind, and nurture the soul.</p>
                                 <Link to="">
-                                    <button  className='bg-[#FFE001] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#FFE001] transition-colors duration-300'>Learn More +</button>
+                                    <button  className='bg-[#F0B323] w-[90%] md:w-[70%] mx-auto text-lg font-semibold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Learn More +</button>
                                 </Link>
                             </div>
                         </div>
@@ -248,7 +237,7 @@ const HomePage = () => {
                     <div className='absolute top-0 w-full h-full bg-[#007681] bg-opacity-[63%]'>
                         
                     </div>
-                    <div className='absolute -top-[75px] left-[30px] lg:left-[100px] bg-[#FFE001] text-white rounded-md lg:w-[24%] mx-auto p-4 flex flex-col items-center justify-center hover:-translate-y-9 transition-all duration-700 cursor-pointer ease-in-out'>
+                    <div className='absolute -top-[75px] left-[30px] lg:left-[100px] bg-[#F0B323] text-white rounded-md lg:w-[24%] mx-auto p-4 flex flex-col items-center justify-center hover:-translate-y-9 transition-all duration-700 cursor-pointer ease-in-out'>
                         <span className='text-7xl my-[20px] md:my-[30px]'>
                             <MdOutlineHeadsetMic  />
                         </span>
@@ -264,11 +253,11 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className='absolute left-[3%] md:left-[45%] lg:left-[35%] top-[190px] md:top-[50px] text-white md:space-y-4'>
-                        <h4 className='text-[#FFE001] text-sm'>GET IN TOUCH</h4>
+                        <h4 className='text-[#F0B323] text-sm'>GET IN TOUCH</h4>
                         <h1 className='font-semibold text-3xl'>HAVE ANY QUESTIONS?</h1>
                         <p className='md:w-[95%] lg:w-[60%] text-sm'>Discover a warm, welcoming community where faith and fellowship thrive! Whether you're seeking spiritual growth, meaningful connections, or simply want to learn more about our mission, we're here for you. Reach out to us today by phone, email, or by filling out our easy online form. Join us and be part of a vibrant SDA family dedicated to making a difference together. Let's connect and grow in faith and friendship!</p>
                         <Link to="/contactUs">
-                            <button  className='bg-[#FFE001] text-lg font-bold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#FFE001] transition-colors duration-300'>Reach Out</button>
+                            <button  className='bg-[#F0B323] text-lg font-bold px-4 py-2 rounded-lg mt-[30px] hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Reach Out</button>
                         </Link>
                     </div>
                 </section>
