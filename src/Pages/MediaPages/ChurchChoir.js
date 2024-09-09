@@ -52,7 +52,7 @@ const ChurchChoir = () => {
                 <title>Church Choir | Kahawa Wendani SDA Church</title>
             </Helmet>
             <body className="bg-[#F8F8F8] pb-[50px] mt-[60px] lg:mt-0">
-            <section className='relative w-full h-[300px] md:h-[450px] bg-right-bottom lg:bg-bottom md:bg-cover bg-no-repeat bg-fixed'
+                <section className='relative w-full h-[300px] md:h-[450px] bg-right-bottom lg:bg-bottom md:bg-cover bg-no-repeat bg-fixed'
                     style={{ backgroundImage: "url(https://images.unsplash.com/photo-1458560871784-56d23406c091?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}
                 >
                     <div className='absolute w-full h-full bg-black bg-opacity-30'>
