@@ -15,10 +15,11 @@ import Development from '../Components/Carousel/Development';
 import Pastor from '../Assets/Leaders/PPastor.png';
 import Vision from '../Assets/SlideShow/vision.png';
 import Mission from '../Assets/SlideShow/Amission.JPG';
+import Community from '../Assets/SlideShow/community.JPG';
 
 const AboutUs = [
     {
-        src: "https://plus.unsplash.com/premium_photo-1681505195930-388c317b7a76?q=80&w=1384&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: Community,
         title: "Our Community",
         content: "Our Mission is to foster a community of believers who are pasionate about living out the teachings of Jesus Christ in harmony with the distinctive beliefs of the Seventh-day Adventists. We uphold the core tenets of the sventh-day adventist faith, including the observance of the Sabbath, imminent return of Christ and the importance of healthful living."
     },
@@ -192,9 +193,9 @@ const HomePage = () => {
                             <div className='basis-[50%] pt-[50px]'>
                                 <h1 className='text-3xl'>Welcome To Church</h1>
                                 <div className='mt-[20px] space-y-4'>
-                                    <p className='text-sm text-[#]'>Welcome to Lavington SDA Church online your gateway to a loving, compassionate church family and to our many community events and services. I hope you’ll find plenty to feed your mind, soul, and body while you’re here and that you’ll be convinced to join us in person at our weekly Sabbath worship</p>
-                                    <p>We believe the Scriptures are sacred and therefore should be studied in a reverent manner. Our services are conducted in a traditional style. Congregational singing of beloved hymns and prayer are a part of the service. Most members choose to wear attire that is business or business casual, but we welcome you to wear what’s comfortable for you</p>
-                                    <p>We welcome you to fellowship with us as you seek to find your rightful place of service to the Almighty God and to mankind.</p>
+                                    <p className=''>Welcome to Kahawa Wendani SDA Church! Here, you’ll find a warm and caring church family, along with numerous community events and services. We hope that the resources available will nourish your mind, soul, and body, and inspire you to join us in person for our weekly Sabbath worship.</p>
+                                    <p>We hold the Scriptures as sacred and approach their study with reverence. Our services follow a traditional format, featuring congregational singing of cherished hymns and moments of prayer. </p>
+                                    <p>We invite you to join us in fellowship as you seek your rightful place in serving the Almighty God and humanity.</p>
                                     <h1 className='text-4xl'>Pr. Macjoe Masesi</h1>
                                 </div>
                             </div>
