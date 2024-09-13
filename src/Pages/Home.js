@@ -188,7 +188,7 @@ const HomePage = () => {
                     style={{backgroundImage: "url(https://images.unsplash.com/photo-1500491460312-c32fc2dbc751?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"}}
                 >
                     <div className='w-full h-full bg-[#007681] bg-opacity-50'>
-                        <div className='w-[90%] mx-auto flex gap-3 justify-center'>
+                        <div className='w-[90%] mx-auto md:flex gap-3 justify-center'>
                             <div className='basis-[50%] pt-[50px]'>
                                 <h1 className='text-3xl'>Welcome To Church</h1>
                                 <div className='mt-[20px] space-y-4'>
@@ -199,7 +199,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className='basis-[50%] '>
-                                <div className='h-[100%] w-[75%]'>
+                                <div className='h-[100%] w-[75%] mx-auto md:mx-0'>
                                     <img
                                         src={Pastor}
                                         alt=''
