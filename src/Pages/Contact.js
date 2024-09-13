@@ -70,11 +70,11 @@ const ContactPage = () => {
                     <div className='md:basis-[55%]'>
                         <form action="https://api.web3forms.com/submit" method="POST" className='bg-white   flex flex-col justify-center py-[50px] px-[20px] space-y-[20px] shadow-xl'>
                         <input type="hidden" name="access_key" value="203298c2-7be9-4de5-b1c6-1b91f760bea0" />
-                            <input type='text' name='Respondents Name' placeholder='Full Name' className='border border-[#007681] rounded-md p-2 block' required />
-                            <input type='text' name='Respondents Number' placeholder='Phone Number' className='border border-[#007681] rounded-md p-2 block' required />
-                            <input type='email' name='Respondents Email' placeholder='Email Address' className='border border-[#007681] rounded-md p-2 block' />
-                            <input type='text' name='Respondents Subject' placeholder='Subject' className='border border-[#007681] rounded-md p-2 block' required />
-                            <textarea type='text' name='Respondents Message' placeholder='Message' rows="5" className='border border-[#007681] rounded-md p-2' required />
+                            <input type='text' name='Respondents Name' placeholder='Full Name' className='border border-[#007681]  p-2 block focus:outline-none' />
+                            <input type='text' name='Respondents Number' placeholder='Phone Number' className='border border-[#007681]  p-2 block focus:outline-none'  />
+                            <input type='email' name='Respondents Email' placeholder='Email Address' className='border border-[#007681]  p-2 block focus:outline-none' />
+                            <input type='text' name='Respondents Subject' placeholder='Subject' className='border border-[#007681]  p-2 block focus:outline-none'  />
+                            <textarea type='text' name='Respondents Message' placeholder='Message / Feedback' rows="5" className='border border-[#007681]  p-2 focus:outline-none' required />
                             <input type='submit' value='Submit' className='bg-[#F0B323] rounded-md p-2 text-white w-[40%] md:w-[20%] hover:cursor-pointer  ' />
                         </form>
                     </div>
