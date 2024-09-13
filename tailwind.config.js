@@ -29,9 +29,6 @@ module.exports = {
           700: '#785603',
           800: '#493400',
           900: '#1c1000',
-        },
-        colors: {
-          highlight: '#007681', // Define a custom color
         }
       },
       fontFamily: {

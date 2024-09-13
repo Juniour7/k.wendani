@@ -153,14 +153,14 @@ const OurBeliefs = () => {
         </div>
 
         <div className='bg-white mt-[30px] border-l-2 border-[#007681] p-2 shadow-md'>
-            <ol className='list-decimal ml-6 underline underline-offset-2 space-y-2'>
+            <ol className='list-decimal ml-6  space-y-2 '>
                 {Beliefs.map((Data, Index) => (
                     <li key={Index}>
                         <a 
                             href={Data.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex gap-2 hover:text-[#007681]"
+                            className="flex gap-2 hover:text-[#007681] underline underline-offset-2 hover:no-underline transition-all duration-500 ease-in-out transform"
                         >
                             <h4>{Data.title}</h4>
                         </a>

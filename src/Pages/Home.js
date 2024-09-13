@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 //icons
@@ -11,8 +11,37 @@ import { GoBook } from "react-icons/go";
 import HeroCarousel from '../Components/Carousel/HeroCarousel';
 import Development from '../Components/Carousel/Development';
 
+//images
+import Pastor from '../Assets/Leaders/PPastor.png';
+import Vision from '../Assets/SlideShow/vision.png';
+import Mission from '../Assets/SlideShow/Amission.JPG';
+
+const AboutUs = [
+    {
+        src: "https://plus.unsplash.com/premium_photo-1681505195930-388c317b7a76?q=80&w=1384&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Our Community",
+        content: "Our Mission is to foster a community of believers who are pasionate about living out the teachings of Jesus Christ in harmony with the distinctive beliefs of the Seventh-day Adventists. We uphold the core tenets of the sventh-day adventist faith, including the observance of the Sabbath, imminent return of Christ and the importance of healthful living."
+    },
+    {
+        src: Vision,
+        title: "Our Mission",
+        content: "The mission of the Seventh-day Adventist Church is to proclaim to all people the everlasting gospel in the context of the Three Angels’ Messages of Revelation 14:6-12. This mission is accomplished through preaching, teaching, and healing."
+    },
+    {
+        src: Mission,
+        title: "Our Vission",
+        content: "The vision of the Seventh-day Adventist Church is to prepare the world for the imminent return of Jesus Christ. This vision is fulfilled by encouraging personal spiritual growth, fostering community outreach, and promoting the global mission of spreading God's love and hope."
+    }
+]
+
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const HandleAbout = () => {
+        navigate('/aboutUs');
+    };
+
     return (
         <>
             <Helmet>
@@ -87,61 +116,25 @@ const HomePage = () => {
                     <h1 className='text-center font-body text-xl md:text-3xl my-5 md:my-7'>About The Church</h1>
                     <hr className='flex-grow'/>
                 </div>
-                <section className='lg:flex gap-3 p-3 lg:p-5 font-body'>
-                    <div className='bg-emerald-200 w-[98%] md:w-[75%] lg:w-[90%] mb-3 mx-auto'>
-                        <div className='w-full h-[200px] md:h-[330px] lg:h-[250px]'>
+                <section className='lg:flex w-[90%] mx-auto gap-3 '>
+                    {AboutUs.map((Data, Index) => (
+                        <div key={Index} className='bg-emerald-200 w-[98%] md:w-[75%] lg:w-[90%]  mb-3 mx-auto '>
+                            <div className='w-full h-[200px] md:h-[340px] lg:h-[250px]'>
                             <img 
-                                src="https://plus.unsplash.com/premium_photo-1681505195930-388c317b7a76?q=80&w=1384&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                                alt=""
-                                className='w-full h-full'    
-                            />
-                        </div>
-                        <div className='p-3'>
-                            <h1 className='text-center text-xl md:text-2xl font-semibold'>Our Community</h1>
-                            <p className=''>Our Mission is to foster a community of believers who are pasionate about living out the teachings of Jesus Christ in harmony with the distinctive beliefs
-                                of the Seventh-day Adventists. We uphold the core tenets of the sventh-day adventist faith, including the observance of the Sabbath, imminent return of Christ and the importance of healthful living.
-                            </p>
-                            <div className='flex flex-col justify-center items-center'>
-                                <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Learn More +</Link></button>                              
-                            </div>
-                        </div>
-                    </div>
-                    <div className='bg-emerald-200 w-[98%] md:w-[75%] lg:w-[90%] mb-3 mx-auto'>
-                        <div className='w-full h-[200px] md:h-[340px]  lg:h-[250px]'>
-                            <img 
-                                src={require('../Assets/SlideShow/vision.png')} 
-                                alt=""
+                                src={Data.src} 
+                                alt={Data.title}
                                 className='w-full h-full object-cover'    
                             />
                         </div>
                         <div className='p-3'>
-                            <h1 className='text-center text-2xl font-semibold'>Our Mission</h1>
-                            <p>Our Mission is to foster a community of believers who are pasionate about living out the teachings of Jesus Christ in harmony with the distinctive beliefs
-                                of the Seventh-day Adventists. We uphold the core tenets of the sventh-day adventist faith, including the observance of the Sabbath, imminent return of Christ and the importance of healthful living.
-                            </p>
-                            <div className='flex flex-col justify-center items-center'>
-                                <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Learn More +</Link></button>                              
+                            <h1 className='text-center text-2xl font-semibold'>{Data.title}</h1>
+                            <p>{Data.content}</p>
+                            <div className=''>
+                                <button onClick={HandleAbout} className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-sm hover:bg-black hover:text-white transition-colors duration-300 ease-in-out'>Learn More</button>                              
                             </div>
                         </div>
-                    </div>
-                    <div className='bg-emerald-200 w-[98%] md:w-[75%] lg:w-[90%]  mb-3 mx-auto'>
-                        <div className='w-full h-[200px] md:h-[340px] lg:h-[250px]'>
-                            <img 
-                                src={require('../Assets/SlideShow/mission.jpg')} 
-                                alt=""
-                                className='w-full h-full object-cover'    
-                            />
                         </div>
-                        <div className='p-3'>
-                            <h1 className='text-center text-2xl font-semibold'>Our Vision</h1>
-                            <p>Our Mission is to foster a community of believers who are pasionate about living out the teachings of Jesus Christ in harmony with the distinctive beliefs
-                                of the Seventh-day Adventists. We uphold the core tenets of the sventh-day adventist faith, including the observance of the Sabbath, imminent return of Christ and the importance of healthful living.
-                            </p>
-                            <div className='flex flex-col justify-center items-center'>
-                                <button className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-md hover:bg-white hover:text-Hero-900'><Link to="/aboutUs">Learn More +</Link></button>                              
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </section>
 
                 {/* Development Section */}
@@ -186,6 +179,35 @@ const HomePage = () => {
                     <div className='basis-[30%] text-white'>
                         <p>This service gives you as the parent(s) the opportunity to express publicly your desires to spiritually nurture your child through the aid of the Holy Spirit, so your child will develop a desire to love God and to love their fellowmen.</p>
                         <p className=''>Please <Link to="/childregistration" className='text-[#F0B323] font-bold cursor-pointer'>CLICK THIS LINK</Link> to download a copy of the form.</p>
+                    </div>
+                </section>
+
+                {/* Pastor's Welcoming */}
+                <section
+                    className='bg-cover bg-center bg-fixed bg-no-repeat lg:h-[85vh]'
+                    style={{backgroundImage: "url(https://images.unsplash.com/photo-1500491460312-c32fc2dbc751?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"}}
+                >
+                    <div className='w-full h-full bg-[#007681] bg-opacity-50'>
+                        <div className='w-[90%] mx-auto flex gap-3 justify-center'>
+                            <div className='basis-[50%] pt-[50px]'>
+                                <h1 className='text-3xl'>Welcome To Church</h1>
+                                <div className='mt-[20px] space-y-4'>
+                                    <p className='text-sm text-[#]'>Welcome to Lavington SDA Church online your gateway to a loving, compassionate church family and to our many community events and services. I hope you’ll find plenty to feed your mind, soul, and body while you’re here and that you’ll be convinced to join us in person at our weekly Sabbath worship</p>
+                                    <p>We believe the Scriptures are sacred and therefore should be studied in a reverent manner. Our services are conducted in a traditional style. Congregational singing of beloved hymns and prayer are a part of the service. Most members choose to wear attire that is business or business casual, but we welcome you to wear what’s comfortable for you</p>
+                                    <p>We welcome you to fellowship with us as you seek to find your rightful place of service to the Almighty God and to mankind.</p>
+                                    <h1 className='text-4xl'>Pr. Macjoe Masesi</h1>
+                                </div>
+                            </div>
+                            <div className='basis-[50%] '>
+                                <div className='h-[100%] w-[75%]'>
+                                    <img
+                                        src={Pastor}
+                                        alt=''
+                                        className='w-full h-full object-cover'
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 

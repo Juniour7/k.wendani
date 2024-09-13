@@ -45,12 +45,12 @@ const Blogs = () => {
             <section>
                 <div className='w-[90%] mx-auto grid md:grid-cols-2 lg:grid-cols-3 just-fy-center  gap-3 my-[30px]'>
                     {CardData.map((Data, Index) => (
-                        <div key={Index} className='bg-white p-3'>
-                            <div className='w-full h-[270px]'>
+                        <div key={Index} className='bg-white p-3 relative pb-[20px]'>
+                            <div className='w-full h-[270px] overflow-hidden'>
                                 <img 
                                     src={Data.src} 
                                     alt={Data.title} 
-                                    className='w-full h-full object-cover' 
+                                    className='w-full h-full object-cover hover:scale-125 cursor-pointer transition-all duration-700 ease-in-out transform' 
                                 />
                             </div>
                             <div>
@@ -58,9 +58,9 @@ const Blogs = () => {
                                     <h1 className='text-xl my-[15px] text-[#007681] hover:underline'>{Data.title}</h1>
                                 </Link>
                                 <p className='text-[#888888] text-sm'>{Data.content}</p>
-                                <div className='flex justify-end mt-[20px]'>
+                                <div className='flex justify-end mt-[20px] absolute bottom-2 right-3'>
                                     <Link to={Data.url}>
-                                        <button className='text-[#F0B323] underline underline-offset-2'>Read More</button>
+                                        <button className='text-[#F0B323] underline underline-offset-2 hover:text-Hero-900 transition-colors duration-300 ease-in-out'>Read More</button>
                                     </Link>
                                 </div>
                             </div>

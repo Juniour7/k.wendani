@@ -1,7 +1,34 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
 
+
+import { IoCall } from "react-icons/io5";
+
+//images
+import Elder from '../Assets/Leaders/Kiongos.JPG';
+import Pastor from '../Assets/Leaders/Preacher.JPG';
+import Leader from '../Assets/Leaders/Leader.jpeg';
+
+const Leaders = [
+    {
+        src: Elder,
+        position: "First Elder",
+        name: "Eld. Ooonge",
+        href: "tel:0715209523"
+    },
+    {
+        src: Pastor,
+        position: "Pastor",
+        name: "Pst. Macjoe Masesi",
+        href: "tel:0715209523"
+    },
+    {
+        src: Leader,
+        position: "Church Leader",
+        name: "Cl. Hellen Wandollah",
+        href: "tel:0715209523"
+    },
+]
 
 const AboutPage = () => {
     return (
@@ -10,21 +37,20 @@ const AboutPage = () => {
                 <title>About Us | Kahawa Wendani SDA Church</title>
             </Helmet>
             <body className='bg-[#F8F8F8] pb-[100px]'>
-                <section className='w-full h-32 md:h-[300px] bg-fixed bg-center relative'
+                <section className='w-full h-[250px] md:h-[400px] bg-fixed bg-center relative'
                     style={{ backgroundImage: "url(https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}
                 >
-                    <div className='absolute w-full h-full bg-black bg-opacity-30'>
-                        <div className='absolute bottom-[20%] left-[5%]'>
-
-                        <h1 className='text-white text-xl md:text-5xl font-semibold'>Who We Are</h1>
+                    <div className='absolute inset-0 flex flex-col items-center justify-center '>
+                        <div className='py-5 md:py-4  border-t-[1px] border-b-[0.5px] w-[60%] md:w-[40%] border-gray-500'>
+                            <h1 className='text-2xl md:text-5xl font-semibold text-white text-center'>Our Church</h1>
                         </div>
                     </div>
                 </section>
 
                 {/* Brief History Section */}
-                <section className='p-5 md:flex justify-evenly gap-0 mt-[70px]'>
-                    <div className='basis-[40%]'>
-                        <h1 className='text-5xl text-[#007681] font-About mb-[40px]'>Our History</h1>
+                <section className='md:p-5 justify-evenly gap-0 mt-[70px] w-[90%] mx-auto'>
+                    <div className=''>
+                        <h1 className='text-5xl text-[#007681] text-center font-About mb-[40px]'>Our History</h1>
                         <div className='space-y-[20px]'>
                             <p>The name “Wendani,” a rich Kikuyu word meaning “love,” perfectly embodies the spirit and essence of our church. Sda Church Kahawa Wendani has a deep-rooted history, originating from SDA Kahawa Garrison, where Wendani Sabbath School was born on July 23, 2005.</p>
                             <p>Our journey began on a bright Sabbath morning when members of the church, expecting their usual worship at Kahawa Garrison, were unexpectedly denied entry. The Garrison commander had issued a directive that restricted civilian access, allowing only soldiers and their families to worship inside the barracks. Despite the abrupt change, our members displayed unwavering faith, worshiping under the sun by the roadside that day.</p>
@@ -32,19 +58,19 @@ const AboutPage = () => {
                             <p>On June 23, 2007, Wendani Sabbath School was formally organized into a church under the guidance of Pastor Marundu and Pastor Nzioka. We celebrated our first Holy Communion on July 14, 2007, marking a significant milestone in our spiritual journey. Since then, our church has continually evolved, relocating to our current location on June 29, 2013.</p>
                         </div>
                     </div>
-                    <div className='basis-[30%] h-[500px]'>
+                    <div className=' h-[500px] hidden'>
                         <img src={require('../Assets/8ae083fe15fe978364cddc88e857f76b.jpg')} alt='' className='w-full h-full object-cover rounded-lg' />
                     </div>
                 </section>
 
                 {/* Mission Section */}
                 <section className='w-[85%] mx-auto'>
-                    <h1 className='text-5xl text-[#007681] font-About mb-[40px]'>Our Mission</h1>
-                    <div className='md:flex justify-evenly mt-[50px]'>
-                        <div className='overflow-hidden basis-[50%] h-[300px]'>
+                    <h1 className='text-5xl text-center text-[#007681] font-About mb-[40px]'>Our Mission</h1>
+                    <div className=' justify-evenly mt-[50px]'>
+                        <div className='overflow-hidden basis-[50%] h-[300px] hidden'>
                             <img src={require('../Assets/1c6c5cd12abc318761dfb5cb5be56522.jpg')} alt='Mission' className='w-full h-full object-cover rounded-lg' />
                         </div>
-                        <div className='basis-[40%] text-right'>
+                        <div className='basis-[40%] text-center'>
                             <p>The mission of the Seventh-day Adventist Church is to proclaim to all people the everlasting gospel in the context of the Three Angels’ Messages of Revelation 14:6-12. This mission is accomplished through preaching, teaching, and healing.</p>
                         </div>
                     </div>
@@ -52,19 +78,19 @@ const AboutPage = () => {
 
                 {/* Vision Section */}
                 <section className='w-[85%] mx-auto mt-[70px]'>
-                    <h1 className='text-5xl text-[#007681] font-About mb-[40px]'>Our Vision</h1>
-                    <div className='md:flex flex-row-reverse justify-evenly mt-[50px]'>
-                        <div className='overflow-hidden basis-[50%] h-[300px]'>
+                    <h1 className='text-5xl text-[#007681] font-About mb-[40px] text-center'>Our Vision</h1>
+                    <div className=' flex-row-reverse justify-evenly mt-[50px]'>
+                        <div className='overflow-hidden basis-[50%] h-[300px] hidden'>
                             <img src={require('../Assets/1c6c5cd12abc318761dfb5cb5be56522.jpg')} alt='Mission' className='w-full h-full object-cover rounded-lg' />
                         </div>
-                        <div className='basis-[40%]'>
+                        <div className='basis-[40%] text-center'>
                             <p>The vision of the Seventh-day Adventist Church is to prepare the world for the imminent return of Jesus Christ. This vision is fulfilled by encouraging personal spiritual growth, fostering community outreach, and promoting the global mission of spreading God's love and hope.</p>
                         </div>
                     </div>
                 </section>
 
                 {/* Join us */}
-                <section className='text-center my-[70px] w-[65%] mx-auto'>
+                <section className='text-center my-[70px] w-[90%] md:w-[65%] mx-auto'>
                     <h1 className='text-5xl text-[#007681] font-About mb-[40px]'>Join Us</h1>
                     <p>We invite you to join us at Sda Church Kahawa Wendani, where love and faith are at the heart of everything we do. Whether you are seeking a new church home or exploring your faith, you will find a welcoming community here</p>
                     <p>Connect with us and be part of our journey as we continue to grow in faith, love, and service to our neighbors.Experience the warmth and love of Wendani, and together, let us make a difference in our community and beyond.</p>
@@ -73,38 +99,28 @@ const AboutPage = () => {
                 {/* Our Leaders */}
                 <section className='mt-[70px]'>
                     <h1 className='text-3xl md:text-5xl text-[#007681] font-About mb-[40px] text-center mt-[20px]'>Meet Our Leaders</h1>
-                    <div className='grid md:grid-cols-3 gap-4 font-About w-[85%] mx-auto'>
-                        <div className='relative z-10'>
-                            <h4 className='text-3xl'>First Elder</h4>
-                            <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
-                                <img src={require('../Assets/Leaders/1st Elder.png')} alt='first elder' className='w-full h-full object-cover' />
+                    <div className='grid md:grid-cols-3 gap-3 font-About w-[90%] mx-auto'>
+                        {Leaders.map((Data,Index) => (
+                            <div key={Index} className='bg-white cursor-pointer flex flex-col justify-center items-center p-3 h-auto  md:w-[70%] lg:w-[400px] shadow-md hover:shadow-2xl hover:-translate-y-4 group hover:bg-[#] transition-all duration-700 ease-in-out'>
+                                <div className='w-[150px] h-[150px] mx-auto'>
+                                    <img 
+                                        src={Data.src} 
+                                        alt={Data.name} 
+                                        className='w-full h-full object-cover rounded-full' 
+                                    />
+                                </div>
+                                <h1 className='text-center text-2xl font-light mt-[15px]'>{Data.name}</h1>
+                                <p className='text-[#F0B323] text-center text-lg pb-3 mt-[15px]'>{Data.position}</p>
+                                <div className='bg-black hover:bg-[#F0B323] transition-colors duration-300 ease-in-out transform w-[50px] h-[50px] flex flex-col justify-center items-center rounded-full'>
+                                    <span className="text-3xl my-auto text-white hover:cursor-pointer rounded-full items-center justify-center flex ">
+                                        <a href={Data.href}>
+                                            <IoCall />
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
-                            <div className='absolute top-[10%] left-[10%] bg-[#F8F8F8] border border-[#F0B323] w-[70%] h-[70%] z-0'/>
-                            <div className='mt-[10px] text-gray-600'>
-                                <h1>Eld. Ooonge</h1>
-                            </div>
-                        </div>
-                        <div className='relative z-10'>
-                            <h4 className='text-3xl'>Pastor</h4>
-                            <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
-                                <img src={require('../Assets/Leaders/Pastor.jpg')} alt='first elder' className='w-full h-full object-cover' />
-                            </div>
-                            <div className='absolute top-[10%] left-[10%] bg-[#F8F8F8] border border-[#F0B323] w-[70%] h-[70%] z-0'/>
-                            <div className='mt-[10px] text-gray-600'>
-                                <h1>Pst.Macjoe  Masesi</h1>
-                            </div>
-                        </div>
-                        <div className='relative z-10'>
-                            <h4 className='text-3xl'>Church Leader</h4>
-                            <div className='relative z-50 mt-[30px] w-[70%] h-[70%]'>
-                                <img src={require('../Assets/Leaders/Church Leader.jpeg')} alt='first elder' className='w-full h-full object-cover' />
-                            </div>
-                            <div className='absolute top-[10%] left-[10%] bg-[#F8F8F8] border border-[#F0B323] w-[70%] h-[70%] z-0'/>
-                            <div className='mt-[10px] text-gray-600'>
-                                <h1>Ch Leader.Hellen Wandollah</h1>
-                            </div>
-                        </div>
-                    </div>
+                        ))}
+                    </div> 
                 </section>
             </body>
         </>
