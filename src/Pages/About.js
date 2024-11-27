@@ -8,14 +8,9 @@ import { IoCall } from "react-icons/io5";
 import Elder from '../Assets/Leaders/Kiongos.JPG';
 import Pastor from '../Assets/Leaders/Preacher.JPG';
 import Leader from '../Assets/Leaders/Leader.jpeg';
+import BgImage from '../Assets/Construction Drive/8.jpg';
 
 const Leaders = [
-    {
-        src: Elder,
-        position: "First Elder",
-        name: "Eld. Ooonge",
-        href: "tel:0715209523"
-    },
     {
         src: Pastor,
         position: "Pastor",
@@ -23,9 +18,15 @@ const Leaders = [
         href: "tel:0715209523"
     },
     {
+        src: Elder,
+        position: "First Elder",
+        name: "Eld. Ooonge",
+        href: "tel:0715209523"
+    },
+    {
         src: Leader,
         position: "Church Leader",
-        name: "Cl. Hellen Wandollah",
+        name: "CL. Hellen Wandollah",
         href: "tel:0715209523"
     },
 ]
@@ -38,7 +39,7 @@ const AboutPage = () => {
             </Helmet>
             <body className='bg-[#F8F8F8] pb-[100px]'>
                 <section className='w-full h-[250px] md:h-[400px] bg-fixed bg-center relative'
-                    style={{ backgroundImage: "url(https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}
+                    style={{ backgroundImage: `url(${BgImage})` }}
                 >
                     <div className='absolute inset-0 flex flex-col items-center justify-center '>
                         <div className='py-5 md:py-4  border-t-[1px] border-b-[0.5px] w-[60%] md:w-[40%] border-gray-500'>
@@ -71,7 +72,7 @@ const AboutPage = () => {
                             <img src={require('../Assets/1c6c5cd12abc318761dfb5cb5be56522.jpg')} alt='Mission' className='w-full h-full object-cover rounded-lg' />
                         </div>
                         <div className='basis-[40%] text-center'>
-                            <p>The mission of the Seventh-day Adventist Church is to proclaim to all people the everlasting gospel in the context of the Three Angels’ Messages of Revelation 14:6-12. This mission is accomplished through preaching, teaching, and healing.</p>
+                            <p>Make disciples of Jesus Christ who live as His loving witnesses and proclaim to all people the everlasting gospel of the Three Angels’ Messages in preparation for His soon return (Matt 28:18-20, Acts 1:8, Rev 14:6-12).</p>
                         </div>
                     </div>
                 </section>
@@ -84,24 +85,24 @@ const AboutPage = () => {
                             <img src={require('../Assets/1c6c5cd12abc318761dfb5cb5be56522.jpg')} alt='Mission' className='w-full h-full object-cover rounded-lg' />
                         </div>
                         <div className='basis-[40%] text-center'>
-                            <p>The vision of the Seventh-day Adventist Church is to prepare the world for the imminent return of Jesus Christ. This vision is fulfilled by encouraging personal spiritual growth, fostering community outreach, and promoting the global mission of spreading God's love and hope.</p>
+                            <p>In harmony with Bible revelation, Seventh-day Adventists see as the climax of God’s plan the restoration of all His creation to full harmony with His perfect will and righteousness.</p>
                         </div>
                     </div>
                 </section>
 
                 {/* Join us */}
-                <section className='text-center my-[70px] w-[90%] md:w-[65%] mx-auto'>
+                {/* <section className='text-center my-[70px] w-[90%] md:w-[65%] mx-auto'>
                     <h1 className='text-5xl text-[#007681] font-About mb-[40px]'>Join Us</h1>
                     <p>We invite you to join us at Sda Church Kahawa Wendani, where love and faith are at the heart of everything we do. Whether you are seeking a new church home or exploring your faith, you will find a welcoming community here</p>
                     <p>Connect with us and be part of our journey as we continue to grow in faith, love, and service to our neighbors.Experience the warmth and love of Wendani, and together, let us make a difference in our community and beyond.</p>
-                </section>
+                </section> */}
 
                 {/* Our Leaders */}
                 <section className='mt-[70px]'>
                     <h1 className='text-3xl md:text-5xl text-[#007681] font-About mb-[40px] text-center mt-[20px]'>Meet Our Leaders</h1>
                     <div className='grid md:grid-cols-3 gap-3 font-About w-[90%] mx-auto'>
                         {Leaders.map((Data,Index) => (
-                            <div key={Index} className='bg-white cursor-pointer flex flex-col justify-center items-center p-3 h-auto  md:w-[70%] lg:w-[400px] shadow-md hover:shadow-2xl hover:-translate-y-4 group hover:bg-[#] transition-all duration-700 ease-in-out'>
+                            <div key={Index} className='bg-white cursor-pointer flex flex-col justify-center items-center p-3  shadow-md hover:shadow-2xl hover:-translate-y-4 group hover:bg-[#] transition-all duration-700 ease-in-out'>
                                 <div className='w-[150px] h-[150px] mx-auto'>
                                     <img 
                                         src={Data.src} 

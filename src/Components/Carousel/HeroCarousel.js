@@ -11,7 +11,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { GoChevronLeft } from "react-icons/go";
 import { FiChevronRight } from "react-icons/fi";
 
-
+//images
+import amo from '../../Assets/SlideShow/amo.jpg';
 
 const HeroCarousel = () => {
     const navigate = useNavigate();
@@ -52,10 +53,10 @@ const HeroCarousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
-        speed: 2000,
+        speed: 1000,
         infinte: true,
         pauseOnHover: false,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 15000,
         cssEase: "linear",
         arrows: true,
         nextArrow: <CustomNextArrow />,
@@ -171,7 +172,7 @@ const HeroCarousel = () => {
                             alt="Hero"
                             className='h-full w-full object-cover overflow-hidden'
                         />
-                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose w-full h-full bg-black bg-opacity-[50%] space-y-[20px]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose w-full h-full bg-black bg-opacity-[25%] space-y-[20px]'>
                             <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>
                             <h1 className='text-5xl font-semibold font-body'>WEEKLY PRAYERS</h1>
                             <p>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
@@ -186,7 +187,7 @@ const HeroCarousel = () => {
                             alt="Hero"
                             className='w-full h-full object-cover'
                         />
-                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[50%]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[25%]'>
                             <p className='text-Main-700 font-semibold'>WORSHIP IN GIVING</p>
                             <h1 className='text-5xl font-semibold font-body'>JOIN THE CONSTRUCTION DRIVE</h1>
                             <p className='w-[65%] mx-auto text-center'>Join us in building a beacon of faith and community! As members of our SDA family, your contributions are vital in creating a sanctuary where we can gather, worship, and grow together</p>
@@ -201,13 +202,28 @@ const HeroCarousel = () => {
                             alt=""
                             className='w-full h-full object-cover'
                         />
-                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[50%]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[25%]'>
                             <p className='text-Main-700 '>AT WENDANI SDA CHURCH COMMUNITY</p>
                             <h1 className='text-6xl font-semibold font-body'>EVERY HEART FINDS HOME</h1>
                             <p>We invite you to experience the grace, joy and love that defines our faith community</p>
-                            <Link to="/giving">
+                            {/* <Link to="/giving">
                                 <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Ministries</button>
-                            </Link>
+                            </Link> */}
+                        </div>
+                    </div>
+                    <div className='relative h-screen font-[Poppins]'>
+                        <img 
+                            src={amo}
+                            alt=""
+                            className='w-full h-full object-cover'
+                        />
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[20%]'>
+                            <p className='text-Main-700 '>AT WENDANI SDA CHURCH COMMUNITY</p>
+                            <h1 className='text-6xl font-semibold font-body'>MOMENTS OF RENEWAL</h1>
+                            <p>Experience the joy of fellowship, spiritual growth, and unforgettable moments of renewal in faith and unity</p>
+                            {/* <Link to="/giving">
+                                <button className='bg-[#F0B323] text-xl px-5 py-2 my-5  hover:cursor-pointer rounded-md hover:bg-white hover:text-[#F0B323] transition-colors duration-300'>Ministries</button>
+                            </Link> */}
                         </div>
                     </div>
                 </Slider>

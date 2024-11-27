@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 
 const SermonData = [
     {
+        src: "https://www.youtube.com/embed/g1PtgMIbXgM?si=WxFrFPkFs5c1KI67"
+    },
+    {
         src: "https://www.youtube.com/embed/5vB4s6buJro?si=mjkgCJftv0v0wYwB"
     },
     {
@@ -11,39 +14,6 @@ const SermonData = [
     },
     {
         src: "https://www.youtube.com/embed/vsydrT4a6uQ?si=yEWPC2k2-pCNpTIG"
-    },
-    {
-        src: "https://www.youtube.com/embed/T_tp9LDFAik?si=xYWyhvkSziC_M-zi&amp;start=13609"
-    },
-    {
-        src: "https://www.youtube.com/embed/3SCXtlSLd38?si=9LhCXfqWSTsS5QhI&amp;start=15318"
-    },
-    {
-        src: "https://www.youtube.com/embed/T3lFJIF8FZk?si=PN3NtoFtZYbXfjsl&amp;start=13588"
-    },
-    {
-        src:"https://www.youtube.com/embed/phdOotN8G4w?si=DLgYNwstfNVKTLvu&amp;start=16584",
-    },
-    {
-        src:"https://www.youtube.com/embed/xznABAKukxY?si=Nk06dAKS6fbLkCMK&amp;start=3430",
-    },
-    {
-        src:"https://www.youtube.com/embed/wB_cRKpPfks?si=b--Qz-hol2Qfc6nl&amp;start=12831",
-    },
-    {
-        src:"https://www.youtube.com/embed/YX-BrUYc24A?si=Ua8Pn1qHnfjw-tp7&amp;start=18505",
-    },
-    {
-        src:"https://www.youtube.com/embed/7JWwjy-5NsI?si=ljivcAg125fkpUQL&amp;start=14756",
-    },
-    {
-        src:"https://www.youtube.com/embed/gO0_R-mLY8U?si=q7sfLkH9lEp7Afy1&amp;start=14348",
-    },
-    {
-        src:"https://www.youtube.com/embed/Ec19UWr6Ly0?si=vbjkcB529ByPtVYM&amp;start=13714",
-    },
-    {
-        src:"https://www.youtube.com/embed/mdEDPUOleCc?si=f4hsbWqdK-KRihCp&amp;start=14081",
     }
 ]
 

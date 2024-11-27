@@ -9,55 +9,24 @@ import { IoIosPlay } from "react-icons/io";
 
 const LessonVideoData = [
   {
-    src: "https://www.youtube.com/embed/hbw5nSO37iw?si=KIqZO0k1GvUPg9qp"
+    src: "https://www.youtube.com/embed/J44YtgYfWKg?si=00E0_uIXcSqH0bw7&amp;start=2517"
   },
   {
-    src: "https://www.youtube.com/embed/QGfFS6f0YKY?si=KuTm1V_I8Sj6L5hD&amp;start=3484"
+    src: "https://www.youtube.com/embed/Ao-nYsvrzYE?si=Y4Xa_2-YboHUN_do&amp;start=2789"
   },
   {
-    src: "https://www.youtube.com/embed/AtARIfHwNAw?si=8__1WpEwQ_ZcfdhB"
+    src: "https://www.youtube.com/embed/N819zjwSnN8?si=aL_DeQiU_oqrdSfJ&amp;start=9"
   },
   {
-    src: "https://www.youtube.com/embed/T_tp9LDFAik?si=yfI057pYecjlh8pL&amp;start=3323"
+    src: "https://www.youtube.com/embed/bV3oEk2VzbM?si=wwS_mwGrGD8iF0UH&amp;start=1455"
   },
   {
-    src: "https://www.youtube.com/embed/3SCXtlSLd38?si=vVlABnIBp5khA06Q&amp;start=3012"
+    src: "https://www.youtube.com/embed/tt98BuoeQfY?si=rIaIBTqPtE6IZY-6&amp;start=1455"
   },
+  
   {
-    src: "https://www.youtube.com/embed/T3lFJIF8FZk?si=DFRifdTspp-jqKSG&amp;start=2342"
+    src: "https://www.youtube.com/embed/tt98BuoeQfY?si=rIaIBTqPtE6IZY-6&amp;start=1455"
   },
-  {
-    src: "https://www.youtube.com/embed/phdOotN8G4w?si=XpdJiohVJ0UpZOiz&amp;start=2793",
-    title: ""
-  },
-  {
-    src: "https://www.youtube.com/embed/o9ubVE_Rinc?si=us3LatXFB4wK04NQ&amp;start=2019",
-    title: ""
-  },
-  {
-    src: "https://www.youtube.com/embed/wB_cRKpPfks?si=Zkz_B3HpoLuj8ZH0&amp;start=2965",
-    title: ""
-  },
-  {
-    src: "https://www.youtube.com/embed/7JWwjy-5NsI?si=lAw2q9qirZd5R8kZ&amp;start=4053",
-    title: ""
-  },
-  {
-    src: "https://www.youtube.com/embed/gO0_R-mLY8U?si=Tm3SryI4YvJE22ou&amp;start=3343",
-    title: ""
-  },
-  {
-    src: "https://www.youtube.com/embed/iMpHGRmgwgk?si=Yk4PqltweRSu3fha&amp;start=3883",
-    title: ""
-  },
-  {
-    src: "https://www.youtube.com/embed/mdEDPUOleCc?si=D7vc6J0c9D7ubqwj&amp;start=3630",
-    title: ""
-  },
-  {
-    src: "https://www.youtube.com/embed/gty6oQcWr4c?si=07gcceScEryQkFrd&amp;start=1808",
-    title: ""
-  }
 ]
 
 
@@ -89,7 +58,7 @@ const LessonDiscussion = () => {
             <span className='text-2xl my-auto'>
               <IoIosPlay />
             </span>
-            <h1 className='text-xl'>The Book Mark</h1>
+            <h1 className='text-xl'>The Gospel of John</h1>
           </div>
           <div className='grid md:grid-cols-3 gap-3 mt-[30px]'>
             {LessonVideoData.map((video,index) => (

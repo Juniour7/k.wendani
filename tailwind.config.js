@@ -33,7 +33,7 @@ module.exports = {
       },
       fontFamily: {
         'body': ['Ubuntu'],
-        'title': ['IBM Plex Sans'],
+        'title': ["Kumbh Sans", 'sans-serif'],
         'media': ['Aladin'],
         'About': ['Pacifico']
       }

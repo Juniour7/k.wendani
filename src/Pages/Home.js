@@ -26,12 +26,12 @@ const AboutUs = [
     {
         src: Vision,
         title: "Our Mission",
-        content: "The mission of the Seventh-day Adventist Church is to proclaim to all people the everlasting gospel in the context of the Three Angels’ Messages of Revelation 14:6-12. This mission is accomplished through preaching, teaching, and healing."
+        content: "Make disciples of Jesus Christ who live as His loving witnesses and proclaim to all people the everlasting gospel of the Three Angels’ Messages in preparation for His soon return (Matt 28:18-20, Acts 1:8, Rev 14:6-12)."
     },
     {
-        src: Mission,
-        title: "Our Vission",
-        content: "The vision of the Seventh-day Adventist Church is to prepare the world for the imminent return of Jesus Christ. This vision is fulfilled by encouraging personal spiritual growth, fostering community outreach, and promoting the global mission of spreading God's love and hope."
+        src: 'https://i.pinimg.com/736x/d2/da/a2/d2daa2f598e60e1053a87c888b24d63e.jpg',
+        title: "Our Vision",
+        content: "In harmony with Bible revelation, Seventh-day Adventists see as the climax of God’s plan the restoration of all His creation to full harmony with His perfect will and righteousness."
     }
 ]
 
@@ -93,47 +93,47 @@ const HomePage = () => {
                 </section>
 
                 {/* Who We Are */}
-                <section className='w-[90%] mx-auto md:flex justify-center items-center gap-3 pt-[30px] mb-[30px]'>
-                    <div className='basis-[50%] text-[#8D9297]'>
+                <section className='w-[90%] mx-auto md:flex justify-center items-center gap-3 pt-[30px] mb-[30px] font-title'>
+                    <div className='basis-[55%] '>
                         <h4 className='text-[#F0B323] text-md font-semibold'>WELCOME TO:</h4>
                         <h1 className='text-[#007681] text-2xl md:text-3xl font-semibold mb-[20px]'>Seventh-Day Adventist Church Kahawa Wendani Community</h1>
-                        <div className='space-y-[10px] text-sm text-black/50'>
+                        <div className='space-y-[10px] font-light'>
                             <p>Welcome to Seventh Day Adventist Church Kahawa Wendani , where you can connect with a caring church community and participate in our diverse range of community events and services. During your time here, we trust you'll discover enriching experiences for your mind, spirit, and body. We also encourage you to consider joining us in person for our weekly Sabbath worship.</p>
-                            <p>At our church, we hold the Scriptures in high regard and approach their study with reverence. Our services follow a traditional format, including congregational singing of cherished hymns and communal prayer. While many members opt for business or business casual attire, we invite you to dress comfortably according to your preference.</p>
+                            <p>At Kahawa Wendani SDA church we hold the Scriptures in high regard. Our services follow a traditional format, including congregational singing of cherished hymns and communal prayer.</p>
                             <p>Join us in fellowship as together we seek to discern our unique roles in serving the Almighty God and humanity.</p>
                         </div>
                         <Link to="/aboutUs">
-                            <button className='bg-[#F0B323] text-white text-lg font-semibold px-5 py-2 rounded-md mt-[40px] hover:bg-black transition-colors duration-300'>Learn More</button>
+                            <button className='bg-[#F0B323] text-white text-lg font-semibold px-5 py-2 mt-[40px] hover:bg-black transition-colors duration-300'>Learn More</button>
                         </Link>
                     </div>
-                    <div className='w-[70%] hidden md:block h-[350px] basis-[40%]'>
-                        <img src={require('../Assets/Construction Drive/2.jpg')} alt='' className='w-full h-full object-cover' />
+                    <div className='w-[40%] hidden md:block h-[350px] basis-[45%] overflow-hidden rounded-md'>
+                        <img src={require('../Assets/Construction Drive/4.jpg')} alt='' className='w-full h-full object-cover rounded-md shadow-md hover:scale-125 transition-all duration-500 ease-in-out' />
                     </div>
                 </section>
 
                 {/* About US */}
-                <div className='flex items-center w-[70%] mx-auto text-Main-800'>
+                <div className='flex items-center w-[70%] mx-auto text-[#007681] font-title'>
                     <hr className='flex-grow '/>
                     <h1 className='text-center font-body text-xl md:text-3xl my-5 md:my-7'>About The Church</h1>
                     <hr className='flex-grow'/>
                 </div>
-                <section className='lg:flex w-[90%] mx-auto gap-3 '>
+                <section className='lg:flex w-[90%] mx-auto gap-3 my-10 font-title'>
                     {AboutUs.map((Data, Index) => (
-                        <div key={Index} className='bg-emerald-200 w-[98%] md:w-[75%] lg:w-[90%]  mb-3 mx-auto '>
+                        <div key={Index} className='bg-[#F8F8F8] w-[98%] md:w-[75%] lg:w-[90%]  mb-3 mx-auto shadow-md'>
                             <div className='w-full h-[200px] md:h-[340px] lg:h-[250px]'>
-                            <img 
-                                src={Data.src} 
-                                alt={Data.title}
-                                className='w-full h-full object-cover'    
-                            />
-                        </div>
-                        <div className='p-3'>
-                            <h1 className='text-center text-2xl font-semibold'>{Data.title}</h1>
-                            <p>{Data.content}</p>
-                            <div className=''>
-                                <button onClick={HandleAbout} className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-sm hover:bg-black hover:text-white transition-colors duration-300 ease-in-out'>Learn More</button>                              
+                                <img 
+                                    src={Data.src} 
+                                    alt={Data.title}
+                                    className='w-full h-full object-cover'    
+                                />
                             </div>
-                        </div>
+                            <div className='p-3 pb-4'>
+                                <h1 className='text-center text-2xl font-semibold'>{Data.title}</h1>
+                                <p className='font-light mt-2'>{Data.content}</p>
+                                {/* <div className=''>
+                                    <button onClick={HandleAbout} className='bg-Hero-700 px-4 py-2 my-3 text-md font-semibold text-white rounded-sm hover:bg-black hover:text-white transition-colors duration-300 ease-in-out'>Learn More</button>                              
+                                </div> */}
+                            </div>
                         </div>
                     ))}
                 </section>
@@ -142,25 +142,25 @@ const HomePage = () => {
                 <Development />
 
                 {/* Media Section */}
-                <div className=' pb-[50px]'>
-                <section className='w-[90%] mx-auto pb-[50px]'>
-                    <h1 className='text-xl font-bold text-white bg-[#007681] py-4 px-3 w-[250px]'>In Case You Missed It</h1>
-                    <div className='md:flex flex-wrap lg:flex-nowrap gap-4 justify-center'>
-                        <div className='mt-5'>
-                            <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[270px]'>Camp Meeting 2024</h1>
-                            <div className='w-full h-[200px] md:w-[400px] md:h-[228px]'>
+                <div className=' pb-[50px] font-title w-[90%] mx-auto'>
+                <section className=' pb-[50px]'>
+                    <h1 className='  text-white bg-[#F0B323] p-2 w-[200px]'>In Case You Missed It</h1>
+                    <div className='grid grid-cols-1 md:grid-cols-3 md:gap-4 justify-center mt-5'>
+                        <div className=''>
+                            <h1 className=' text-white bg-[#F0B323] mt-5 mb-2 p-2 w-[200px]'>Camp Meeting 2024</h1>
+                            <div className='w-full h-[200px] md:w-full md:h-[223px]'>
                                 <iframe  width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/videoseries?si=uBr5WEjZ0RZAGZTk&amp;list=PLVMwUA2etYjF0Tgkg8TI45yIDsWyh3QYV" title="Stewardship Revival Week || Day 1  || Sunday 19th May 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
-                        <div className='mt-5'>
-                            <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[30%]'>Sermon</h1>
-                            <div className='w-full h-[200px] md:w-[400px] md:h-[228px]'>
-                                <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/5vB4s6buJro?si=mjkgCJftv0v0wYwB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div className=''>
+                            <h1 className=' text-white bg-[#F0B323] mt-5 mb-2 p-2 w-[40%]'>Latest Sermon</h1>
+                            <div className='w-full h-[200px] md:w-full md:h-[223px]'>
+                                <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/g1PtgMIbXgM?si=DJJzwZ3I0CD9jWo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
-                        <div className='mt-5'>
-                            <h1 className='text-xl text-white bg-[#007681] mt-5 mb-2 font-semibold py-2 px-2 w-[270px]'>Worship in Music</h1>
-                            <div className='w-full h-[200px] md:w-[400px] md:h-[228px]'>
+                        <div className=''>
+                            <h1 className=' text-white bg-[#F0B323] mt-5 mb-2 p-2 w-[200px]'>Worship in Music</h1>
+                            <div className='w-full h-[200px] md:w-full md:h-[223px]'>
                                 <iframe width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/bBk9d4FfVfk" title="NILIPOTEA KATIKA GIZA LA DHAMBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>

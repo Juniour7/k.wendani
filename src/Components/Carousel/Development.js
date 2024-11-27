@@ -24,20 +24,19 @@ const Development = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 2000,
+        speed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 15000,
         arrows: false,
     };
 
   return (
     <>
-        <section className='bg-[#F8F8F8] px-3 lg:px-0 py-[20px] md:pb-[50px]'>
+        <section className='bg-[#F8F8F8] px-3 lg:px-0 py-[20px] md:pb-[50px] font-title'>
             <div className='text-center mb-2 md:mb-6'>
-                <h4 className='text-md text-[#FFE001]'>You're Welcome</h4>
-                <h1 className='text-[#007681] text-2xl md:text-4xl'>Invitation to Contribute to Our Church's Construction</h1>
+                <h1 className='text-[#007681] text-2xl md:text-4xl my-7 font-semibold'>Ongoing Church Contruction</h1>
                 <div className="h-[250px] md:h-[400px] flex-shrink-0 rounded-lg mt-[20px] lg:hidden overflow-hidden">
                     <Slider {...settings}>
                         {images.map((image, index) => (
@@ -53,17 +52,17 @@ const Development = () => {
                 </div>
             </div>
             <div className='lg:flex  justify-center  gap-5'>
-                <div className='basis-[40%] space-y-3'>
+                <div className='basis-[40%] space-y-3 font-light'>
                     <p className=''>We warmly invite you to join us in the meaningful journey of constructing our Church a sacred space where faith, fellowship, and community will come together. Just as the people of Israel willingly contributed to building the temple with joyful hearts (1 Chronicles 29:9), we have a similar opportunity to unite our efforts in creating a place that will serve as a beacon of hope and love for all. Every contribution, no matter the size, will help us build this sanctuary, where lives will be transformed, prayers will be answered, and God's love will be felt by all who enter.</p>
                     <p>As we embark on this endeavor, we are reminded of the early church's spirit of generosity in Acts 2:44-45, where believers shared everything they had to support one another. Your support will not only help construct a building but also establish a spiritual home that will impact lives for generations to come. We invite you to be part of this divine mission, where together, we can create a place to grow in Christ and serve our community with love and grace.</p>
-                    <Link to="/giving"><button className='bg-[#007681] mt-[20px] md:mt-[50px] text-[#F0B323] rounded-md text-xl font-semibold px-6 py-2  hover:bg-[#F0B323] hover:text-[#007681] hover:border-0 transition-colors duration-300 transform ease-in-out'>Build With Us</button></Link>
+                    <Link to="/giving"><button className='text-white mt-[20px] md:mt-[50px] bg-[#F0B323] font-medium text-lg px-6 py-2   hover:bg-black hover:border-0 transition-colors duration-300 transform ease-in-out'>Build With Us</button></Link>
                 </div>
 
                 {/* Carousel Part */}
                 <div className="basis-[50%] md:w-[40%] h-[250px] md:h-[450px] flex-shrink-0 rounded-lg  hidden lg:block">
                     <Slider {...settings}>
                         {images.map((image, index) => (
-                        <div key={index} className='md:w-[40%] h-[250px] md:h-[450px]'>
+                        <div key={index} className='md:w-[40%] h-[250px] md:h-[450px] rounded-lg'>
                             <img
                             src={image}
                             alt={`Step ${index + 1}`}

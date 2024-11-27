@@ -196,7 +196,7 @@ const NavLg = () => {
 
     return (
         <>
-            <nav className={`bg-[#007681] h-[100px] w-full bg-opacity-50 flex justify-center items-center space-x-[100px] p-4 fixed top-0 z-50 transition-all duration-700 ${scrolled ? 'bg-opacity-100 h-[80px]' : ''}`}>
+            <nav className={`bg-[rgba(0,118,129,0.5)] h-[100px] w-full bg-opacity-50 flex justify-center items-center space-x-[100px] p-4 fixed top-0 z-50 transition-all duration-700 ${scrolled ? 'bg-[rgba(0,118,129,1)] bg-opacity-100 h-[5.313rem]' : ''}`}>
                 <div className={`w-[295px] h-[80px] py-auto transition-all duration-700 ease-in-out ${scrolled ? 'max-w-[250px] max-h-[70px] my-auto' : ''}`}>
                     <Link to="/">
                         <img 
@@ -206,7 +206,7 @@ const NavLg = () => {
                         />
                     </Link>
                 </div>
-                <header className='my-auto'>
+                <header className='my-auto font-title font-medium'>
                     <ul className='inline-flex text-white text-lg space-x-3'>
                         <li className='hover:cursor-pointer hover:text-[#F0B323] py-4 transition-colors duration-300'>
                             <NavLink to="/" 
