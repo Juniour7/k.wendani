@@ -23,9 +23,8 @@ const LessonVideoData = [
   {
     src: "https://www.youtube.com/embed/tt98BuoeQfY?si=rIaIBTqPtE6IZY-6&amp;start=1455"
   },
-  
   {
-    src: "https://www.youtube.com/embed/tt98BuoeQfY?si=rIaIBTqPtE6IZY-6&amp;start=1455"
+    src: "https://www.youtube.com/embed/yd8AWrTAgVQ?si=Zxyaz6z4SgLk4Aq8&amp;start=1455"
   },
 ]
 

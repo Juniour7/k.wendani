@@ -10,6 +10,7 @@ import { GoBook } from "react-icons/go";
 //Components
 import HeroCarousel from '../Components/Carousel/HeroCarousel';
 import Development from '../Components/Carousel/Development';
+import UpcomingEvents from '../Components/UpcomingEvents/UpcomingEvents';
 
 //images
 import Pastor from '../Assets/Leaders/PPastor.png';
@@ -51,7 +52,7 @@ const HomePage = () => {
             <HeroCarousel />
             <body className=''>
                 {/*Upcoming Events */}
-                <section className='grid grid-cols-1 md:grid-cols-4 '>
+                {/* <section className='grid grid-cols-1 md:grid-cols-4 '>
                     <div className='bg-[#007681] text-white p-5'>
                         <div className='py-[20px] md:py-[70px] flex flex-col justify-center items-center text-left'>
                             <div className='text-left'>
@@ -90,7 +91,7 @@ const HomePage = () => {
                             <p></p>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Who We Are */}
                 <section className='w-[90%] mx-auto md:flex justify-center items-center gap-3 pt-[30px] mb-[30px] font-title'>
@@ -182,6 +183,9 @@ const HomePage = () => {
                         <p className=''>Please <Link to="/childregistration" className='text-[#F0B323] font-bold cursor-pointer'>CLICK THIS LINK</Link> to download a copy of the form.</p>
                     </div>
                 </section>
+
+                {/* Upcoming Events */}
+                <UpcomingEvents />
 
                 {/* Pastor's Welcoming */}
                 <section

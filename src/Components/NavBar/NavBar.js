@@ -266,10 +266,10 @@ const NavLg = () => {
                                     <button className='hover:cursor-pointer py-4'>Resources</button>
                                 </div>
                                 <div className='hidden bg-Main-400 text-black absolute origin-top -left-[40px] top-[55px] text-left group-hover:block transition-all duration-300'>
-                                    <div className="w-[190px] divide-y" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                    <div className="w-[250px] divide-y" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                         <Link to="/" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Downloads</Link>
                                         <Link to="/blog" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Blogs</Link>
-                                        <Link to="/childregistration" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Dedication Form</Link>
+                                        <Link to="/childregistration" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Child Dedication Form</Link>
                                         <Link to="" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem"> Bennovolence Form</Link>
                                         <Link to="/churchLibrary" className="block text-md font-light  hover:text-white hover:bg-Main-700 px-3 py-2" role="menuitem">Library</Link>
                                     </div>
