@@ -35,7 +35,7 @@ const Development = () => {
   return (
     <>
         <section className='bg-[#F8F8F8] px-3 lg:px-0 py-[20px] md:pb-[50px] font-title'>
-            <div className='text-center mb-2 md:mb-6'>
+            <div className='text-center mb-2 md:mb-6 w-[90%] mx-auto'>
                 <h1 className='text-[#007681] text-2xl md:text-4xl my-7 font-semibold'>Ongoing Church Contruction</h1>
                 <div className="h-[250px] md:h-[400px] flex-shrink-0 rounded-lg mt-[20px] lg:hidden overflow-hidden">
                     <Slider {...settings}>
@@ -51,7 +51,7 @@ const Development = () => {
                     </Slider>
                 </div>
             </div>
-            <div className='lg:flex  justify-center  gap-5'>
+            <div className='lg:flex  justify-center  gap-5 w-[90%] mx-auto lg:w-full'>
                 <div className='basis-[40%] space-y-3 font-light'>
                     <p className=''>We warmly invite you to join us in the meaningful journey of constructing our Church a sacred space where faith, fellowship, and community will come together. Just as the people of Israel willingly contributed to building the temple with joyful hearts (1 Chronicles 29:9), we have a similar opportunity to unite our efforts in creating a place that will serve as a beacon of hope and love for all. Every contribution, no matter the size, will help us build this sanctuary, where lives will be transformed, prayers will be answered, and God's love will be felt by all who enter.</p>
                     <p>As we embark on this endeavor, we are reminded of the early church's spirit of generosity in Acts 2:44-45, where believers shared everything they had to support one another. Your support will not only help construct a building but also establish a spiritual home that will impact lives for generations to come. We invite you to be part of this divine mission, where together, we can create a place to grow in Christ and serve our community with love and grace.</p>

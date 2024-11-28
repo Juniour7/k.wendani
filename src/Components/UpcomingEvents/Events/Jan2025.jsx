@@ -21,7 +21,7 @@ const Jan2025 = () => {
             event: 'AWM End Year Party',
             leader: 'AWM Leader',
             department: 'AWM Department',
-            venue: 'Main Sanctuary'
+            venue: 'Kahawa Wendani SDA Church'
         },
         {
             date: '1st - 8th Dec',
@@ -61,9 +61,9 @@ const Jan2025 = () => {
         <section className='font-title grid grid-cols-1'>
             {Events.length > 0 ? (
                 Events.map((Data, Index) => (
-                    <div key={Index} className="grid md:grid-cols-5 border-b border-[#DDDDDD] py-7 space-y-3">
+                    <div key={Index} className="grid md:grid-cols-5 items-start border-b border-[#DDDDDD] py-7 space-y-3 md:space-y-0">
                         <div>
-                            <h1 className="font-semibold text-[#007681] text-lg">{Data.date}</h1>
+                            <h1 className="font-bold text-[#007681] text-lg">{Data.date}</h1>
                             <p className="text-[#7C6D66] font-light">{Data.time}</p>
                         </div>
                         <div>

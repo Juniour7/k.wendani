@@ -118,9 +118,9 @@ const HomePage = () => {
                     <h1 className='text-center font-body text-xl md:text-3xl my-5 md:my-7'>About The Church</h1>
                     <hr className='flex-grow'/>
                 </div>
-                <section className='lg:flex w-[90%] mx-auto gap-3 my-10 font-title'>
+                <section className='grid md:grid-cols-2 lg:grid-cols-3 w-[90%] mx-auto gap-3 my-10 font-title'>
                     {AboutUs.map((Data, Index) => (
-                        <div key={Index} className='bg-[#F8F8F8] w-[98%] md:w-[75%] lg:w-[90%]  mb-3 mx-auto shadow-md'>
+                        <div key={Index} className='bg-[#F8F8F8]   mb-3 mx-auto shadow-md'>
                             <div className='w-full h-[200px] md:h-[340px] lg:h-[250px]'>
                                 <img 
                                     src={Data.src} 
@@ -149,19 +149,19 @@ const HomePage = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3 md:gap-4 justify-center mt-5'>
                         <div className=''>
                             <h1 className=' text-white bg-[#F0B323] mt-5 mb-2 p-2 w-[200px]'>Camp Meeting 2024</h1>
-                            <div className='w-full h-[200px] md:w-full md:h-[223px]'>
+                            <div className='w-full h-[200px] md:w-full md:h-[150px] lg:h-[223px]'>
                                 <iframe  width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/videoseries?si=uBr5WEjZ0RZAGZTk&amp;list=PLVMwUA2etYjF0Tgkg8TI45yIDsWyh3QYV" title="Stewardship Revival Week || Day 1  || Sunday 19th May 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div className=''>
-                            <h1 className=' text-white bg-[#F0B323] mt-5 mb-2 p-2 w-[40%]'>Latest Sermon</h1>
-                            <div className='w-full h-[200px] md:w-full md:h-[223px]'>
+                            <h1 className=' text-white bg-[#F0B323] mt-5 mb-2 p-2 w-[40%] md:w-[60%] lg:w-[40%]'>Latest Sermon</h1>
+                            <div className='w-full h-[200px] md:w-full md:h-[150px] lg:h-[223px]'>
                                 <iframe width="560" height="315" className="w-full h-full" src="https://www.youtube.com/embed/g1PtgMIbXgM?si=DJJzwZ3I0CD9jWo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div className=''>
                             <h1 className=' text-white bg-[#F0B323] mt-5 mb-2 p-2 w-[200px]'>Worship in Music</h1>
-                            <div className='w-full h-[200px] md:w-full md:h-[223px]'>
+                            <div className='w-full h-[200px] md:w-full md:h-[150px] lg:h-[223px]'>
                                 <iframe width="853" height="480" className='w-full h-full' src="https://www.youtube.com/embed/bBk9d4FfVfk" title="NILIPOTEA KATIKA GIZA LA DHAMBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
@@ -218,7 +218,7 @@ const HomePage = () => {
 
                 {/* Pages Preview */}
                 <section>
-                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 w-[90%] md:w-[60%] lg:w-[90%] mx-auto my-[50px]'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-[90%]  mx-auto my-[50px]'>
                         <div className='bg-white text-[#007681] p-3 pb-5 rounded-lg flex flex-col items-center shadow-xl hover:bg-[#007681] hover:text-white transition-all duration-300'>
                             <span className='text-7xl text-[#F0B323]'>
                                 <MdOutlineArticle />
