@@ -35,7 +35,7 @@ const Feb2025 = () => {
                                 <p className="text-[#7C6D66] font-light">{Data.leader}</p>
                             </div>
                         </div>
-                        <div className="pl-5">
+                        <div className="md:pl-5">
                             <h1 className="font-semibold text-[#007681] text-xl">{Data.venue}</h1>
                         </div>
                         <div className="flex justify-end">

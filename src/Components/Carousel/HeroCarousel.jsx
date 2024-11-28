@@ -66,15 +66,15 @@ const HeroCarousel = () => {
 
     return (
         <>
-            <div className='md:hidden mt-[70px] z-0'>
+            <div className='md:hidden mt-[70px] z-0 overflow-hidden'>
                 <Slider {...settings}>
-                    <div className='relative h-[270px] w-full z-0'>
+                    <div className='relative h-[250px] w-full z-0'>
                         <img 
                             src={require('../../Assets/SlideShow/IMG_0004.JPG')}
                             alt="Kahawa Wendani"
                             className='w-full h-full'
                         />
-                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 w-full h-full bg-black bg-opacity-[50%] space-y-[5px]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 w-full h-full bg-black bg-opacity-[25%] space-y-[5px]'>
                             <p className='text-Main-700'>Embrace The warmth Of Fellowship</p>
                             <h1 className='text-xl font-semibold font-body'>WEEKLY PRAYERS</h1>
                             <p className='text-center text-sm w-[90%]'>Join us for prayers every Wednesday and Friday evening from 5pm to 6pm.</p>
@@ -83,32 +83,41 @@ const HeroCarousel = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='relative h-[270px] w-full'>
+                    <div className='relative h-[250px] w-full'>
                         <img 
                             src={require('../../Assets/Construction Drive/3.jpg')}
                             alt="Kahawa Wendani"
                             className='w-full h-full'
                         />
-                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 space-y-[5px] w-full h-full bg-black bg-opacity-[50%]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 space-y-[5px] w-full h-full bg-black bg-opacity-[25%]'>
                             <p className='text-Main-700 font-semibold'>WORSHIP IN GIVING</p>
                             <h1 className='text-xl font-semibold text-center font-body w-[90%]'>JOIN THE CONSTRUCTION DRIVE</h1>
                             <p className='w-[95%] mx-auto text-center text-sm'>Join us in building a beacon of faith and community!</p>
                             <button onClick={GivingClick} className='bg-[#F0B323] text-sm px-3 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Contribute</button>
                         </div>
                     </div>
-                    <div className='relative h-[270px] font-[Poppins]'>
+                    <div className='relative h-[250px] font-[Poppins]'>
                         <img 
                             src={require('../../Assets/SlideShow/Ambassadors.jpg')}
                             alt=""
                             className='w-full h-full object-cover'
                         />
-                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-3 w-full h-full bg-black bg-opacity-[50%]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-3 w-full h-full bg-black bg-opacity-[25%]'>
                             <p className='text-Main-700 text-base'>AT WENDANI SDA CHURCH COMMUNITY</p>
                             <h1 className='text-xl text-center font-semibold font-body'>EVERY HEART FINDS HOME</h1>
                             <p className='text-center text-sm'>We invite you to experience the grace, joy and love that defines our faith community</p>
-                            <Link to="/giving">
-                                <button className='bg-[#F0B323] text-sm px-3 py-2 my-2  hover:cursor-pointer rounded-md transition-colors duration-200'>Ministries</button>
-                            </Link>
+                        </div>
+                    </div>
+                    <div className='relative h-[250px] font-[Poppins]'>
+                        <img 
+                            src={amo}
+                            alt=""
+                            className='w-full h-full object-cover'
+                        />
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-3 w-full h-full bg-black bg-opacity-[25%]'>
+                            <p className='text-Main-700 text-base'>AT WENDANI SDA CHURCH COMMUNITY</p>
+                            <h1 className='text-xl text-center font-semibold font-body'>MOMENTS OF RENEWAL</h1>
+                            <p className='text-center text-xs'>Experience the joy of fellowship, spiritual growth, and unforgettable moments of renewal in faith and unity</p>
                         </div>
                     </div>
                 </Slider>
@@ -152,7 +161,7 @@ const HeroCarousel = () => {
                             alt=""
                             className='w-full h-full object-cover'
                         />
-                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[50%]'>
+                        <div className='absolute inset-0 flex flex-col justify-center items-center text-white p-5 leading-loose space-y-[20px] w-full h-full bg-black bg-opacity-[25%]'>
                             <p className='text-Main-700 '>AT WENDANI SDA CHURCH COMMUNITY</p>
                             <h1 className='text-6xl font-semibold font-body text-center'>EVERY HEART FINDS HOME</h1>
                             <p>We invite you to experience the grace, joy and love that defines our faith community</p>

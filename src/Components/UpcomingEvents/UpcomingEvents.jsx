@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
 
 //Event Components
 import Jan2025 from './Events/Jan2025';
