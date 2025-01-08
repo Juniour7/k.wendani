@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
+import { HashRouter as Router, Routes,Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import './Custom.css';
@@ -48,13 +48,13 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<HomePage  />} />
-          <Route exact path="/aboutUs" element={<AboutPage  />} />
-          <Route exact path="/events" element={<EventPage  />} />
-          <Route exact path="/contactUs" element={<ContactPage  />} />
-          <Route exact path="/giving" element={<Giving  />} />
-          <Route exact path="/prayers" element={<Prayers  />} />
-          <Route exact path="/blog" element={<Blogs  />} />
+          <Route path="/" element={<HomePage  />} />
+          <Route path="/aboutUs" element={<AboutPage  />} />
+          <Route path="/events" element={<EventPage  />} />
+          <Route path="/contactUs" element={<ContactPage  />} />
+          <Route path="/giving" element={<Giving  />} />
+          <Route path="/prayers" element={<Prayers  />} />
+          <Route path="/blog" element={<Blogs  />} />
 
           <Route path="/blog">
             <Route path="theSabbath" element={<TheSabbath />} />
@@ -62,19 +62,19 @@ function App() {
             <Route path="prayerWorks" element={<HowPrayer />} />
           </Route>
 
-          <Route exact path="/media/sermon" element={<Sermon  />} />
-          <Route exact path="/media/ambChoir" element={<AmbassadorChoir  />} />
-          <Route exact path="/media/youthChoir" element={<YouthChoir  />} />
-          <Route exact path="/media/lessonDiscussion" element={<LessonDiscussion  />} />
-          <Route exact path="/media/churchChoir" element={<ChurchChoir  />} />
+          <Route path="/media/sermon" element={<Sermon  />} />
+          <Route path="/media/ambChoir" element={<AmbassadorChoir  />} />
+          <Route path="/media/youthChoir" element={<YouthChoir  />} />
+          <Route path="/media/lessonDiscussion" element={<LessonDiscussion  />} />
+          <Route path="/media/churchChoir" element={<ChurchChoir  />} />
 
-          <Route exact path="/adventurersClub" element={<AdventureresClub  />} />
-          <Route exact path="/pathfindersClub" element={<PathfindersClub  />} />
-          <Route exact path="/ambassadorsClub" element={<AmbassadorsClub  />} />
-          <Route exact path="/youthsCorner" element={<YouthsCorner  />} />
+          <Route path="/adventurersClub" element={<AdventureresClub  />} />
+          <Route path="/pathfindersClub" element={<PathfindersClub  />} />
+          <Route path="/ambassadorsClub" element={<AmbassadorsClub  />} />
+          <Route path="/youthsCorner" element={<YouthsCorner  />} />
 
-          <Route exact path="/childregistration" element={<DedicationForm  />} />
-          <Route exact path="/churchLibrary" element={<Library  />} />
+          <Route path="/childregistration" element={<DedicationForm  />} />
+          <Route path="/churchLibrary" element={<Library  />} />
         </Routes>
         <BackToTopButton />
         <ScrollToTop /> 

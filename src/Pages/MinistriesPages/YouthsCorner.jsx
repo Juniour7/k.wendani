@@ -4,6 +4,10 @@ import { Helmet } from 'react-helmet-async';
 //Components
 import YouthCarousel from '../../Components/MinCarousel/YouthCarousel';
 
+// Images
+import Image1 from '../../Assets/Youth Corner/Youths.jpg';
+import Image2 from '../../Assets/Youth Corner/WhatsApp Image 2024-06-21 at 10.57.30_b0da969c.jpg';
+
 const YouthsCorner = () => {
   return (
     <>
@@ -12,7 +16,7 @@ const YouthsCorner = () => {
         </Helmet>
         <body className='bg-[#F8FAFC] pb-[50px]'>
             <section className='w-full h-[40vh] lg:h-screen relative'>
-                <img src={require('../../Assets/Youth Corner/Youths.jpg')} alt='adevntureres' className='w-full h-full object-cover' />
+                <img src={Image1} alt='adevntureres' className='w-full h-full object-cover' />
                 <div className='absolute top-0 h-full w-full bg-black bg-opacity-[]'>
                     <div className='absolute bottom-[5%] lg:bottom-[30%] left-[5%] text-white'>
                         <h1 className='text-2xl md:text-5xl font-semibold'>Remember Your Creator</h1>
@@ -31,7 +35,7 @@ const YouthsCorner = () => {
                     <p>AY MISSION: To lead young people into a saving relationship with Jesus Christ and help them embrace His call to discipleship. AY AIM: The Advent message to all the world in my generation. AY MOTTO: The love of Christ compels me.</p>
                 </div>
                 <div className='basis-[40%] h-[220px] md:h-[300px]'>
-                    <img src={require('../../Assets/Youth Corner/WhatsApp Image 2024-06-21 at 10.57.30_b0da969c.jpg')} alt='adevntureres' className='w-full h-full object-cover' />
+                    <img src={Image2} alt='adevntureres' className='w-full h-full object-cover' />
                 </div>
             </section>
 
@@ -60,30 +64,6 @@ const YouthsCorner = () => {
                 <YouthCarousel />
             </section>
 
-            {/* Contact Info */}
-            <section className='w-[80%] mx-auto bg-[#997B36] border-l-4 border-r-4 border-[#F0B323] p-5 mt-[50px] grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-y-0 md:divide-x-2 divide-[#F0B323]'>
-                <div className='text-center text-white flex flex-col items-center space-y-4'>
-                    <h1 className='text-3xl font-semibold'>CONTACT:</h1>
-                    <h2 className='text-2xl mt-[10px]'>Sis. Rosemary Kiago</h2>
-                    <p className='text-md w-[70%] md:w-[50%] mx-auto'>
-                        Youth Leader, Kahawa Wendani SDA Church
-                    </p>
-                    <div className='flex gap-2'>
-                        <h2 className='text-xl'>Phone:</h2>
-                        <a href='tel:0712203840' className='my-auto text-md hover:text-[#00162E] transition-colors duration-200'>
-                            0712203840
-                        </a>
-                    </div>
-                </div>
-                <div className='mt-[10px] md:mt-0'>
-                    <div className='ml-2 text-center text-white flex flex-col items-center space-y-4'>
-                        <h1 className='text-2xl font-semibold'>Leornad Johnson</h1>
-                        <p className='text-md w-[70%] md:w-[50%] mx-auto'>
-                            Assistant Youth Leader, Kahawa Wendani SDA Church
-                        </p>
-                    </div>
-                </div>
-            </section>
         </body>
     </>
   )

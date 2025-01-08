@@ -4,7 +4,24 @@ import { Helmet } from 'react-helmet-async';
 //Components
 import ChildrenCarousel from '../../Components/MinCarousel/ChildreCarousel';
 
+// Images
+import Image from '../../Assets/Children Ministry/adv2.jpg';
+import Image1 from '../../Assets/Children Ministry/Adventurers Achievements/builder1.png';
+import Image2 from '../../Assets/Children Ministry/Adventurers Achievements/busy-bee1.png';
+import Image3 from '../../Assets/Children Ministry/Adventurers Achievements/eager-beaver1.png';
+import Image4 from '../../Assets/Children Ministry/Adventurers Achievements/helping-hand1.png';
+import Image5 from '../../Assets/Children Ministry/Adventurers Achievements/little-lamb1.png';
+import Image6 from '../../Assets/Children Ministry/Adventurers Achievements/sunbeam1.png';
+import Image7 from '../../Assets/Children Ministry/adventureres.jpg';
+
+
+
+
 const AdventureresClub = () => {
+    const Badges = [
+        Image1, Image2, Image3, Image4, Image5, Image6
+    ];
+
   return (
     <>
         <Helmet>
@@ -12,7 +29,7 @@ const AdventureresClub = () => {
         </Helmet>
         <body className='bg-[#F8FAFC] '>
             <section className='w-full h-[40vh] lg:h-screen relative'>
-                <img src={require('../../Assets/Children Ministry/adv2.jpg')} alt='adevntureres' className='w-full h-full object-cover' />
+                <img src={Image} alt='adevntureres' className='w-full h-full object-cover' />
                 <div className='absolute top-0 h-full w-full bg-black bg-opacity-[10%]'>
                     <div className='absolute bottom-[24%] left-[10%] text-white'>
                         <h1 className='text-3xl md:text-7xl font-semibold'>Adventurers Club</h1>
@@ -23,24 +40,18 @@ const AdventureresClub = () => {
 
             {/* Achievements */}
             <section className='w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  justify-center items-center mt-[30px]'>
-                <div className='w-[150px] h-[120px]'>
-                    <img src={require('../../Assets/Children Ministry/Adventurers Achievements/builder1.png')} alt='' className='w-full h-full' />
-                </div>
-                <div className='w-[150px] h-[120px]'>
-                    <img src={require('../../Assets/Children Ministry/Adventurers Achievements/busy-bee1.png')} alt='' className='w-full h-full' />
-                </div>
-                <div className='w-[150px] h-[120px]'>
-                    <img src={require('../../Assets/Children Ministry/Adventurers Achievements/eager-beaver1.png')} alt='' className='w-full h-full' />
-                </div>
-                <div className='w-[150px] h-[120px]'>
-                    <img src={require('../../Assets/Children Ministry/Adventurers Achievements/helping-hand1.png')} alt='' className='w-full h-full' />
-                </div>
-                <div className='w-[150px] h-[120px]'>
-                    <img src={require('../../Assets/Children Ministry/Adventurers Achievements/little-lamb1.png')} alt='' className='w-full h-full' />
-                </div>
-                <div className='w-[150px] h-[120px]'>
-                    <img src={require('../../Assets/Children Ministry/Adventurers Achievements/sunbeam1.png')} alt='' className='w-full h-full' />
-                </div>
+                {Badges.map((img,index) => (
+                    <div 
+                        key={index}
+                        className='w-[150px] h-[120px]'
+                    >
+                        <img 
+                            src={img} 
+                            alt="" 
+                            className='w-full h-full'
+                        />
+                    </div>
+                ))}
             </section>
 
             <section className='mt-[50px] w-[97%] md:w-[90%] mx-auto md:flex gap-3 mb-[20px]'>
@@ -49,7 +60,7 @@ const AdventureresClub = () => {
                     <p>We encourage each child to fully engage in all our activities, with parents and guardians actively participating alongside them through various assignments. Our Adventurer program offers a diverse array of age-appropriate challenges, including games, outdoor adventures, nature exploration, family camping, field trips, and community service projects. The program is structured around a five-level, age-specific curriculum, complemented by around 80 specialized award areas that cover crafts, nature, recreation, spiritual development, and home arts. This comprehensive approach ensures a well-rounded and enriching experience for every participant.</p>
                 </div>
                 <div className='basis-[40%]'>
-                    <img src={require('../../Assets/Children Ministry/adventureres.jpg')} alt='adevntureres' className='w-full h-full object-cover' />
+                    <img src={Image7} alt='adevntureres' className='w-full h-full object-cover' />
                 </div>
             </section>
 
