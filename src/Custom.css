@@ -1,0 +1,10 @@
+/* custom-selection.css */
+::selection {
+    background-color: #007681; /* Replace with your desired highlight color */
+    color: white; /* Replace with your desired text color */
+  }
+  
+::-moz-selection {
+  background-color: #007681; /* For Firefox */
+  color: white; /* For Firefox */
+}
